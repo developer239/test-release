@@ -1,1 +1,1 @@
-export const core = 'hello world'
+export const core = 'hello world and releas please'
