@@ -6,5 +6,8 @@
   "types": "lib/index",
   "files": [
     "lib"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
