@@ -1,3 +1,10 @@
+# [@test-release/core-v1.1.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.1.0...@test-release/core-v1.1.1) (2020-05-11)
+
+
+### Bug Fixes
+
+* publish config in core package.json ([041222c](https://github.com/developer239/test-release/commit/041222c3770f0fd9e28d3147ccb9891c729a7664))
+
 # [@test-release/core-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.0.0...@test-release/core-v1.1.0) (2020-05-11)
 
 
