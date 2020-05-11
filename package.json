@@ -5,12 +5,13 @@
     "bootstrap": "lerna bootstrap",
     "format": "prettier --write '*/**/*.{ts,md,json}'",
     "lint:ts": "eslint --ext .ts packages",
-    "lerna:build": "lerna exec -- npx --no-install rollup -c ../../rollup.config.js",
+    "lerna:build": "lerna exec -- npx --no-install rollup -c ../../../rollup.config.js",
     "lerna:release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "semantic-release": "npm run lerna:build && npm run lerna:release"
   },
   "workspaces": [
-    "packages/*"
+    "packages/core/*",
+    "packages/micro-generators/*"
   ],
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
