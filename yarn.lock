@@ -1320,6 +1320,11 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
+"@test-release/core@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.1.1.tgz#12eb70d9bdddf8766ed5c5b59c97f488efa1f49a"
+  integrity sha512-7CEpOn4vtQbgSz8VNT3QbUEZY3jV3Es9YP7jFWSN+NveEbB+CR8RH38FPJ5gqdyWk5Zy74mJjkWDPSaUireCMg==
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"

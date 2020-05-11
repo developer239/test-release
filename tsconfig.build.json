@@ -5,11 +5,14 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@test-release/core": ["packages/core/core/src"]
+      "@test-release/*": [
+        "packages/core/*/src"
+      ]
     }
   },
+
   "exclude": [
     "node_modules",
-    "lib"
+    "dist"
   ]
 }
