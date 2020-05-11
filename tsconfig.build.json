@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@test-release/*": ["packages/*/src"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@test-release/core",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index",
+  "types": "lib/index",
+  "files": [
+    "lib"
+  ]
+}
