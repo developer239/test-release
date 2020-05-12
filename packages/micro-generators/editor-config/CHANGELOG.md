@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.8.2](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.8.1...@test-release/editor-config-v1.8.2) (2020-05-12)
+
+
+### Bug Fixes
+
+* make bin command work ([7e4c37d](https://github.com/developer239/test-release/commit/7e4c37d94c938efc5aaa91891978c0f157dcafae))
+
 # [@test-release/editor-config-v1.8.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.8.0...@test-release/editor-config-v1.8.1) (2020-05-12)
 
 # [@test-release/editor-config-v1.8.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.7.1...@test-release/editor-config-v1.8.0) (2020-05-12)
