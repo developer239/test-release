@@ -15,29 +15,11 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org
 
-      - name: Cache node modules
-        uses: actions/cache@v1
-        id: cache
-        with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('**/yarn.lock') }}
-
       - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install
-
-      - name: Wait After Install
-        uses: jakejarvis/wait-action@master
-        with:
-          time: '5s'
 
       - name: Bootstrap Lerna
         run: yarn bootstrap
-
-      - name: Wait For Lerna
-        uses: jakejarvis/wait-action@master
-        with:
-          time: '5s'
 
       - run: yarn semantic-release
         env:
