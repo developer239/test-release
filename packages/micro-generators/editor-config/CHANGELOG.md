@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.9.3](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.9.2...@test-release/editor-config-v1.9.3) (2020-05-12)
+
+
+### Bug Fixes
+
+* bin command ([d550d2f](https://github.com/developer239/test-release/commit/d550d2f0db2cf54aa350f5d959ed4fbe8596a597))
+
 # [@test-release/editor-config-v1.9.2](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.9.1...@test-release/editor-config-v1.9.2) (2020-05-12)
 
 
