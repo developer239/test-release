@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+import { generate } from '@test-release/core'
 import { createEditorConfig } from './index'
 
-createEditorConfig().catch(error => console.log(error))
+generate(createEditorConfig()).catch(error => error)

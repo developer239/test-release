@@ -1,19 +1,20 @@
-import path from 'path'
 import ora from 'ora'
 import { copyFiles } from '../template'
 
 interface IOptions {
-  projectFolder: string
+  name: string
+  projectFolder?: string
   source: string
-  destination: string
   context?: Object
+  destination?: string
 }
 
-export const generate = (name: string) => async ({
-  projectFolder,
+export const generate = async ({
+  name,
+  projectFolder = '.',
   source,
-  destination,
   context,
+  destination = '.',
 }: IOptions) => {
   const spinner = ora()
   spinner.start(`[generator] running ${name}`)
