@@ -1,3 +1,4 @@
+import resolve from '@rollup/plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import { preserveShebangs } from 'rollup-plugin-preserve-shebangs'
 import progress from 'rollup-plugin-progress'
@@ -23,6 +24,7 @@ export default {
       tsconfigDefaults: tsDefaults,
       tsconfigOverride: tsOverrides,
     }),
+    resolve({ jsnext: true }),
     commonjs(),
   ],
 }
