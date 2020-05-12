@@ -1,4 +1,2 @@
-export const doSomeCoreFunction = (task: string) => {
-  // eslint-disable-next-line
-  console.log('doing something:', task)
-}
+export { generate } from './services/generator'
+export { copyFiles } from './services/template'

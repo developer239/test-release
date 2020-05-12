@@ -1,1 +1,1 @@
-console.log('cli core')
+console.log('not implemented')

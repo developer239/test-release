@@ -9,7 +9,9 @@
         "packages/core/*/lib"
       ]
     },
-    "declaration": true
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "node_modules",
