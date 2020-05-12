@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.5.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.4.0...@test-release/editor-config-v1.5.0) (2020-05-12)
+
+
+### Features
+
+* more messages ([5cf2cee](https://github.com/developer239/test-release/commit/5cf2ceef002dada17f4bb2af24ff52a37d8d869b))
+
 # [@test-release/editor-config-v1.4.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.3.0...@test-release/editor-config-v1.4.0) (2020-05-12)
 
 
