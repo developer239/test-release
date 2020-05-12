@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.7.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.6.0...@test-release/editor-config-v1.7.0) (2020-05-12)
+
+
+### Features
+
+* yay ([3ccad8b](https://github.com/developer239/test-release/commit/3ccad8bc1f0b63dbf4613a64534c49c09bf15c12))
+
 # [@test-release/editor-config-v1.6.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.5.0...@test-release/editor-config-v1.6.0) (2020-05-12)
 
 
