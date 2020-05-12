@@ -1,5 +1,5 @@
 {
-  "name": "test-release-editor-config",
+  "name": "@test-release/editor-config",
   "version": "1.9.1",
   "license": "MIT",
   "main": "index.js",
@@ -11,7 +11,7 @@
   ],
   "types": "lib/index",
   "bin": {
-    "test-release-editor-config": "lib/index.js"
+    "@test-release/editor-config": "lib/index.js"
   },
   "dependencies": {
     "@test-release/core": "1.1.1"
