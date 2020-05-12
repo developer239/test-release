@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.7.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.7.0...@test-release/editor-config-v1.7.1) (2020-05-12)
+
+
+### Bug Fixes
+
+* simplify release config ([7000f4b](https://github.com/developer239/test-release/commit/7000f4bb3d5dc498570d091dea310e6a2045ca13))
+
 # [@test-release/editor-config-v1.7.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.6.0...@test-release/editor-config-v1.7.0) (2020-05-12)
 
 
