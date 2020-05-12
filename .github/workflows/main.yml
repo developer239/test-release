@@ -26,7 +26,10 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install
 
-      - run: npm run semantic-release
+      - name: Bootstrap Lerna
+        run: yarn bootstrap
+
+      - run: npm semantic-release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
