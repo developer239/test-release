@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.11.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.10.0...@test-release/editor-config-v1.11.0) (2020-05-12)
+
+
+### Features
+
+* differentiate cli/app build ([c480ba7](https://github.com/developer239/test-release/commit/c480ba7314a166c3c10ca50f62a0e74a44fa510f))
+
 # [@test-release/editor-config-v1.10.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.9.4...@test-release/editor-config-v1.10.0) (2020-05-12)
 
 

@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 function unwrapExports (x) {
 	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
@@ -30,4 +28,4 @@ var generateEditorConfig = function (task) {
     lib_1(task);
 };
 
-exports.generateEditorConfig = generateEditorConfig;
+generateEditorConfig('generating from cli');
