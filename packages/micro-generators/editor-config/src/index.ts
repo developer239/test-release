@@ -4,3 +4,5 @@ runTest('editor config')
 
 // eslint-disable-next-line no-console
 console.log(core)
+
+console.log('yay')
