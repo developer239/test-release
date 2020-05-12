@@ -1,6 +1,12 @@
 {
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "module": "commonjs"
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@test-release/*": [
+        "packages/core/*/src"
+      ]
+    }
   }
 }

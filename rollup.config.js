@@ -1,3 +1,5 @@
+import commonjs from 'rollup-plugin-commonjs'
+import { preserveShebangs } from 'rollup-plugin-preserve-shebangs'
 import progress from 'rollup-plugin-progress'
 import typescript from 'rollup-plugin-typescript2'
 
@@ -14,13 +16,14 @@ export default {
   },
 
   plugins: [
+    preserveShebangs(),
     progress(),
     typescript({
+      clean: true,
       tsconfig: 'tsconfig.build.json',
       tsconfigDefaults: tsDefaults,
       tsconfigOverride: tsOverrides,
-      // TODO: remove
-      objectHashIgnoreUnknownHack: true,
     }),
+    commonjs(),
   ],
 }

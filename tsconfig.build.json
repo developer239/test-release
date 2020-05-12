@@ -6,7 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "@test-release/*": [
-        "packages/core/*/src"
+        "packages/core/*/lib"
       ]
     }
   },
