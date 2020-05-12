@@ -1,0 +1,16 @@
+{
+  "name": "@test-release/editor-config",
+  "version": "1.2.0",
+  "license": "MIT",
+  "main": "lib/index",
+  "types": "lib/index",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@test-release/core": "1.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
