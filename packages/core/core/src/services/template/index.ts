@@ -35,10 +35,8 @@ export const copyFiles = async (
     },
   }
 
-  const sourcePath = path.join(__dirname, 'generators', source)
-
   const projectFolderPath = `${process.cwd()}/${projectFolder}`
   const destinationPath = path.join(projectFolderPath, destination)
 
-  await copy(sourcePath, destinationPath, options)
+  await copy(source, destinationPath, options)
 }

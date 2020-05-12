@@ -19,7 +19,7 @@ export const generate = (name: string) => async ({
   spinner.start(`[generator] running ${name}`)
 
   try {
-    await copyFiles(path.join(name, source), destination, projectFolder, context)
+    await copyFiles(source, destination, projectFolder, context)
     spinner.succeed(`[generator] create ${name}`)
   } catch (error) {
     spinner.warn(`[generator] ${name} error: ${error}`)

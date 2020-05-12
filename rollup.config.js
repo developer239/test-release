@@ -1,4 +1,5 @@
 import commonjs from 'rollup-plugin-commonjs'
+import copy from 'rollup-plugin-copy'
 import { preserveShebangs } from 'rollup-plugin-preserve-shebangs'
 import progress from 'rollup-plugin-progress'
 import typescript from 'rollup-plugin-typescript2'
@@ -18,5 +19,10 @@ export default ['bin', 'index'].map(name => ({
       tsconfig: 'tsconfig.build.json',
     }),
     commonjs(),
+    copy({
+      targets: [
+        { src: 'src/templates*', dest: './lib' }
+      ],
+    })
   ],
 }))
