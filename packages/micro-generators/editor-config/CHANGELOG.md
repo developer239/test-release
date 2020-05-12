@@ -1,3 +1,15 @@
+# [@test-release/editor-config-v1.9.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.8.5...@test-release/editor-config-v1.9.0) (2020-05-12)
+
+
+### Bug Fixes
+
+* test release ([1675d9e](https://github.com/developer239/test-release/commit/1675d9e35fa5f22396a2cc8e1ea51121c578e5fe))
+
+
+### Features
+
+* add new features ([3a7c52d](https://github.com/developer239/test-release/commit/3a7c52d7ea53758e36ab6f6c5b33a045907536f3))
+
 # [@test-release/editor-config-v1.8.4](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.8.3...@test-release/editor-config-v1.8.4) (2020-05-12)
 
 
