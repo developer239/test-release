@@ -1,3 +1,10 @@
+# [test-release-editor-config-v1.0.2](https://github.com/developer239/test-release/compare/test-release-editor-config-v1.0.1...test-release-editor-config-v1.0.2) (2020-05-12)
+
+
+### Bug Fixes
+
+* package json ([ac8b06d](https://github.com/developer239/test-release/commit/ac8b06d7e2c9b1c3783d93751cd0a9a668ed30cd))
+
 # [test-release-editor-config-v1.0.1](https://github.com/developer239/test-release/compare/test-release-editor-config-v1.0.0...test-release-editor-config-v1.0.1) (2020-05-12)
 
 
