@@ -1,3 +1,10 @@
+# [@test-release/core-v1.3.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.2.1...@test-release/core-v1.3.0) (2020-05-12)
+
+
+### Features
+
+* better typescript support ([1fd184c](https://github.com/developer239/test-release/commit/1fd184cbf800b05c1af9cb935b4ccf2dcc4186d1))
+
 # [@test-release/core-v1.2.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.2.0...@test-release/core-v1.2.1) (2020-05-11)
 
 
