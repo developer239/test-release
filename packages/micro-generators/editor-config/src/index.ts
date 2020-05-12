@@ -1,5 +1,5 @@
-import { runTest } from '@test-release/core'
+import { doSomeCoreFunction } from '@test-release/core'
 
-runTest('editor config so it works')
-
-runTest('editor config so it works')
+export const generateEditorConfig = (task: string) => {
+  doSomeCoreFunction(task)
+}

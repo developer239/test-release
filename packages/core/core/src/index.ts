@@ -1,6 +1,4 @@
-export const runTest = (name: string) => {
+export const doSomeCoreFunction = (task: string) => {
   // eslint-disable-next-line
-  console.log('running test for', name)
+  console.log('doing something:', task)
 }
-
-export const core = 'hello worlddd'

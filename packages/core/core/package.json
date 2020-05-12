@@ -2,11 +2,17 @@
   "name": "@test-release/core",
   "version": "1.4.0",
   "license": "MIT",
-  "main": "lib/index",
-  "types": "lib/index",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "files": [
     "lib"
   ],
+  "types": "lib/index",
+  "bin": {
+    "@test-release/core": "lib/bin.js"
+  },
   "publishConfig": {
     "access": "public"
   }
