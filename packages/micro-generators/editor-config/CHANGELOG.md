@@ -1,3 +1,17 @@
+# [@test-release/editor-config-v1.10.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.9.4...@test-release/editor-config-v1.10.0) (2020-05-12)
+
+
+### Bug Fixes
+
+* blah ([11c63cf](https://github.com/developer239/test-release/commit/11c63cf1731091c784b56aae6436f9fcc4cfe2df))
+* package json ([ac8b06d](https://github.com/developer239/test-release/commit/ac8b06d7e2c9b1c3783d93751cd0a9a668ed30cd))
+
+
+### Features
+
+* make editor config work in [@test-release](https://github.com/test-release) scope ([37a5eb1](https://github.com/developer239/test-release/commit/37a5eb15e3f6cf858163eeb220bc4b3ac0d79e90))
+* rename editor config package ([dd2292b](https://github.com/developer239/test-release/commit/dd2292bebc3aedf23d37a108a3414794d9f0bef0))
+
 # [test-release-editor-config-v1.0.2](https://github.com/developer239/test-release/compare/test-release-editor-config-v1.0.1...test-release-editor-config-v1.0.2) (2020-05-12)
 
 
