@@ -1,3 +1,10 @@
+# [@test-release/core-v1.8.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.7.0...@test-release/core-v1.8.0) (2020-05-12)
+
+
+### Features
+
+* more updates ([399b7fa](https://github.com/developer239/test-release/commit/399b7fa8334683ecff86e9834316550993b9e590))
+
 # [@test-release/core-v1.7.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.6.2...@test-release/core-v1.7.0) (2020-05-12)
 
 
