@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.12.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.11.0...@test-release/editor-config-v1.12.0) (2020-05-12)
+
+
+### Features
+
+* meh ([37ec5d9](https://github.com/developer239/test-release/commit/37ec5d9c3297e17dd17ba873a219e12caa0a3b1f))
+
 # [@test-release/editor-config-v1.11.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.10.0...@test-release/editor-config-v1.11.0) (2020-05-12)
 
 
