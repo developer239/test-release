@@ -1,3 +1,4 @@
-import { generateEditorConfig } from './index'
+/* eslint-disable no-console */
+import { createEditorConfig } from './index'
 
-generateEditorConfig('generating from cli')
+createEditorConfig().catch(error => console.log(error))

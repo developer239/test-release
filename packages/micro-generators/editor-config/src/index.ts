@@ -1,5 +1,10 @@
-import { doSomeCoreFunction } from '@test-release/core'
+import { generate } from '@test-release/core'
 
-export const generateEditorConfig = (task: string) => {
-  doSomeCoreFunction(task)
+export const createEditorConfig = async () => {
+  await generate('editorconfig')({
+    projectFolder: 'temp',
+    source: 'templates',
+    destination: '.',
+    context: {},
+  })
 }
