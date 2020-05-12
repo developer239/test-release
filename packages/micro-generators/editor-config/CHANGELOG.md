@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.13.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.12.2...@test-release/editor-config-v1.13.0) (2020-05-12)
+
+
+### Features
+
+* update editor config plugin ([2a181e7](https://github.com/developer239/test-release/commit/2a181e7c6b93c3552e1c5cd6c6b0c1ca18879bd8))
+
 # [@test-release/editor-config-v1.12.2](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.12.1...@test-release/editor-config-v1.12.2) (2020-05-12)
 
 
