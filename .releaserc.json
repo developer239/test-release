@@ -21,7 +21,6 @@
       }
     ],
     "@semantic-release/release-notes-generator",
-    "@semantic-release/npm",
     "@semantic-release/changelog",
     [
       "@semantic-release/git",
@@ -32,7 +31,8 @@
           "lib/**/*.{js,ts,css}"
         ]
       }
-    ]
+    ],
+    "@semantic-release/npm"
   ],
   "branches": ["master"]
 }
