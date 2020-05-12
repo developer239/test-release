@@ -8,9 +8,9 @@
       "@test-release/*": [
         "packages/core/*/lib"
       ]
-    }
+    },
+    "declaration": true
   },
-
   "exclude": [
     "node_modules",
     "dist"
