@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.12.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.12.0...@test-release/editor-config-v1.12.1) (2020-05-12)
+
+
+### Bug Fixes
+
+* blah ([5e6e93e](https://github.com/developer239/test-release/commit/5e6e93ed97c1330df439641c9080c9100ecd1370))
+
 # [@test-release/editor-config-v1.12.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.11.0...@test-release/editor-config-v1.12.0) (2020-05-12)
 
 
