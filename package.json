@@ -7,7 +7,7 @@
     "lint:ts": "eslint --ext .ts packages",
     "lerna:build": "lerna exec --concurrency 1 -- npx --no-install rollup -c ../../../rollup.config.js",
     "lerna:release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
-    "semantic-release": "npm run lerna:build && npm run lerna:release"
+    "release": "npm run lerna:build && npm run lerna:release"
   },
   "workspaces": [
     "packages/core/*",
