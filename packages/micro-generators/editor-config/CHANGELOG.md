@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.9.4](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.9.3...@test-release/editor-config-v1.9.4) (2020-05-12)
+
+
+### Bug Fixes
+
+* path ([a7a1a85](https://github.com/developer239/test-release/commit/a7a1a853af8d55a3399a91d4e516fb879e723f7d))
+
 # [@test-release/editor-config-v1.9.3](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.9.2...@test-release/editor-config-v1.9.3) (2020-05-12)
 
 
