@@ -1320,10 +1320,10 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@test-release/core@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.8.0.tgz#995dfec033bb79b0a40f0d35d0f231c213d8ceec"
-  integrity sha512-Wyb11S/I3C/Y12HuyJR9Bxv1sIcMx4x0U+JmQqWcxTqdInLf44HxiWBMwfMtYC21xqGNdfN5St9k9MsuYaozVw==
+"@test-release/core@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.9.0.tgz#24698647731def4b7f974a86edd21c41ef89ac84"
+  integrity sha512-fu6uHBhRw/3DCPDjqQr0ohbIZBeNZ9kcCvisFMOHQbo3Hz5wSX7EKsVwxbxNBlC04qX0Kw36M1Ia5MQWa7wldA==
   dependencies:
     handlebars "^4.7.6"
     ora "^4.0.4"
