@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.15.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.14.1...@test-release/editor-config-v1.15.0) (2020-05-12)
+
+
+### Features
+
+* make generators smarter ([d9c44f7](https://github.com/developer239/test-release/commit/d9c44f715919d32dd429c44b6cf162b34585da65))
+
 # [@test-release/editor-config-v1.14.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.14.0...@test-release/editor-config-v1.14.1) (2020-05-12)
 
 # [@test-release/editor-config-v1.14.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.13.1...@test-release/editor-config-v1.14.0) (2020-05-12)
