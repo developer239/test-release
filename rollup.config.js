@@ -19,7 +19,6 @@ export default {
     preserveShebangs(),
     progress(),
     typescript({
-      clean: true,
       tsconfig: 'tsconfig.build.json',
       tsconfigDefaults: tsDefaults,
       tsconfigOverride: tsOverrides,
