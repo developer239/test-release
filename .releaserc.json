@@ -27,8 +27,7 @@
       {
         "assets": [
           "CHANGELOG.md",
-          "package.json",
-          "lib/**/*.{js,ts,css}"
+          "package.json"
         ]
       }
     ],
