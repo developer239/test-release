@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.9.2](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.9.1...@test-release/editor-config-v1.9.2) (2020-05-12)
+
+
+### Bug Fixes
+
+* plugins order ([5688257](https://github.com/developer239/test-release/commit/5688257e4790720fae78ce2afc8ed3ba264b4da9))
+
 # [@test-release/editor-config-v1.9.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.9.0...@test-release/editor-config-v1.9.1) (2020-05-12)
 
 
