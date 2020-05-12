@@ -1,3 +1,10 @@
+# [@test-release/core-v1.6.2](https://github.com/developer239/test-release/compare/@test-release/core-v1.6.1...@test-release/core-v1.6.2) (2020-05-12)
+
+
+### Bug Fixes
+
+* do more updates ([9410ff3](https://github.com/developer239/test-release/commit/9410ff3f1c8e4d4732278e921930a4aa408b2d6f))
+
 # [@test-release/core-v1.6.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.6.0...@test-release/core-v1.6.1) (2020-05-12)
 
 
