@@ -2,7 +2,7 @@
   "name": "@test-release/editor-config",
   "version": "1.9.1",
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },

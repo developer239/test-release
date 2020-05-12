@@ -2,7 +2,7 @@
   "name": "@test-release/core",
   "version": "1.4.0",
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
