@@ -1,3 +1,10 @@
+# [@test-release/core-v1.7.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.6.2...@test-release/core-v1.7.0) (2020-05-12)
+
+
+### Features
+
+* update core plugin ([988135c](https://github.com/developer239/test-release/commit/988135cc9e8b4ec788e30ee7baaf8856ea22d0f5))
+
 # [@test-release/core-v1.6.2](https://github.com/developer239/test-release/compare/@test-release/core-v1.6.1...@test-release/core-v1.6.2) (2020-05-12)
 
 
