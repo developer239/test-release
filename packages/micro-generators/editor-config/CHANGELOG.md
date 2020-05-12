@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.8.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.7.1...@test-release/editor-config-v1.8.0) (2020-05-12)
+
+
+### Features
+
+* test multirelease ([ad83955](https://github.com/developer239/test-release/commit/ad83955f7cf9255a1af7ca689d4e0903fd148482))
+
 # [@test-release/editor-config-v1.7.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.7.0...@test-release/editor-config-v1.7.1) (2020-05-12)
 
 
