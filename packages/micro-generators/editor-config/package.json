@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "lib/index",
   "bin": {
-    "@test-release/editor-config": "lib/index"
+    "@test-release/editor-config": "@test-release/editor-config/lib/index"
   },
   "types": "lib/index",
   "files": [
