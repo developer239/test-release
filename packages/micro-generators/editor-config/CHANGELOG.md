@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.8.4](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.8.3...@test-release/editor-config-v1.8.4) (2020-05-12)
+
+
+### Bug Fixes
+
+* test release ([a82d383](https://github.com/developer239/test-release/commit/a82d383ab03c799345f486158189508e66205b46))
+
 # [@test-release/editor-config-v1.8.2](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.8.1...@test-release/editor-config-v1.8.2) (2020-05-12)
 
 
