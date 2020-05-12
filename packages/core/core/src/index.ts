@@ -3,4 +3,4 @@ export const runTest = (name: string) => {
   console.log('running test for', name)
 }
 
-export const core = 'hello world'
+export const core = 'hello worlddd'
