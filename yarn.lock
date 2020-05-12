@@ -968,10 +968,10 @@
   resolved "https://registry.yarnpkg.com/@linters/prettier-config/-/prettier-config-1.2.0.tgz#6eee79ca2199e0276baad3aaf3dfc91ab2474228"
   integrity sha512-LsYD+/ICbb8LoOX1AWY5wXm8xjkCOO7f8K1kRpf5vt1oIyZakKxXNX5FxFeiF7nm99MloTpqfFBzzGLAHJNKYA==
 
-"@linters/semantic-release@1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@linters/semantic-release/-/semantic-release-1.5.2.tgz#6989bc6ffb6bf9fed64f7b632ce5886e6568fe94"
-  integrity sha512-Bdyo5fyF84UcEnyF6YzvYP1HLpbfBhYXIbz2Bh/qk72uAM2vwGM5HESo6/eyKBwZnOE86A9PqJLbps0XCBYmqA==
+"@linters/semantic-release@1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@linters/semantic-release/-/semantic-release-1.5.3.tgz#fda8bdff75ce869179c9ef1cba4e1c7cb3d07cd9"
+  integrity sha512-/Vt4zOi6EPUWgJ6x6Vyp5f4UvIpkhCxEnJw17jpLqymPUzdatfZetmIu2dpd9a4UH5XGX6jzjceZo0ZgyWUjOw==
   dependencies:
     "@semantic-release/changelog" "5.0.0"
     "@semantic-release/commit-analyzer" "8.0.1"
