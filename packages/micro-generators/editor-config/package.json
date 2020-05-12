@@ -2,11 +2,14 @@
   "name": "test-release-editor-config",
   "version": "1.9.1",
   "license": "MIT",
-  "main": "lib/index",
-  "types": "lib/index",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "files": [
     "lib"
   ],
+  "types": "lib/index",
   "bin": {
     "test-release-editor-config": "lib/index.js"
   },
