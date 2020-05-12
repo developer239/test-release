@@ -1,3 +1,10 @@
+# [@test-release/core-v1.4.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.3.0...@test-release/core-v1.4.0) (2020-05-12)
+
+
+### Features
+
+* test multirelease ([ad83955](https://github.com/developer239/test-release/commit/ad83955f7cf9255a1af7ca689d4e0903fd148482))
+
 # [@test-release/core-v1.3.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.2.1...@test-release/core-v1.3.0) (2020-05-12)
 
 
