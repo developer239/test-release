@@ -1,3 +1,10 @@
+# [@test-release/core-v1.10.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.10.0...@test-release/core-v1.10.1) (2020-05-13)
+
+
+### Bug Fixes
+
+* make getPathArgv return undefined ([84cbf62](https://github.com/developer239/test-release/commit/84cbf6203b67779fb9d74fbe334bf2ddd014517b))
+
 # [@test-release/core-v1.10.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.9.0...@test-release/core-v1.10.0) (2020-05-13)
 
 
