@@ -17,13 +17,21 @@
     "access": "public"
   },
   "dependencies": {
+    "chalk": "^4.0.0",
     "handlebars": "^4.7.6",
+    "inquirer": "^7.1.0",
     "ora": "^4.0.4",
     "recursive-copy": "^2.0.10",
-    "through2": "^3.0.1"
+    "shelljs": "^0.8.4",
+    "through2": "^3.0.1",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
     "@types/handlebars": "^4.1.0",
-    "@types/ora": "^3.2.0"
+    "@types/inquirer": "^6.5.0",
+    "@types/ora": "^3.2.0",
+    "@types/shelljs": "^0.8.7",
+    "@types/yargs": "^15.0.4"
   }
 }

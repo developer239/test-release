@@ -1,4 +1,7 @@
-import { generate } from '@test-release/core'
+import { generateTemplate, getPathArgv, logger } from '@test-release/core'
 import { createEditorConfig } from './index'
 
-generate(createEditorConfig()).catch(error => error)
+generateTemplate({
+  ...createEditorConfig(),
+  projectFolder: getPathArgv(),
+}).catch(logger.error)

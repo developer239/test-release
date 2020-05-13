@@ -1,5 +1,5 @@
 import ora from 'ora'
-import { copyFiles } from '../template'
+import { copyFiles } from './copyFiles'
 
 interface IOptions {
   name: string
@@ -9,7 +9,7 @@ interface IOptions {
   destination?: string
 }
 
-export const generate = async ({
+export const generateTemplate = async ({
   name,
   projectFolder = '.',
   source,

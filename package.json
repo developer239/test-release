@@ -5,7 +5,7 @@
     "bootstrap": "lerna bootstrap",
     "format": "prettier --write '*/**/*.{ts,md,json}'",
     "lint:ts": "eslint --ext .ts packages",
-    "build:dev": "npm run lerna:build && npm run lerna link --force-local",
+    "build:dev": "yarn install && npm run lerna:build && npm run lerna link --force-local",
     "lerna:build": "lerna exec --concurrency 1 -- npx --no-install rollup -c ../../../rollup.config.js",
     "lerna:release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "release": "npm run lerna:build && npm run lerna:release"
