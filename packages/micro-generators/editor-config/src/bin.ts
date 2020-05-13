@@ -3,5 +3,5 @@ import { createEditorConfig } from './index'
 
 generateTemplate({
   ...createEditorConfig(),
-  projectFolder: getPathArgv(),
+  projectFolder: getPathArgv() || '.',
 }).catch(logger.error)
