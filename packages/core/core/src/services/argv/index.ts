@@ -1,3 +1,3 @@
 import yargs from 'yargs'
 
-export const getPathArgv = (): string | undefined => String(yargs.argv.path)
+export const getPathArgv = () => yargs.argv.path as string | undefined
