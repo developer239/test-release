@@ -1320,10 +1320,10 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@test-release/core@1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.10.0.tgz#2c31fab3114753d0237b92c57757d1e8dd4eb74d"
-  integrity sha512-6PFyoMTistKGeD/w6UldE1H9RqL78GWoICY/Afs4ESjtYygNq8RM630RTHTq9NEXpGqLlfJ9MvWqnNWSl2Cp0g==
+"@test-release/core@1.10.1":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.10.1.tgz#f15c74af8b423b56a3bba13aa154aa7568d9e2cf"
+  integrity sha512-xLes5gjXfe5bZh2x6jcJcbFwIBbdg2tfzaExu6yPkN+XHIvYu9Wmbt2hIgoA4KYFxpe7DKneZWD5LAtIGHyCsQ==
   dependencies:
     chalk "^4.0.0"
     handlebars "^4.7.6"
