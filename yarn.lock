@@ -1334,6 +1334,27 @@
     through2 "^3.0.1"
     yargs "^15.3.1"
 
+"@test-release/editor-config@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.16.2.tgz#6e4628f8864e9738c7c64111266a078076ffc305"
+  integrity sha512-wwrxYAhYMIEFKoWhpsBlKLo92q7rcmmvqyAeC5taEBPlXYUoqjjcuogaz2Tse/uWsYZx+QBHjF2SovSLjLr6kA==
+  dependencies:
+    "@test-release/core" "1.10.1"
+
+"@test-release/prettier@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.0.2.tgz#1f03bfa349d2d8903a12a7e4af79a59640b99e23"
+  integrity sha512-H5rf817ay+madUsRTKWQm4I8z+4rAJav3mC6sB09RvSEsoK1WqMXJuy5+dQNlyzSEuqyiRKFNyXumI+nq99O2Q==
+  dependencies:
+    "@test-release/core" "1.10.1"
+
+"@test-release/stylelint@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.0.2.tgz#fa44161908090453e6a8341cf283fd796eb73129"
+  integrity sha512-oKrtX0EmT0Yi2DeLwRSNsijXlvS77W8dFf2HreDoFxY1nHRV/HvlqyfL1wxXaSva5OJ71rycSPcWKB0yRwaflA==
+  dependencies:
+    "@test-release/core" "1.10.1"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
