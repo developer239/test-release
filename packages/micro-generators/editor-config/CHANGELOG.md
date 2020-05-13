@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.16.2](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.16.1...@test-release/editor-config-v1.16.2) (2020-05-13)
+
+
+### Bug Fixes
+
+* return . as default path ([89d124d](https://github.com/developer239/test-release/commit/89d124dc96c8dfdd6f60055c2a684d7c2eece8cb))
+
 # [@test-release/editor-config-v1.16.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.16.0...@test-release/editor-config-v1.16.1) (2020-05-13)
 
 # [@test-release/editor-config-v1.16.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.15.1...@test-release/editor-config-v1.16.0) (2020-05-13)
