@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.17.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.16.2...@test-release/editor-config-v1.17.0) (2020-05-14)
+
+
+### Features
+
+* update generators ([bfbd485](https://github.com/developer239/test-release/commit/bfbd4850822545dca7934d0e5a50523a96afefec))
+
 # [@test-release/editor-config-v1.16.2](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.16.1...@test-release/editor-config-v1.16.2) (2020-05-13)
 
 
