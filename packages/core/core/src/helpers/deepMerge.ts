@@ -1,9 +1,5 @@
 /* eslint-disable security/detect-object-injection, guard-for-in */
-export interface IItem {
-  [key: string]: string | string[] | object
-}
-
-export const deepMerge = (target: IItem, ...sources: IItem[]): any => {
+export const deepMerge = (target: any, ...sources: any[]): any => {
   for (const source of sources) {
     for (const key in source) {
       const valueSource = source[key]

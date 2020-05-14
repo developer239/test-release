@@ -44,18 +44,18 @@ export const moveToDevDependencies = ({
 
 export const removeFiles = ({
   projectFolder,
-  name,
+  message,
   files,
   recursive = false,
 }: {
   projectFolder: string
-  name: string
+  message: string
   files: string[]
   recursive?: boolean
 }) =>
   shell.execInProjectWithSpinner(projectFolder)(
     `rm ${recursive ? '-r' : ''} ${files.join(' ')}`,
-    `[fs][remove files] ${name}`,
+    `[fs][remove files] ${message}`,
   )
 
 export const makeDir = (name: string) =>

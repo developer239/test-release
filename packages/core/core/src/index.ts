@@ -14,4 +14,10 @@ export {
 export {
   updatePackageJson
 } from './services/package-json'
-export { AppType } from './types'
+export {
+  execute
+} from './services/schema/executor'
+export {
+  builder,
+} from './services/schema/builder'
+export { AppType, ISchema } from './types'
