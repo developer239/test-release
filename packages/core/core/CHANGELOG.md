@@ -1,3 +1,10 @@
+# [@test-release/core-v1.11.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.10.1...@test-release/core-v1.11.0) (2020-05-14)
+
+
+### Features
+
+* update core schema ([fe6d961](https://github.com/developer239/test-release/commit/fe6d961ebdd98d5d5c58dae9793103036705213e))
+
 # [@test-release/core-v1.10.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.10.0...@test-release/core-v1.10.1) (2020-05-13)
 
 
