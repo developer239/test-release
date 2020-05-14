@@ -1,42 +1,17 @@
 import {
-  addDependencies,
-  askAppType,
-  generateTemplate,
+  askAppType, execute,
   getPathArgv,
   logger,
-  updatePackageJson,
 } from '@test-release/core'
 import { createPrettierConfig } from './index'
 
 const run = async () => {
-  const projectFolder = getPathArgv() || '.'
-  const type = await askAppType()
+  const projectFolder = getPathArgv() ?? '.'
+  const appType = await askAppType()
 
-  const prettierSchema = createPrettierConfig({ appType: type })
+  const prettierSchema = createPrettierConfig({ appType })
 
-  await updatePackageJson(
-    {
-      projectFolder,
-      message: 'adding prettier dependencies',
-      messageSuccess: 'added prettier dependencies',
-    },
-    jsonFile => ({
-      ...jsonFile,
-      scripts: {
-        ...jsonFile.scripts,
-        ...prettierSchema.packageJson.scripts,
-      },
-    }),
-  )
-  await addDependencies({
-    projectFolder,
-    libraries: prettierSchema.packageJson.devDependencies,
-  })
-  await generateTemplate({
-    name: prettierSchema.name,
-    projectFolder,
-    source: prettierSchema.source,
-  })
+  await execute(prettierSchema, projectFolder)
 }
 
 run().catch(logger.error)

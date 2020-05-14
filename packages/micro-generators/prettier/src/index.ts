@@ -1,19 +1,25 @@
 import path from 'path'
-import { AppType } from '@test-release/core'
+import { AppType, builder } from '@test-release/core'
 
 export const createPrettierConfig = ({
   appType,
 }: {
   appType: AppType
-}) => ({
-  name: 'prettier',
-  source: path.join(__dirname, 'templates'),
-  packageJson: {
-    scripts: {
-      format: appType === 'node'
-        ? 'prettier --write \'*/**/*.{ts,md,json}\''
-        : 'prettier --write \'*/**/*.{ts,tsx,css,md,json}\'',
-    },
-    devDependencies: ['prettier', '@linters/prettier-config'],
-  },
-})
+}) => {
+  const schema = builder('prettier')
+
+  schema.addFile({
+    name: 'prettier',
+    source: path.join(__dirname, 'templates'),
+  })
+
+  if (appType === 'node') {
+    schema.addScript('format', 'prettier --write \'*/**/*.{ts,md,json}\'')
+  } else {
+    schema.addScript('format', 'prettier --write \'*/**/*.{ts,tsx,css,md,json}\'')
+  }
+
+  schema.addDevDependencies(['prettier', '@linters/prettier-config'])
+
+  return schema.toJson()
+}

@@ -1334,6 +1334,21 @@
     through2 "^3.0.1"
     yargs "^15.3.1"
 
+"@test-release/core@1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.11.0.tgz#ec3c9c4687167a4e97f9f24544af9e3df9ac50b9"
+  integrity sha512-jAaAtU8JNS8rG6WEycm3F78Nyi6Jc2lU5PCQVtBw3UWeqk+W2fmS5ilFxP2lksTZIThv36jwsKIT4V8B5VA9yw==
+  dependencies:
+    chalk "^4.0.0"
+    handlebars "^4.7.6"
+    inquirer "^7.1.0"
+    ora "^4.0.4"
+    ramda "^0.27.0"
+    recursive-copy "^2.0.10"
+    shelljs "^0.8.4"
+    through2 "^3.0.1"
+    yargs "^15.3.1"
+
 "@test-release/editor-config@^1.16.2":
   version "1.16.2"
   resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.16.2.tgz#6e4628f8864e9738c7c64111266a078076ffc305"

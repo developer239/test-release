@@ -1,42 +1,44 @@
 import path from 'path'
-import { deepMerge } from '@test-release/core'
+import { builder } from '@test-release/core'
 
 interface IOptions {
   hasPrettier: boolean
 }
 
-export const createCommonConfig = ({ hasPrettier }: IOptions) => ({
-  name: 'stylelint',
-  packageJson: {
-    scripts: {
-      'lint:css': 'stylelint \'**/*.{ts,tsx}\'',
-    },
-    devDependencies: [
-      'stylelint',
-      ...(hasPrettier ? ['stylelint-config-prettier'] : []),
-    ],
-  },
-  context: {
-    hasPrettier,
-  },
-})
+export const createCommonSchema = ({ hasPrettier }: IOptions) => {
+  const schema = builder('stylelint')
+  schema.addScript('lint:css', 'stylelint \'**/*.{ts,tsx}\'')
+  schema.addDevDependencies(['stylelint'])
 
-export const createStylelintWebConfig = (options: IOptions) => deepMerge(
-  createCommonConfig(options),
-  {
+  if (hasPrettier) {
+    schema.addDevDependencies(['stylelint-config-prettier'])
+  }
+
+  return schema
+}
+
+export const createStylelintWebConfig = (options: IOptions) => {
+  const schema = createCommonSchema(options)
+
+  schema.addFile({
+    name: 'stylelint',
     source: path.join(__dirname, 'templates/web'),
-    packageJson: {
-      devDependencies: ['@linters/stylelint-css-in-js-config'],
-    },
-  },
-)
+  })
 
-export const createStylelintMobileConfig = (options: IOptions) => deepMerge(
-  createCommonConfig(options),
-  {
+  schema.addDevDependencies(['@linters/stylelint-css-in-js-config'])
+
+  return schema.toJson()
+}
+
+export const createStylelintMobileConfig = (options: IOptions) => {
+  const schema = createCommonSchema(options)
+
+  schema.addFile({
+    name: 'stylelint',
     source: path.join(__dirname, 'templates/mobile'),
-    packageJson: {
-      devDependencies: ['@linters/stylelint-css-in-js-react-native-config'],
-    },
-  },
-)
+  })
+
+  schema.addDevDependencies(['@linters/stylelint-css-in-js-react-native-config'])
+
+  return schema.toJson()
+}

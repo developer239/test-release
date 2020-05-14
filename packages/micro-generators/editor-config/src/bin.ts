@@ -1,7 +1,11 @@
-import { generateTemplate, getPathArgv, logger } from '@test-release/core'
-import { createEditorConfig } from './index'
+import { execute, getPathArgv, logger } from '@test-release/core'
+import { createEditorConfigSchema } from './index'
 
-generateTemplate({
-  ...createEditorConfig(),
-  projectFolder: getPathArgv() || '.',
-}).catch(logger.error)
+const run = async () => {
+  const projectFolder = getPathArgv() ?? '.'
+  const schema = createEditorConfigSchema()
+
+  await execute(schema, projectFolder)
+}
+
+run().catch(logger.error)
