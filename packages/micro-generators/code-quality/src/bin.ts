@@ -1,17 +1,15 @@
 /* eslint-disable no-await-in-loop */
 import {
-  addDependencies,
   AppType,
   askAppTypeFE,
-  createFilesFromFolder,
-  getPath,
+  getPathArgv,
   logger,
-  updatePackageJson,
+  execute,
 } from '@test-release/core'
 import { createCodeQualityConfig } from './index'
 
 const run = async () => {
-  const projectFolder = getPath() ?? '.'
+  const projectFolder = getPathArgv() ?? '.'
   const appType = await askAppTypeFE()
 
   if (appType !== AppType.WEB && appType !== AppType.MOBILE){
@@ -20,33 +18,7 @@ const run = async () => {
 
   const codeQualitySchema = createCodeQualityConfig({ appType })
 
-  await updatePackageJson(
-    {
-      projectFolder,
-      message: 'adding code quality dependencies',
-      messageSuccess: 'added code quality dependencies',
-    },
-    jsonFile => ({
-      ...jsonFile,
-      scripts: {
-        ...jsonFile.scripts,
-        ...codeQualitySchema.packageJson.scripts,
-      },
-    }),
-  )
-  await addDependencies({
-    projectFolder,
-    libraries: codeQualitySchema.packageJson.devDependencies,
-  })
-
-  for (const templateSource of codeQualitySchema.sources) {
-    await createFilesFromFolder({
-      name: templateSource.name,
-      projectFolder,
-      source: templateSource.source,
-      context: templateSource.context,
-    })
-  }
+  await execute(codeQualitySchema, projectFolder)
 }
 
 run().catch(logger.error)
