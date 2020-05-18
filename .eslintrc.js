@@ -7,6 +7,7 @@ module.exports = {
   ],
   rules: {
     'security/detect-object-injection': 0,
+    '@typescript-eslint/no-dynamic-delete': 0,
     'guard-for-in': 1,
   }
 }

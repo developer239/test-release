@@ -1,7 +1,8 @@
-/* eslint-disable security/detect-object-injection,@typescript-eslint/no-dynamic-delete */
-export const deleteProperty = (object: any, path: string[]) => {
+export type IObject = any
+
+export const deleteProperty = (object: IObject, path: string[]) => {
+  let currentObject = { ...object }
   const last = path.pop() as string
-  let currentObject = object
 
   for (const key of path) {
     currentObject = currentObject[key]
@@ -10,5 +11,8 @@ export const deleteProperty = (object: any, path: string[]) => {
       return
     }
   }
+
   delete currentObject[last]
+
+  return currentObject
 }
