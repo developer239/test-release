@@ -5,7 +5,9 @@
     "baseUrl": ".",
     "paths": {
       "@test-release/*": [
-        "packages/core/*/src"
+        "packages/core/*/src",
+        "packages/macro-generators/*/src",
+        "packages/micro-generators/*/src"
       ]
     }
   }

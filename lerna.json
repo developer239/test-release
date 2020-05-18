@@ -1,7 +1,8 @@
 {
   "packages": [
     "packages/core/*",
-    "packages/micro-generators/*"
+    "packages/micro-generators/*",
+    "packages/macro-generators/*"
   ],
   "version": "independent",
   "npmClient": "yarn",
