@@ -1,3 +1,10 @@
+# [@test-release/core-v1.13.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.13.0...@test-release/core-v1.13.1) (2020-05-18)
+
+
+### Bug Fixes
+
+* dependecy versions ([57eec08](https://github.com/developer239/test-release/commit/57eec081c495509274ec9a0f17087343badfe105))
+
 # [@test-release/core-v1.13.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.12.0...@test-release/core-v1.13.0) (2020-05-18)
 
 
