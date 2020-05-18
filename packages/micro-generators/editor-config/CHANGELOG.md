@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.19.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.18.1...@test-release/editor-config-v1.19.0) (2020-05-18)
+
+
+### Features
+
+* feat new generators 🚀 ([921be59](https://github.com/developer239/test-release/commit/921be594daa33c441152bedeadd92f62c386b32a))
+
 # [@test-release/editor-config-v1.18.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.18.0...@test-release/editor-config-v1.18.1) (2020-05-18)
 
 # [@test-release/editor-config-v1.18.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.17.0...@test-release/editor-config-v1.18.0) (2020-05-18)
