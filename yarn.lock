@@ -1775,21 +1775,6 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@test-release/core@1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.11.0.tgz#ec3c9c4687167a4e97f9f24544af9e3df9ac50b9"
-  integrity sha512-jAaAtU8JNS8rG6WEycm3F78Nyi6Jc2lU5PCQVtBw3UWeqk+W2fmS5ilFxP2lksTZIThv36jwsKIT4V8B5VA9yw==
-  dependencies:
-    chalk "^4.0.0"
-    handlebars "^4.7.6"
-    inquirer "^7.1.0"
-    ora "^4.0.4"
-    ramda "^0.27.0"
-    recursive-copy "^2.0.10"
-    shelljs "^0.8.4"
-    through2 "^3.0.1"
-    yargs "^15.3.1"
-
 "@test-release/core@1.12.0":
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.12.0.tgz#302021154caa73381b9d76f22a85082124de970d"
@@ -1805,26 +1790,26 @@
     through2 "^3.0.1"
     yargs "^15.3.1"
 
-"@test-release/editor-config@^1.17.0":
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.17.0.tgz#464c77ab8f795a6a34de715c08ccf9d1caa1c2e2"
-  integrity sha512-OjaaVf1mQnKPrYQl109pt8ksSBxteahseSGivGXWmCMch6SbxXaYxa4Pdo+rOzsuv+/SOVQPRtGzdmzzFEBQTA==
+"@test-release/editor-config@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.18.1.tgz#424f611a60b44ecf2651bb2e7eb36746db606cc4"
+  integrity sha512-Es8bvTbAvOLN8HisLloh/Jeiigk2XvOJY+hNtix65d86UYk0pClFaHxAgGMCdyY09PVSjHxStI1JUfWL5MfyMg==
   dependencies:
-    "@test-release/core" "1.11.0"
+    "@test-release/core" "1.12.0"
 
-"@test-release/prettier@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.1.0.tgz#7d44deb084f09f5b9c55520255b91a457db09a84"
-  integrity sha512-74AELDuqwdZMPAmxSzA13xrZbEk44142z6h/1PfU9MRQC2jh9GompdXQJV+Dn8FypM1fAXh9GYnbxpoulsRSUA==
+"@test-release/prettier@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.2.1.tgz#6e258a7f89bf9a0749c5a19804322cb41b374a56"
+  integrity sha512-xWSXoP9jJEtlAhiC8juICd3n+KcnCVlKW9OLRWp/B4x3BkQgsXZKl4lnhZonafkDIKPgRfv1GWN8Nx2Chrn2KA==
   dependencies:
-    "@test-release/core" "1.11.0"
+    "@test-release/core" "1.12.0"
 
-"@test-release/stylelint@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.1.0.tgz#cc9a0c071e8ca13b254309730b2c46bc56e55f1b"
-  integrity sha512-MgEBkrJgP5EJagBOSM/JhvWb85CkYG7mKXAw7HXJcGL8JFSUDt5lJ0LlBPHuY6Ey0e9NaWvuvKGB/LBZnLlx1Q==
+"@test-release/stylelint@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.2.1.tgz#988a43ab56520f2f80363ae78b8ae5419b35be75"
+  integrity sha512-uytj6lKCIF2Wcm/CVMPSCqB1wPsCo/iQYSzR+qhkbBjjxm1O+kOhA827bDJkh/Zy+BftOE0jssVFYdio8AjlZQ==
   dependencies:
-    "@test-release/core" "1.11.0"
+    "@test-release/core" "1.12.0"
 
 "@tootallnate/once@1":
   version "1.1.2"

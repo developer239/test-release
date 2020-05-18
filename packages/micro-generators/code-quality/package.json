@@ -15,9 +15,9 @@
   },
   "dependencies": {
     "@test-release/core": "1.12.0",
-    "@test-release/editor-config": "^1.17.0",
-    "@test-release/prettier": "^1.1.0",
-    "@test-release/stylelint": "^1.1.0"
+    "@test-release/editor-config": "^1.18.1",
+    "@test-release/prettier": "^1.2.1",
+    "@test-release/stylelint": "^1.2.1"
   },
   "publishConfig": {
     "access": "public"
