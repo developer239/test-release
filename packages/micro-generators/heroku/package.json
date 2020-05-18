@@ -1,0 +1,22 @@
+{
+  "name": "@test-release/heroku",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index",
+  "bin": {
+    "@test-release/stylelint": "lib/bin.js"
+  },
+  "dependencies": {
+    "@test-release/core": "1.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

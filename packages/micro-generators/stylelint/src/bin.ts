@@ -1,6 +1,7 @@
 import {
   AppType,
-  askAppTypeFE, execute,
+  askAppTypeFE,
+  execute,
   getProjectPath,
   logError,
 } from '@test-release/core'
@@ -12,13 +13,14 @@ const run = async () => {
   const type = await askAppTypeFE()
   const hasPrettier = await askHasPrettier()
 
-  if (type !== AppType.WEB && type !== AppType.MOBILE){
+  if (type !== AppType.WEB && type !== AppType.MOBILE) {
     logError('App type is not supported!')
   }
 
-  const stylelintSchema = type === AppType.WEB
-    ? createStylelintWebConfig({ hasPrettier })
-    : createStylelintMobileConfig({ hasPrettier })
+  const stylelintSchema =
+    type === AppType.WEB
+      ? createStylelintWebConfig({ hasPrettier })
+      : createStylelintMobileConfig({ hasPrettier })
 
   await execute(stylelintSchema, projectFolder)
 }

@@ -7,7 +7,7 @@ interface IOptions {
 
 export const createCommonSchema = ({ hasPrettier }: IOptions) => {
   const schema = builder('stylelint')
-  schema.addScript('lint:css', 'stylelint \'**/*.{ts,tsx}\'')
+  schema.addScript('lint:css', "stylelint '**/*.{ts,tsx}'")
   schema.addDevDependencies(['stylelint'])
 
   if (hasPrettier) {
@@ -38,7 +38,9 @@ export const createStylelintMobileConfig = (options: IOptions) => {
     source: path.join(__dirname, 'templates/mobile'),
   })
 
-  schema.addDevDependencies(['@linters/stylelint-css-in-js-react-native-config'])
+  schema.addDevDependencies([
+    '@linters/stylelint-css-in-js-react-native-config',
+  ])
 
   return schema.toJson()
 }

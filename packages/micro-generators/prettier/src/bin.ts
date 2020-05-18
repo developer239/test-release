@@ -1,5 +1,6 @@
 import {
-  askAppType, execute,
+  askAppType,
+  execute,
   getProjectPath,
   logError,
 } from '@test-release/core'

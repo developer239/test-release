@@ -12,7 +12,7 @@ const run = async () => {
   const projectFolder = getProjectPath() ?? '.'
   const appType = await askAppTypeFE()
 
-  if (appType !== AppType.WEB && appType !== AppType.MOBILE){
+  if (appType !== AppType.WEB && appType !== AppType.MOBILE) {
     logError('App type is not supported!')
   }
 
