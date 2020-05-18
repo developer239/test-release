@@ -1,22 +1,25 @@
-/* eslint-disable security/detect-object-injection, guard-for-in */
-export const deepMerge = (target: any, ...sources: any[]): any => {
+export type IMergeObject = any
+
+export const deepMerge = <TObject>(target: IMergeObject, ...sources: IMergeObject[]): TObject => {
+  const currentTarget = { ...target }
+
   for (const source of sources) {
     for (const key in source) {
       const valueSource = source[key]
-      const valueTarget = target[key]
+      const valueTarget = currentTarget[key]
 
       if (Array.isArray(valueSource) && Array.isArray(valueTarget)) {
-        target[key] = [...valueSource, ...valueTarget]
+        currentTarget[key] = [...valueTarget, ...valueSource]
         continue
       }
 
       if (Object(valueSource) === valueSource && Object(valueTarget) === valueTarget) {
-        target[key] = deepMerge(Object(valueSource), Object(valueTarget))
+        currentTarget[key] = deepMerge(Object(valueSource), Object(valueTarget))
         continue
       }
 
-      target[key] = source[key]
+      currentTarget[key] = source[key]
     }
   }
-  return target
+  return currentTarget
 }
