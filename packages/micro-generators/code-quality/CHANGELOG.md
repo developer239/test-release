@@ -1,3 +1,10 @@
+# [@test-release/code-quality-v1.3.0](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.2.1...@test-release/code-quality-v1.3.0) (2020-05-18)
+
+
+### Features
+
+* update code quality dependencies ([5fa7887](https://github.com/developer239/test-release/commit/5fa7887057a0f560b640125d13c1d11f4c60bb56))
+
 # [@test-release/code-quality-v1.2.1](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.2.0...@test-release/code-quality-v1.2.1) (2020-05-18)
 
 # [@test-release/code-quality-v1.2.0](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.1.0...@test-release/code-quality-v1.2.0) (2020-05-18)
