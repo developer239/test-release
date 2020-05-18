@@ -1,3 +1,15 @@
+# [@test-release/prettier-v1.2.0](https://github.com/developer239/test-release/compare/@test-release/prettier-v1.1.0...@test-release/prettier-v1.2.0) (2020-05-18)
+
+
+### Bug Fixes
+
+* typescript errors ([3349ff9](https://github.com/developer239/test-release/commit/3349ff94597eb987ca2838a4ea13d4741c0011d2))
+
+
+### Features
+
+* optimize project structure ([988fac5](https://github.com/developer239/test-release/commit/988fac53f36fdd32798c23ccacec1b9d616134c1))
+
 # [@test-release/prettier-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/prettier-v1.0.2...@test-release/prettier-v1.1.0) (2020-05-14)
 
 
