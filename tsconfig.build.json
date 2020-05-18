@@ -6,7 +6,9 @@
     "baseUrl": ".",
     "paths": {
       "@test-release/*": [
-        "packages/core/*/lib"
+        "packages/core/*/lib",
+        "packages/macro-generators/*/lib",
+        "packages/micro-generators/*/lib"
       ]
     },
     "declaration": true,
