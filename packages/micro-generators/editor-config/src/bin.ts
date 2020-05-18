@@ -1,11 +1,11 @@
-import { execute, getPath, logger } from '@test-release/core'
+import { execute, getProjectPath, logError } from '@test-release/core'
 import { createEditorConfigSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getPath() ?? '.'
+  const projectFolder = getProjectPath() ?? '.'
   const schema = createEditorConfigSchema()
 
   await execute(schema, projectFolder)
 }
 
-run().catch(logger.error)
+run().catch(logError)

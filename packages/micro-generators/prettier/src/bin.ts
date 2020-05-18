@@ -1,12 +1,12 @@
 import {
   askAppType, execute,
-  getPath,
-  logger,
+  getProjectPath,
+  logError,
 } from '@test-release/core'
 import { createPrettierConfig } from './index'
 
 const run = async () => {
-  const projectFolder = getPath() ?? '.'
+  const projectFolder = getProjectPath() ?? '.'
   const appType = await askAppType()
 
   const prettierSchema = createPrettierConfig({ appType })
@@ -14,4 +14,4 @@ const run = async () => {
   await execute(prettierSchema, projectFolder)
 }
 
-run().catch(logger.error)
+run().catch(logError)

@@ -2,18 +2,18 @@
 import {
   AppType,
   askAppTypeFE,
-  getPathArgv,
-  logger,
+  getProjectPath,
+  logError,
   execute,
 } from '@test-release/core'
 import { createCodeQualityConfig } from './index'
 
 const run = async () => {
-  const projectFolder = getPathArgv() ?? '.'
+  const projectFolder = getProjectPath() ?? '.'
   const appType = await askAppTypeFE()
 
   if (appType !== AppType.WEB && appType !== AppType.MOBILE){
-    logger.error('App type is not supported!')
+    logError('App type is not supported!')
   }
 
   const codeQualitySchema = createCodeQualityConfig({ appType })
@@ -21,4 +21,4 @@ const run = async () => {
   await execute(codeQualitySchema, projectFolder)
 }
 
-run().catch(logger.error)
+run().catch(logError)
