@@ -1,3 +1,5 @@
+# [@test-release/nextjs-v1.0.1](https://github.com/developer239/test-release/compare/@test-release/nextjs-v1.0.0...@test-release/nextjs-v1.0.1) (2020-05-18)
+
 # @test-release/nextjs-v1.0.0 (2020-05-18)
 
 
