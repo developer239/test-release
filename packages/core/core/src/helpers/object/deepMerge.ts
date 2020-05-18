@@ -1,6 +1,9 @@
 export type IMergeObject = any
 
-export const deepMerge = <TObject>(target: IMergeObject, ...sources: IMergeObject[]): TObject => {
+export const deepMerge = <TObject>(
+  target: IMergeObject,
+  ...sources: IMergeObject[]
+): TObject => {
   const currentTarget = { ...target }
 
   for (const source of sources) {
@@ -13,7 +16,10 @@ export const deepMerge = <TObject>(target: IMergeObject, ...sources: IMergeObjec
         continue
       }
 
-      if (Object(valueSource) === valueSource && Object(valueTarget) === valueTarget) {
+      if (
+        Object(valueSource) === valueSource &&
+        Object(valueTarget) === valueTarget
+      ) {
         currentTarget[key] = deepMerge(Object(valueSource), Object(valueTarget))
         continue
       }

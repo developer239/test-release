@@ -15,19 +15,12 @@ export {
   removeDependencies,
   moveToDevDependencies,
 } from './services/shell/dependencies'
-export {
-  execWithSpinner,
-  exec,
-  runLongExec,
-} from './services/shell/exec'
+export { execWithSpinner, exec, runLongExec } from './services/shell/exec'
 export {
   execInProject,
   execInProjectWithSpinner,
 } from './services/shell/execProject'
-export {
-  removeProjectFiles,
-  makeProjectDir,
-} from './services/shell/files'
+export { removeProjectFiles, makeProjectDir } from './services/shell/files'
 export {
   AppType,
   ISchemaCommand,

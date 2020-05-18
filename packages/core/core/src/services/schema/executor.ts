@@ -4,24 +4,22 @@ import { deleteProperty } from '../../helpers/object/deleteProperty'
 import { ISchema, ISchemaCommand } from '../../types'
 import { createFilesFromFolder } from '../files/createFromFolder'
 import { updatePackageJson } from '../packageJson'
-import { addDependencies, moveToDevDependencies, removeDependencies } from '../shell/dependencies'
+import {
+  addDependencies,
+  moveToDevDependencies,
+  removeDependencies,
+} from '../shell/dependencies'
 import { execWithSpinner } from '../shell/exec'
 import { removeProjectFiles } from '../shell/files'
 
-export const execute = async (
-  schema: ISchema,
-  projectFolder: string,
-) => {
+export const execute = async (schema: ISchema, projectFolder: string) => {
   //
   // Execute commands
   //
 
   const commands = orderBy<ISchemaCommand>('priority')(schema.commands)
   for (const command of commands) {
-    await execWithSpinner(
-      command.command,
-      command.successMessage,
-    )
+    await execWithSpinner(command.command, command.successMessage)
   }
 
   //
@@ -58,7 +56,7 @@ export const execute = async (
       message: '[json] cleaning package.json',
       messageSuccess: '[json] clean package.json',
     },
-    packageJson => {
+    (packageJson) => {
       for (const propertyPath of schema.packageProperties.remove) {
         deleteProperty(packageJson, propertyPath)
       }
@@ -68,7 +66,7 @@ export const execute = async (
       }
 
       return packageJson
-    },
+    }
   )
 
   //
@@ -100,6 +98,6 @@ export const execute = async (
   await addDependencies({
     projectFolder,
     libraries: schema.dependencies.add.dev,
-    isDev: true
+    isDev: true,
   })
 }

@@ -28,10 +28,7 @@ describe('[helpers][object] deepMerge', () => {
     const right = { first: ['second'] }
 
     expect(deepMerge(left, right)).toStrictEqual({
-      first: [
-        ...left.first,
-        ...right.first,
-      ],
+      first: [...left.first, ...right.first],
     })
   })
 
@@ -43,7 +40,7 @@ describe('[helpers][object] deepMerge', () => {
       first: {
         ...left.first,
         ...right.first,
-      }
+      },
     })
   })
 })

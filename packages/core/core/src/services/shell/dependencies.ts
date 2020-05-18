@@ -11,7 +11,7 @@ export const addDependencies = ({
 }) =>
   execInProjectWithSpinner(projectFolder)(
     `yarn add ${libraries.join(' ')} ${isDev ? '-D' : ''}`,
-    `[dependencies][add] ${libraries.join(' ')}`,
+    `[dependencies][add] ${libraries.join(' ')}`
   )
 
 export const removeDependencies = ({
@@ -23,7 +23,7 @@ export const removeDependencies = ({
 }) =>
   execInProjectWithSpinner(projectFolder)(
     `yarn remove ${libraries.join(' ')}`,
-    `[dependencies][remove] ${libraries.join(' ')}`,
+    `[dependencies][remove] ${libraries.join(' ')}`
   )
 
 export const moveToDevDependencies = ({
@@ -35,5 +35,5 @@ export const moveToDevDependencies = ({
 }) =>
   execInProjectWithSpinner(projectFolder)(
     `yarn remove ${libraries.join(' ')} && yarn add ${libraries.join(' ')} -D`,
-    `[dependencies][move] ${libraries.join(' ')}`,
+    `[dependencies][move] ${libraries.join(' ')}`
   )

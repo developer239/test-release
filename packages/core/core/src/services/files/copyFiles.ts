@@ -11,7 +11,7 @@ export const copyFiles = async (
   source: string,
   destination: string,
   projectFolder: string,
-  context?: Object,
+  context?: Object
 ) => {
   const options = {
     overwrite: true,
@@ -28,10 +28,12 @@ export const copyFiles = async (
         return null
       }
 
-      return through((chunk: Buffer, _: BufferEncoding, done: CallableFunction) => {
-        const compileTemplate = Handlebars.compile(chunk.toString())
-        done(null, compileTemplate(context))
-      })
+      return through(
+        (chunk: Buffer, _: BufferEncoding, done: CallableFunction) => {
+          const compileTemplate = Handlebars.compile(chunk.toString())
+          done(null, compileTemplate(context))
+        }
+      )
     },
   }
 

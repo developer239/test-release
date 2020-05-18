@@ -14,11 +14,8 @@ export const removeProjectFiles = ({
 }) =>
   execInProjectWithSpinner(projectFolder)(
     `rm ${recursive ? '-r' : ''} ${files.join(' ')}`,
-    `[files][remove project files] ${message}`,
+    `[files][remove project files] ${message}`
   )
 
 export const makeProjectDir = (name: string) =>
-  execWithSpinner(
-    `mkdir ${name}`,
-    `[files][make project dir] ${name}`,
-  )
+  execWithSpinner(`mkdir ${name}`, `[files][make project dir] ${name}`)

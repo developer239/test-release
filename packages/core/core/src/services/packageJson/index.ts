@@ -12,7 +12,7 @@ type jsonFileType = any
 
 export const updatePackageJson = async (
   { projectFolder, message, messageSuccess }: IOptions,
-  updateFile: (packageJson: jsonFileType) => Promise<jsonFileType>,
+  updateFile: (packageJson: jsonFileType) => Promise<jsonFileType>
 ) => {
   const fileName = 'package.json'
   const spinner = ora()
