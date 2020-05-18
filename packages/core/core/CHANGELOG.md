@@ -1,3 +1,16 @@
+# [@test-release/core-v1.12.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.11.0...@test-release/core-v1.12.0) (2020-05-18)
+
+
+### Bug Fixes
+
+* export types ([d7c34d1](https://github.com/developer239/test-release/commit/d7c34d130bfdf96e24dd95e1997d19b19de8a5fc))
+* typescript errors ([3349ff9](https://github.com/developer239/test-release/commit/3349ff94597eb987ca2838a4ea13d4741c0011d2))
+
+
+### Features
+
+* optimize project structure ([988fac5](https://github.com/developer239/test-release/commit/988fac53f36fdd32798c23ccacec1b9d616134c1))
+
 # [@test-release/core-v1.11.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.10.1...@test-release/core-v1.11.0) (2020-05-14)
 
 ### Features
