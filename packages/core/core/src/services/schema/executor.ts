@@ -1,7 +1,7 @@
 import { orderBy } from '../../helpers/array/orderBy'
 import { addProperty } from '../../helpers/object/addProperty'
 import { deleteProperty } from '../../helpers/object/deleteProperty'
-import { ISchema } from '../../types'
+import { ISchema, ISchemaCommand } from '../../types'
 import { createFilesFromFolder } from '../files/createFromFolder'
 import { updatePackageJson } from '../packageJson'
 import { addDependencies, moveToDevDependencies, removeDependencies } from '../shell/dependencies'
@@ -16,7 +16,7 @@ export const execute = async (
   // Execute commands
   //
 
-  const commands = orderBy('priority')(schema.commands)
+  const commands = orderBy<ISchemaCommand>('priority')(schema.commands)
   for (const command of commands) {
     await execWithSpinner(
       command.command,

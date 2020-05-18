@@ -43,3 +43,18 @@ export interface ISchema {
     remove: string[]
   }
 }
+
+export enum CDType {
+  NONE = 'none',
+  HEROKU = 'heroku',
+}
+
+export enum CIType {
+  NONE = 'none',
+  ACTIONS = 'github_actions',
+}
+
+export enum DatabaseType {
+  NONE = 'none',
+  SQL = 'sql',
+}

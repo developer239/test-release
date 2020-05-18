@@ -28,3 +28,13 @@ export {
   removeProjectFiles,
   makeProjectDir,
 } from './services/shell/files'
+export {
+  AppType,
+  ISchemaCommand,
+  ISchemaAddFile,
+  ISchemaAddProperty,
+  ISchema,
+  CDType,
+  CIType,
+  DatabaseType,
+} from './types'
