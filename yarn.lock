@@ -1775,21 +1775,6 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@test-release/core@1.12.0":
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.12.0.tgz#302021154caa73381b9d76f22a85082124de970d"
-  integrity sha512-rVygVEG/RZQ6WYy6aRMIhfepVR57dqbKF+q5h4Tr0OXSDQFDpK35kqgMF9ay2otnthHkOOchtfuU+xn5hLooyQ==
-  dependencies:
-    chalk "^4.0.0"
-    handlebars "^4.7.6"
-    inquirer "^7.1.0"
-    ora "^4.0.4"
-    ramda "^0.27.0"
-    recursive-copy "^2.0.10"
-    shelljs "^0.8.4"
-    through2 "^3.0.1"
-    yargs "^15.3.1"
-
 "@test-release/core@1.13.0":
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.13.0.tgz#ebb5c944ca7c90fc65b883de4ba9026aa616262e"
@@ -1807,25 +1792,25 @@
     yargs "^15.3.1"
 
 "@test-release/editor-config@^1.18.1":
-  version "1.18.1"
-  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.18.1.tgz#424f611a60b44ecf2651bb2e7eb36746db606cc4"
-  integrity sha512-Es8bvTbAvOLN8HisLloh/Jeiigk2XvOJY+hNtix65d86UYk0pClFaHxAgGMCdyY09PVSjHxStI1JUfWL5MfyMg==
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.19.0.tgz#8ee788e5d342504165f3c6f7fef4b68258997f08"
+  integrity sha512-58dyaH8w7y9Os7iMRKx/vxWHRKh6KWc7jzU48I544Azk93nU/OKxu6MV/YIYPnr4s/44rBVImU7NCRKYxw1ADw==
   dependencies:
-    "@test-release/core" "1.12.0"
+    "@test-release/core" "1.13.0"
 
 "@test-release/prettier@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.2.1.tgz#6e258a7f89bf9a0749c5a19804322cb41b374a56"
-  integrity sha512-xWSXoP9jJEtlAhiC8juICd3n+KcnCVlKW9OLRWp/B4x3BkQgsXZKl4lnhZonafkDIKPgRfv1GWN8Nx2Chrn2KA==
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.3.0.tgz#27909ad9ace294be7e5e02993315039fcb9597b4"
+  integrity sha512-irc7XxL5n/undmiUbdFyDBWZUhxmCoZ8QzCU5U28M2CWtj6rNDNL10rDcLfpgv94Tj2iQfgjCRvEkeaIlapc9w==
   dependencies:
-    "@test-release/core" "1.12.0"
+    "@test-release/core" "1.13.0"
 
 "@test-release/stylelint@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.2.1.tgz#988a43ab56520f2f80363ae78b8ae5419b35be75"
-  integrity sha512-uytj6lKCIF2Wcm/CVMPSCqB1wPsCo/iQYSzR+qhkbBjjxm1O+kOhA827bDJkh/Zy+BftOE0jssVFYdio8AjlZQ==
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.3.0.tgz#f3652f97d01c110db30b0d3f94291415beaf5406"
+  integrity sha512-Od5XDLMXanmFKYgY1CrJbOWouGN82ovzMccQM2q1WGYgBkJKXuEOOujmRKbeYqSiKRmmC71cDQ09JbA1hHhPeA==
   dependencies:
-    "@test-release/core" "1.12.0"
+    "@test-release/core" "1.13.0"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -1951,9 +1936,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/jest@^25.2.2":
-  version "25.2.2"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-25.2.2.tgz#6a752e7a00f69c3e790ea00c345029d5cefa92bf"
-  integrity sha512-aRctFbG8Pb7DSLzUt/fEtL3q/GKb9mretFuYhRub2J0q6NhzBYbx9HTQzHrWgBNIxYOlxGNVe6Z54cpbUt+Few==
+  version "25.2.3"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-25.2.3.tgz#33d27e4c4716caae4eced355097a47ad363fdcaf"
+  integrity sha512-JXc1nK/tXHiDhV55dvfzqtmP4S3sy3T3ouV2tkViZgxY/zeUkcpQcQPGRlgF4KmWzWW5oiWYSZwtCB+2RsE4Fw==
   dependencies:
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
@@ -3501,7 +3486,7 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debuglog@^1.0.1:
+debuglog@*, debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
   integrity sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=
@@ -5200,7 +5185,7 @@ import-local@^3.0.2:
     pkg-dir "^4.2.0"
     resolve-cwd "^3.0.0"
 
-imurmurhash@^0.1.4:
+imurmurhash@*, imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
@@ -6608,6 +6593,11 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
+lodash._baseindexof@*:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/lodash._baseindexof/-/lodash._baseindexof-3.1.0.tgz#fe52b53a1c6761e42618d654e4a25789ed61822c"
+  integrity sha1-/lK1OhxnYeQmGNZU5KJXie1hgiw=
+
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash._baseuniq/-/lodash._baseuniq-4.6.0.tgz#0ebb44e456814af7905c6212fa2c9b2d51b841e8"
@@ -6616,10 +6606,32 @@ lodash._baseuniq@~4.6.0:
     lodash._createset "~4.0.0"
     lodash._root "~3.0.0"
 
+lodash._bindcallback@*:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
+  integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
+
+lodash._cacheindexof@*:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/lodash._cacheindexof/-/lodash._cacheindexof-3.0.2.tgz#3dc69ac82498d2ee5e3ce56091bafd2adc7bde92"
+  integrity sha1-PcaayCSY0u5ePOVgkbr9Ktx73pI=
+
+lodash._createcache@*:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/lodash._createcache/-/lodash._createcache-3.1.2.tgz#56d6a064017625e79ebca6b8018e17440bdcf093"
+  integrity sha1-VtagZAF2JeeevKa4AY4XRAvc8JM=
+  dependencies:
+    lodash._getnative "^3.0.0"
+
 lodash._createset@~4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/lodash._createset/-/lodash._createset-4.0.3.tgz#0f4659fbb09d75194fa9e2b88a6644d363c9fe26"
   integrity sha1-D0ZZ+7CddRlPqeK4imZE02PJ/iY=
+
+lodash._getnative@*, lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
+  integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
@@ -6670,6 +6682,11 @@ lodash.memoize@4.x:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.restparam@*:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
+  integrity sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU=
 
 lodash.set@^4.3.2:
   version "4.3.2"
@@ -10009,9 +10026,9 @@ ts-jest@^26.0.0:
     yargs-parser "18.x"
 
 ts-toolbelt@^6.3.3:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.8.0.tgz#e1be47975abd149956ea39e5160eec9f142db7e6"
-  integrity sha512-HidhVaj33+ZubzrVb1Y9rSul6SrtcZHbIWmcgR2x58pV/OIItZcimruUYeSkToMgeURdMhDTjZjM0rcYxKbrdQ==
+  version "6.8.4"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.8.4.tgz#6c4d4d53a3237caa1ddcd7e50c1c00e8e8d96861"
+  integrity sha512-OgJPX0YOlhPD5fdFIoS50ZCWXDlmwBYbkXnlTs+TxOfsVzCvr+HoANzLLcTDLF9hkHO56DxtBTCm6XDPm7YEow==
 
 tsconfig-paths@^3.9.0:
   version "3.9.0"
