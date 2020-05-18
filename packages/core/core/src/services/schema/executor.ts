@@ -1,11 +1,12 @@
-/* eslint-disable no-await-in-loop */
-import * as R from 'ramda'
-import { deleteProperty } from '../../helpers/deleteProperty'
+import { orderBy } from '../../helpers/array/orderBy'
+import { addProperty } from '../../helpers/object/addProperty'
+import { deleteProperty } from '../../helpers/object/deleteProperty'
 import { ISchema } from '../../types'
-import { addDependencies, moveToDevDependencies, removeDependencies, removeFiles } from '../exec'
-import { generateTemplate } from '../generator/generate'
-import { updatePackageJson } from '../package-json'
-import { shell } from '../shell'
+import { createFilesFromFolder } from '../files/createFromFolder'
+import { updatePackageJson } from '../packageJson'
+import { addDependencies, moveToDevDependencies, removeDependencies } from '../shell/dependencies'
+import { execWithSpinner } from '../shell/exec'
+import { removeProjectFiles } from '../shell/files'
 
 export const execute = async (
   schema: ISchema,
@@ -15,9 +16,9 @@ export const execute = async (
   // Execute commands
   //
 
-  const commands = R.sort(R.descend(R.prop('priority')), schema.commands)
+  const commands = orderBy('priority')(schema.commands)
   for (const command of commands) {
-    await shell.execWithSpinner(
+    await execWithSpinner(
       command.command,
       command.successMessage,
     )
@@ -27,7 +28,7 @@ export const execute = async (
   // Remove unnecessary project files
   //
 
-  await removeFiles({
+  await removeProjectFiles({
     projectFolder,
     message: 'all',
     files: schema.files.remove,
@@ -39,7 +40,7 @@ export const execute = async (
   //
 
   for (const template of schema.files.add) {
-    await generateTemplate({
+    await createFilesFromFolder({
       name: template.name,
       projectFolder,
       source: template.source,
@@ -63,7 +64,7 @@ export const execute = async (
       }
 
       for (const property of schema.packageProperties.add) {
-        R.assocPath(property.path, property.value)(packageJson)
+        addProperty(property.path, property.value)(packageJson)
       }
 
       return packageJson
@@ -75,7 +76,6 @@ export const execute = async (
   //
 
   await removeDependencies({
-    name: 'all',
     projectFolder,
     libraries: schema.dependencies.remove,
   })
@@ -85,7 +85,6 @@ export const execute = async (
   //
 
   await moveToDevDependencies({
-    name: 'all',
     projectFolder,
     libraries: schema.dependencies.move.prod,
   })

@@ -20,10 +20,8 @@ export const updatePackageJson = async (
 
   const jsonFilePath = path.join(process.cwd(), projectFolder, fileName)
 
-  // These two lines break about 10 different eslint rules 🙈
-  // eslint-disable-next-line
   delete require.cache[jsonFilePath]
-  // eslint-disable-next-line
+  // eslint-disable-next-line @typescript-eslint/no-var-requires,security/detect-non-literal-require
   const jsonFile = require(jsonFilePath)
 
   const updatedJsonFile = await updateFile(jsonFile)

@@ -3,15 +3,15 @@ import {
   addDependencies,
   AppType,
   askAppTypeFE,
-  generateTemplate,
-  getPathArgv,
+  createFilesFromFolder,
+  getPath,
   logger,
   updatePackageJson,
 } from '@test-release/core'
 import { createCodeQualityConfig } from './index'
 
 const run = async () => {
-  const projectFolder = getPathArgv() || '.'
+  const projectFolder = getPath() ?? '.'
   const appType = await askAppTypeFE()
 
   if (appType !== AppType.WEB && appType !== AppType.MOBILE){
@@ -40,7 +40,7 @@ const run = async () => {
   })
 
   for (const templateSource of codeQualitySchema.sources) {
-    await generateTemplate({
+    await createFilesFromFolder({
       name: templateSource.name,
       projectFolder,
       source: templateSource.source,

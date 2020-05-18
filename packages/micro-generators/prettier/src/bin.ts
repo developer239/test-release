@@ -1,12 +1,12 @@
 import {
   askAppType, execute,
-  getPathArgv,
+  getPath,
   logger,
 } from '@test-release/core'
 import { createPrettierConfig } from './index'
 
 const run = async () => {
-  const projectFolder = getPathArgv() ?? '.'
+  const projectFolder = getPath() ?? '.'
   const appType = await askAppType()
 
   const prettierSchema = createPrettierConfig({ appType })

@@ -9,5 +9,7 @@ module.exports = {
     'security/detect-object-injection': 0,
     '@typescript-eslint/no-dynamic-delete': 0,
     'guard-for-in': 1,
+    'no-await-in-loop': 1,
+    'absolute-import/no-relative-path': 0,
   }
 }

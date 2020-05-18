@@ -1,8 +1,8 @@
-import { execute, getPathArgv, logger } from '@test-release/core'
+import { execute, getPath, logger } from '@test-release/core'
 import { createEditorConfigSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getPathArgv() ?? '.'
+  const projectFolder = getPath() ?? '.'
   const schema = createEditorConfigSchema()
 
   await execute(schema, projectFolder)

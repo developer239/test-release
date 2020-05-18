@@ -1,4 +1,4 @@
-import { deepMerge } from '../../helpers/deepMerge'
+import { deepMerge } from '../../helpers/object/deepMerge'
 import { ISchemaAddFile, ISchema, ISchemaAddProperty } from '../../types'
 
 export const builder = (name: string) => {
@@ -25,6 +25,13 @@ export const builder = (name: string) => {
     },
   } as ISchema
 
+  const addDependencies = (dependencies: string[]) => {
+    schema.dependencies.add.prod = [
+      ...schema.dependencies.add.prod,
+      ...dependencies
+    ]
+  }
+
   const addDevDependencies = (dependencies: string[]) => {
     schema.dependencies.add.dev = [
       ...schema.dependencies.add.dev,
@@ -32,31 +39,48 @@ export const builder = (name: string) => {
     ]
   }
 
-  const addProperty = (property: ISchemaAddProperty) =>
+  const moveDependencies = (dependencies: string[]) => {
+    schema.dependencies.move.prod = [
+      ...schema.dependencies.move.prod,
+      ...dependencies
+    ]
+  }
+
+  const addPackageJsonProperty = (property: ISchemaAddProperty) =>
     schema.packageProperties.add.push(property)
 
+  const removePackageJsonProperty = (pathToProperty: string[]) =>
+    schema.packageProperties.remove.push(pathToProperty)
+
   const addScript = (key: string, value: string) =>
-    addProperty({
+    addPackageJsonProperty({
       path: ['scripts', key],
       value
     })
+
+  const removeScript = (key: string) =>
+    removePackageJsonProperty(['scripts', key])
+
+  const addFolder = (file: ISchemaAddFile) =>
+    schema.files.add.push(file)
 
   const combineSchema = (newSchema: ISchema) => {
     schema = deepMerge(schema, newSchema)
   }
 
-  const addFile = (file: ISchemaAddFile) =>
-    schema.files.add.push(file)
-
   const toJson = (): ISchema =>
     schema
 
   return {
+    addDependencies,
     addDevDependencies,
+    moveDependencies,
     addScript,
-    addProperty,
+    removeScript,
+    addPackageJsonProperty,
+    removePackageJsonProperty,
     combineSchema,
-    addFile,
+    addFolder,
     toJson,
   }
 }

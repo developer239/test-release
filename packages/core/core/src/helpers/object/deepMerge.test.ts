@@ -1,6 +1,6 @@
 import { deepMerge } from './deepMerge'
 
-describe('[helpers] deepMerge', () => {
+describe('[helpers][object] deepMerge', () => {
   it('should NOT modify arguments', () => {
     const left = { first: 'first' }
     const right = { second: 'second' }

@@ -4,7 +4,7 @@ import ora from 'ora'
 import shelljs from 'shelljs'
 
 // https://stackoverflow.com/questions/46354368/how-to-have-cli-spinner-run-during-shelljs-command-exec
-const runLongExec = (command: string) => {
+export const runLongExec = (command: string) => {
   return new Promise((resolve, reject) => {
     const spawnedProcess = childProcess.spawn(command, { shell: true })
 
@@ -13,7 +13,7 @@ const runLongExec = (command: string) => {
   })
 }
 
-const execWithSpinner = async (
+export const execWithSpinner = async (
   command: string,
   successMessage: string,
   options?: { trim: string }
@@ -31,27 +31,6 @@ const execWithSpinner = async (
   return response
 }
 
-const exec = (command: string, silent = true) => {
+export const exec = (command: string, silent = true) => {
   return shelljs.exec(command, { silent })
-}
-
-const execInProject = (projectFolder: string) => (command: string) => {
-  return exec(`cd ${projectFolder} && ${command}`)
-}
-
-const execInProjectWithSpinner = (projectFolder: string) => (
-  command: string,
-  successMessage: string
-) => {
-  const goToProjectDir = `cd ${projectFolder} && `
-  return execWithSpinner(`${goToProjectDir}${command}`, successMessage, {
-    trim: goToProjectDir,
-  })
-}
-
-export const shell = {
-  exec,
-  execWithSpinner,
-  execInProject,
-  execInProjectWithSpinner,
 }

@@ -1,14 +1,14 @@
 import {
   AppType,
   askAppTypeFE, execute,
-  getPathArgv,
+  getPath,
   logger,
 } from '@test-release/core'
 import { askHasPrettier } from './services/prompt'
 import { createStylelintMobileConfig, createStylelintWebConfig } from './index'
 
 const run = async () => {
-  const projectFolder = getPathArgv() ?? '.'
+  const projectFolder = getPath() ?? '.'
   const type = await askAppTypeFE()
   const hasPrettier = await askHasPrettier()
 

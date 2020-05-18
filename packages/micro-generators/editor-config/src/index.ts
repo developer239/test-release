@@ -3,7 +3,7 @@ import { builder } from '@test-release/core'
 
 export const createEditorConfigSchema = () => {
   const schema = builder('editorconfig')
-  schema.addFile({
+  schema.addFolder({
     name: 'editorconfig',
     source: path.join(__dirname, 'templates'),
   })

@@ -8,7 +8,7 @@ export const createPrettierConfig = ({
 }) => {
   const schema = builder('prettier')
 
-  schema.addFile({
+  schema.addFolder({
     name: 'prettier',
     source: path.join(__dirname, 'templates'),
   })

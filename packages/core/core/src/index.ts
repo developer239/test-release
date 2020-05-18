@@ -1,23 +1,30 @@
-export { deepMerge } from './helpers/deepMerge'
-export { generateTemplate } from './services/generator/generate'
-export { logger } from './services/logger'
-export { copyFiles } from './services/generator/copyFiles'
-export { getPathArgv } from './services/argv'
-export { askYesNo, askAppType, askAppTypeFE } from './services/prompt'
+export { orderBy } from './helpers/array/orderBy'
+export { addProperty } from './helpers/object/addProperty'
+export { deepMerge } from './helpers/object/deepMerge'
+export { deleteProperty } from './helpers/object/deleteProperty'
+export { getPath } from './services/arguments'
+export { copyFiles } from './services/files/copyFiles'
+export { createFilesFromFolder } from './services/files/createFromFolder'
+export { logInfo, logError } from './services/logger'
+export { updatePackageJson } from './services/packageJson'
+export { askAppType, askAppTypeFE, askYesNo } from './services/prompt'
+export { builder } from './services/schema/builder'
+export { execute } from './services/schema/executor'
 export {
   addDependencies,
   removeDependencies,
   moveToDevDependencies,
-  removeFiles,
-  makeDir,
-} from './services/exec'
+} from './services/shell/dependencies'
 export {
-  updatePackageJson
-} from './services/package-json'
+  execWithSpinner,
+  exec,
+  runLongExec,
+} from './services/shell/exec'
 export {
-  execute
-} from './services/schema/executor'
+  execInProject,
+  execInProjectWithSpinner,
+} from './services/shell/execProject'
 export {
-  builder,
-} from './services/schema/builder'
-export { AppType, ISchema } from './types'
+  removeProjectFiles,
+  makeProjectDir,
+} from './services/shell/files'

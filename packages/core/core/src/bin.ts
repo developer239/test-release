@@ -1,1 +1,3 @@
-console.log('not implemented')
+import { logError } from './services/logger'
+
+logError('Not implemented.')

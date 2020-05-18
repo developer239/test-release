@@ -9,7 +9,7 @@ interface IOptions {
   destination?: string
 }
 
-export const generateTemplate = async ({
+export const createFilesFromFolder = async ({
   name,
   projectFolder = '.',
   source,
