@@ -8,6 +8,7 @@ export interface ISchemaCommand {
   command: string
   successMessage: string
   priority: number
+  shouldRunInProject?: boolean
 }
 
 export interface ISchemaAddFile {
@@ -19,6 +20,7 @@ export interface ISchemaAddFile {
 export interface ISchemaAddProperty {
   path: string[]
   value: string | number | boolean
+  file?: string
 }
 
 export interface ISchema {

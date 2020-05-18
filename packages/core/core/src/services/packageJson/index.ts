@@ -3,6 +3,7 @@ import path from 'path'
 import ora from 'ora'
 
 interface IOptions {
+  fileName?: string
   projectFolder: string
   message: string
   messageSuccess: string
@@ -11,10 +12,14 @@ interface IOptions {
 type jsonFileType = any
 
 export const updatePackageJson = async (
-  { projectFolder, message, messageSuccess }: IOptions,
+  {
+    fileName = 'package.json',
+    projectFolder,
+    message,
+    messageSuccess,
+  }: IOptions,
   updateFile: (packageJson: jsonFileType) => Promise<jsonFileType>
 ) => {
-  const fileName = 'package.json'
   const spinner = ora()
   spinner.start(message)
 

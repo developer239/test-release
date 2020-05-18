@@ -1,5 +1,10 @@
 import { deepMerge } from '../../helpers/object/deepMerge'
-import { ISchemaAddFile, ISchema, ISchemaAddProperty } from '../../types'
+import {
+  ISchemaAddFile,
+  ISchema,
+  ISchemaAddProperty,
+  ISchemaCommand,
+} from '../../types'
 
 export const builder = (name: string) => {
   let schema = {
@@ -25,6 +30,10 @@ export const builder = (name: string) => {
     },
   } as ISchema
 
+  const addCommand = (command: ISchemaCommand) => {
+    schema.commands = [...schema.commands, command]
+  }
+
   const addDependencies = (dependencies: string[]) => {
     schema.dependencies.add.prod = [
       ...schema.dependencies.add.prod,
@@ -46,14 +55,14 @@ export const builder = (name: string) => {
     ]
   }
 
-  const addPackageJsonProperty = (property: ISchemaAddProperty) =>
+  const addJsonProperty = (property: ISchemaAddProperty) =>
     schema.packageProperties.add.push(property)
 
   const removePackageJsonProperty = (pathToProperty: string[]) =>
     schema.packageProperties.remove.push(pathToProperty)
 
   const addScript = (key: string, value: string) =>
-    addPackageJsonProperty({
+    addJsonProperty({
       path: ['scripts', key],
       value,
     })
@@ -70,12 +79,13 @@ export const builder = (name: string) => {
   const toJson = (): ISchema => schema
 
   return {
+    addCommand,
     addDependencies,
     addDevDependencies,
     moveDependencies,
     addScript,
     removeScript,
-    addPackageJsonProperty,
+    addJsonProperty,
     removePackageJsonProperty,
     combineSchema,
     addFolder,

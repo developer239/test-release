@@ -1,4 +1,3 @@
-import { execWithSpinner } from './exec'
 import { execInProjectWithSpinner } from './execProject'
 
 export const removeProjectFiles = ({
@@ -16,6 +15,3 @@ export const removeProjectFiles = ({
     `rm ${recursive ? '-r' : ''} ${files.join(' ')}`,
     `[files][remove project files] ${message}`
   )
-
-export const makeProjectDir = (name: string) =>
-  execWithSpinner(`mkdir ${name}`, `[files][make project dir] ${name}`)

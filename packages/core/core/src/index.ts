@@ -7,7 +7,14 @@ export { copyFiles } from './services/files/copyFiles'
 export { createFilesFromFolder } from './services/files/createFromFolder'
 export { logInfo, logError } from './services/logger'
 export { updatePackageJson } from './services/packageJson'
-export { askAppType, askAppTypeFE, askYesNo } from './services/prompt'
+export {
+  askAppType,
+  askAppTypeFE,
+  askYesNo,
+  askCIType,
+  askCDType,
+  askDatabaseType,
+} from './services/prompt'
 export { builder } from './services/schema/builder'
 export { execute } from './services/schema/executor'
 export {
@@ -20,7 +27,8 @@ export {
   execInProject,
   execInProjectWithSpinner,
 } from './services/shell/execProject'
-export { removeProjectFiles, makeProjectDir } from './services/shell/files'
+export { removeProjectFiles } from './services/shell/files'
+export { validateProjectFolder } from './services/validator/validateProjectFolder'
 export {
   AppType,
   ISchemaCommand,

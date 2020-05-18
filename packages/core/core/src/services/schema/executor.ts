@@ -10,6 +10,7 @@ import {
   removeDependencies,
 } from '../shell/dependencies'
 import { execWithSpinner } from '../shell/exec'
+import { execInProjectWithSpinner } from '../shell/execProject'
 import { removeProjectFiles } from '../shell/files'
 
 export const execute = async (schema: ISchema, projectFolder: string) => {
@@ -19,7 +20,14 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
 
   const commands = orderBy<ISchemaCommand>('priority')(schema.commands)
   for (const command of commands) {
-    await execWithSpinner(command.command, command.successMessage)
+    if (command.shouldRunInProject) {
+      await execInProjectWithSpinner(projectFolder)(
+        command.command,
+        command.successMessage
+      )
+    } else {
+      await execWithSpinner(command.command, command.successMessage)
+    }
   }
 
   //
@@ -50,6 +58,9 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
   // Update package json
   //
 
+  const packagePropertiesAdd = schema.packageProperties.add.filter(
+    (prop) => !prop.file || prop.file === 'package.json'
+  )
   await updatePackageJson(
     {
       projectFolder,
@@ -61,13 +72,33 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
         deleteProperty(packageJson, propertyPath)
       }
 
-      for (const property of schema.packageProperties.add) {
+      for (const property of packagePropertiesAdd) {
         addProperty(property.path, property.value)(packageJson)
       }
 
       return packageJson
     }
   )
+
+  const tsconfigPropertiesAdd = schema.packageProperties.add.filter(
+    (prop) => prop.file === 'tsconfig.json'
+  )
+  if (tsconfigPropertiesAdd.length) {
+    await updatePackageJson(
+      {
+        projectFolder,
+        message: '[json] cleaning tsconfig.json',
+        messageSuccess: '[json] clean tsconfig.json',
+      },
+      (tsconfigJson) => {
+        for (const property of tsconfigPropertiesAdd) {
+          addProperty(property.path, property.value)(tsconfigJson)
+        }
+
+        return tsconfigJson
+      }
+    )
+  }
 
   //
   // Uninstall dependencies
