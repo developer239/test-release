@@ -16,7 +16,6 @@ export const createNextJsSchema = ({ projectFolder, isHeroku }: IOptions) => {
       priority: 99,
     })
   }
-
   schema.addDependencies(['next', 'react', 'react-dom', 'styled-components'])
   schema.addDevDependencies([
     '@types/node ',
