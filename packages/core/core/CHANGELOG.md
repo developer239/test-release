@@ -1,3 +1,10 @@
+# [@test-release/core-v1.13.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.12.0...@test-release/core-v1.13.0) (2020-05-18)
+
+
+### Features
+
+* update core package ([d855ebd](https://github.com/developer239/test-release/commit/d855ebdc91ba37d488e55ff2cd1b8bd5e6c95dbe))
+
 # [@test-release/core-v1.12.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.11.0...@test-release/core-v1.12.0) (2020-05-18)
 
 ### Bug Fixes
