@@ -9,13 +9,11 @@ interface IOptions {
 export const createNextJsSchema = ({ projectFolder, isHeroku }: IOptions) => {
   const schema = builder('nextjs')
 
-  if (!projectFolder) {
-    schema.addCommand({
-      command: '[fs][make dir] create project directory',
-      successMessage: '[fs][make dir] create project directory',
-      priority: 99,
-    })
-  }
+  schema.addCommand({
+    command: '[fs][make dir] create project directory',
+    successMessage: '[fs][make dir] create project directory',
+    priority: 99,
+  })
   schema.addDependencies(['next', 'react', 'react-dom', 'styled-components'])
   schema.addDevDependencies([
     '@types/node ',
