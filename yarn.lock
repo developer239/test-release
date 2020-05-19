@@ -8958,9 +8958,9 @@ rollup-pluginutils@^2.8.1:
     estree-walker "^0.6.1"
 
 rollup@^2.9.1:
-  version "2.10.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.10.3.tgz#b024155a93a13412ff547764f8fd4f67fbf64f51"
-  integrity sha512-Pw4isow3qDZvIozWtEBSZckSxpZgAj11hLijykaO/qZLNq4VGZVZOANBzoWlMabTtg9edQTe3pkLU39PoIkOeg==
+  version "2.10.4"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.10.4.tgz#ec2f91519c597c214cdf45e50600ed8ea356358e"
+  integrity sha512-aYvoYjeu9DwrUTEfRlHiugW1eoHz7EGxETaOISpw+zkH9oOaQLO85eG+14ky4vyYgi3mUofbpWJgb+yLBE0PKw==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -10033,9 +10033,9 @@ ts-jest@^26.0.0:
     yargs-parser "18.x"
 
 ts-toolbelt@^6.3.3:
-  version "6.8.4"
-  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.8.4.tgz#6c4d4d53a3237caa1ddcd7e50c1c00e8e8d96861"
-  integrity sha512-OgJPX0YOlhPD5fdFIoS50ZCWXDlmwBYbkXnlTs+TxOfsVzCvr+HoANzLLcTDLF9hkHO56DxtBTCm6XDPm7YEow==
+  version "6.8.5"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.8.5.tgz#c40177aea14edb35daa0b6df3298069d774b195a"
+  integrity sha512-0uqJ/8EJ+r5ryOl1cWX4xXnUyG7vA9Vde4cq1+VWhqnl2k9vbasQoKfWWAcIY2Ni83tFnK4na4CZLFR9kUhgYg==
 
 tsconfig-paths@^3.9.0:
   version "3.9.0"
