@@ -41,5 +41,6 @@ export const createStylelintMobileConfig = (options: IOptions) => {
   schema.addDevDependencies([
     '@linters/stylelint-css-in-js-react-native-config',
   ])
+
   return schema.toJson()
 }

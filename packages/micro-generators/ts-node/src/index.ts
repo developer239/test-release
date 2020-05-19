@@ -16,5 +16,6 @@ export const createTsNodeSchema = () => {
     name: 'ts-node',
     source: path.join('templates'),
   })
+
   return schema.toJson()
 }

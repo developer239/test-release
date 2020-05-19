@@ -14,6 +14,7 @@ export const createPrettierConfig = ({ appType }: { appType: AppType }) => {
   } else {
     schema.addScript('format', "prettier --write '*/**/*.{ts,tsx,css,md,json}'")
   }
+
   schema.addDevDependencies(['prettier', '@linters/prettier-config'])
 
   return schema.toJson()
