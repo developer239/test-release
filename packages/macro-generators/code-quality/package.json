@@ -14,10 +14,10 @@
     "@test-release/code-quality": "lib/bin.js"
   },
   "dependencies": {
-    "@test-release/core": "1.13.0",
-    "@test-release/editor-config": "1.19.0",
-    "@test-release/prettier": "1.3.0",
-    "@test-release/stylelint": "1.3.0"
+    "@test-release/core": "1.13.1",
+    "@test-release/editor-config": "1.19.1",
+    "@test-release/prettier": "1.3.3",
+    "@test-release/stylelint": "1.3.3"
   },
   "publishConfig": {
     "access": "public"
