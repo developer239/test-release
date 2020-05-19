@@ -1,3 +1,4 @@
+import path from 'path'
 import { builder } from '@test-release/core'
 
 interface IOptions {
@@ -53,7 +54,7 @@ export const createCreateReactAppSchema = ({
 
   schema.addFolder({
     name: 'create react app base',
-    source: 'templates/base',
+    source: path.join(__dirname, 'templates/base'),
     context: {
       projectFolder,
       isHeroku,
@@ -65,8 +66,8 @@ export const createCreateReactAppSchema = ({
     schema.addDevDependencies(['@types/react-router-dom'])
 
     schema.addFolder({
-      name: 'project folder',
-      source: 'templates/react-router',
+      name: 'create react app router',
+      source: path.join(__dirname, 'templates/react-router'),
       context: {
         projectFolder,
       },
