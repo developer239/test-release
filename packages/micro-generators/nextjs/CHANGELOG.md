@@ -1,3 +1,10 @@
+# [@test-release/nextjs-v1.0.3](https://github.com/developer239/test-release/compare/@test-release/nextjs-v1.0.2...@test-release/nextjs-v1.0.3) (2020-05-19)
+
+
+### Bug Fixes
+
+* remove useless condition ([22e0a46](https://github.com/developer239/test-release/commit/22e0a461366075c70c50222d79149b5f70702a74))
+
 # [@test-release/nextjs-v1.0.2](https://github.com/developer239/test-release/compare/@test-release/nextjs-v1.0.1...@test-release/nextjs-v1.0.2) (2020-05-19)
 
 # [@test-release/nextjs-v1.0.1](https://github.com/developer239/test-release/compare/@test-release/nextjs-v1.0.0...@test-release/nextjs-v1.0.1) (2020-05-18)
