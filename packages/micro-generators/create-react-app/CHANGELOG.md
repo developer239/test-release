@@ -1,3 +1,10 @@
+# [@test-release/create-react-app-v1.0.2](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.1...@test-release/create-react-app-v1.0.2) (2020-05-19)
+
+
+### Bug Fixes
+
+* use absolute path to generate schema ([a668ecd](https://github.com/developer239/test-release/commit/a668ecd22b62acfa1ad57c7bcac4e00e412b32bc))
+
 # [@test-release/create-react-app-v1.0.1](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.0...@test-release/create-react-app-v1.0.1) (2020-05-19)
 
 # @test-release/create-react-app-v1.0.0 (2020-05-18)
