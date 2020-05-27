@@ -42,6 +42,83 @@ You can easily selectively add code quality tools and other useful libraries to 
 |Micro | [@test-release/stylelint](packages/micro-generators/stylelint) | [![@test-release/stylelint][stylelint-badge]][stylelint-npm] |
 |Micro | [@test-release/ts-node](packages/micro-generators/ts-node) | [![@test-release/ts-node][tsnode-badge]][tsnode-npm] |
 
+## Examples
+
+### Minimal micro generator
+
+This is how many lines of code you have to write to add prettier to all your projects in the future:
+
+```js
+// src/templates/.prettierrc.js
+
+module.exports = require('@linters/prettier-config')
+```
+
+```ts
+// src/index.ts
+
+import path from 'path'
+import { builder, execute } from '@test-release/core'
+
+export const createPrettierSchema = () => {
+  const schema = builder('prettier')
+
+  schema.addFolder({
+    name: 'prettier',
+    source: path.join(__dirname, 'templates'),
+  })
+
+  schema.addScript('format', "prettier --write '*/**/*.{ts,tsx,css,md,json}'")
+  schema.addDevDependencies(['prettier', '@linters/prettier-config'])
+
+  return schema.toJson()
+}
+
+const projectFolder = '.'
+execute(createPrettierSchema(), projectFolder)
+```
+
+### Composing multiple micro generators
+
+We can easily use existing micro generators and bundle them together into bigger generator.
+
+#### Micro generators
+
+- [@test-release/editor-config](/packages/micro-generators/editor-config)
+- [@test-release/eslint](/packages/micro-generators/eslint)
+- [@test-release/prettier](/packages/micro-generators/prettier)
+- [@test-release/stylelint](/packages/micro-generators/stylelint)
+
+#### Generator implementation
+
+```ts
+import { AppType, builder } from '@test-release/core'
+import { createEditorConfigSchema } from '@test-release/editor-config'
+import { createEslintSchema } from '@test-release/eslint'
+import { createPrettierConfig } from '@test-release/prettier'
+import { createStylelintWebConfig } from '@test-release/stylelint'
+
+export const createWebCodeQualitySchema = () => {
+  const schema = builder('codequality')
+  const hasPrettier = true
+
+  const editorconfigSchema = createEditorConfigSchema()
+  const eslintSchema = createEslintSchema({ appType: AppType.WEB })
+  const prettierSchema = createPrettierConfig({ appType: AppType.WEB })
+  const stylelintSchema = createStylelintWebConfig({ hasPrettier })
+
+  schema.combineSchema(editorconfigSchema)
+  schema.combineSchema(eslintSchema)
+  schema.combineSchema(prettierSchema)
+  schema.combineSchema(stylelintSchema)
+
+  return schema.toJson()
+}
+
+const projectFolder = '.'
+execute(createWebCodeQualitySchema(), projectFolder)
+```
+
 [core-badge]: https://badge.fury.io/js/%40test-release%2Fcore.svg
 [core-npm]: https://badge.fury.io/js/%4040test-release%2Fcore
 
