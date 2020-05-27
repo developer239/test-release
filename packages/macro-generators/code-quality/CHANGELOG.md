@@ -1,3 +1,5 @@
+# [@test-release/code-quality-v1.4.3](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.4.2...@test-release/code-quality-v1.4.3) (2020-05-27)
+
 # [@test-release/code-quality-v1.4.2](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.4.1...@test-release/code-quality-v1.4.2) (2020-05-19)
 
 # [@test-release/code-quality-v1.4.1](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.4.0...@test-release/code-quality-v1.4.1) (2020-05-18)
