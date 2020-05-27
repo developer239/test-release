@@ -1,3 +1,5 @@
+# [@test-release/eslint-v1.0.2](https://github.com/developer239/test-release/compare/@test-release/eslint-v1.0.1...@test-release/eslint-v1.0.2) (2020-05-27)
+
 # [@test-release/eslint-v1.0.1](https://github.com/developer239/test-release/compare/@test-release/eslint-v1.0.0...@test-release/eslint-v1.0.1) (2020-05-19)
 
 # @test-release/eslint-v1.0.0 (2020-05-18)
