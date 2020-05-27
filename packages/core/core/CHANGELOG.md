@@ -1,3 +1,5 @@
+# [@test-release/core-v1.13.2](https://github.com/developer239/test-release/compare/@test-release/core-v1.13.1...@test-release/core-v1.13.2) (2020-05-27)
+
 # [@test-release/core-v1.13.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.13.0...@test-release/core-v1.13.1) (2020-05-18)
 
 
