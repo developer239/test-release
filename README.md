@@ -1,28 +1,32 @@
-# @spew 💦
+# @test-release 💦
 
 ![release](https://github.com/developer239/test-release/workflows/release/badge.svg)
 
 > Replace your big boilerplate repositories with small composable generators.
 
+_@test-release_ is alternative to Yeoman and other generators that help you to kickstart new projects, prescribe best practices and tools to help you stay productive.
+
+There is a difference though that _@test-release_ generators are really small and independent. However you can easily compose smaller generators into bigger ones and create more robust and opinionated codebase. 
+
 ## Core Packages
 
-You can build your own generators.
+You can use these to build your own generators. All packages are written in TypeScript and designed to be easy to use.
 
 |Type          | Package                                         | Version                                       | 
 |------------- | ----------------------------------------------- | ----------------------------------------------
 |Library Core  | [@test-release/core](packages/core/core) | [![@test-release/core][core-badge]][core-npm] |  
 
-## Big Generators
+## Generators
 
-Mini generators bundled together so that you can easily setup the perfect environemnt that you want. 
+Multiple micro generators composed into robust generators. These generators are useful for opinionated codebase setup. For example when we are setting up CRA the first thing we do is to remove service worker and install code quality tools.
 
 |Type          | Package                                         | Version                                       | 
 |------------- | ----------------------------------------------- | ----------------------------------------------
 |Macro | [@test-release/code-quality](packages/macro-generators/code-quality) | [![@test-release/code-quality][cc-badge]][cc-npm] |  
 
-## Mini Generators
+## Micro Generators
 
-Stop ✋ boilerplates! Generate only what you want to use. 
+You can easily selectively add code quality tools and other useful libraries to your existing codebase.
 
 |Type          | Package                                         | Version                                       | 
 |------------- | ----------------------------------------------- | ----------------------------------------------
