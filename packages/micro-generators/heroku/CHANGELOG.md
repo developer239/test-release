@@ -1,3 +1,10 @@
+# [@test-release/heroku-v1.0.3](https://github.com/developer239/test-release/compare/@test-release/heroku-v1.0.2...@test-release/heroku-v1.0.3) (2020-10-09)
+
+
+### Bug Fixes
+
+* heroku template path ([fc4ad16](https://github.com/developer239/test-release/commit/fc4ad1645ff00eed1de186a216b83e6f69fdf170))
+
 # [@test-release/heroku-v1.0.2](https://github.com/developer239/test-release/compare/@test-release/heroku-v1.0.1...@test-release/heroku-v1.0.2) (2020-10-09)
 
 
