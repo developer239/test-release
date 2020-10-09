@@ -29,7 +29,7 @@ export const createGitHooksSchema = ({
     'husky',
     'lint-staged',
     '@commitlint/cli',
-    '@code-quality/commitlint-config',
+    '@linters/commitlint-config',
   ])
 
   return schema.toJson()
