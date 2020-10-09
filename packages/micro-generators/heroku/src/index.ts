@@ -25,7 +25,7 @@ export const createHerokuSchema = ({
 
   schema.addFolder({
     name: 'heroku',
-    source: path.join('templates', appType),
+    source: path.join(__dirname, 'templates', appType),
     context: {
       projectFolder,
       isDatabase: Boolean(isDatabase),
