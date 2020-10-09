@@ -14,8 +14,8 @@
     "@test-release/code-quality": "lib/bin.js"
   },
   "dependencies": {
-    "@test-release/core": "1.13.1",
-    "@test-release/editor-config": "1.19.1",
+    "@test-release/core": "1.13.2",
+    "@test-release/editor-config": "1.19.2",
     "@test-release/eslint": "^1.0.4",
     "@test-release/prettier": "1.3.3",
     "@test-release/stylelint": "1.3.3"

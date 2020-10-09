@@ -1792,10 +1792,26 @@
     validate-npm-package-name "3.0.0"
     yargs "15.3.1"
 
-"@test-release/editor-config@1.19.1":
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.19.1.tgz#cabd50c5b6cf474899ae42a2fda5fb4b07c3887d"
-  integrity sha512-laQRZi3Tlc1ttrZkO536U5JczugO/sRjUJen7i/4H9OWFtyXVsDGsjCzRztRpxWSQqZEKb+ay6rqhwwhhtREZw==
+"@test-release/core@1.13.2":
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.13.2.tgz#3d67c2b52617ac911034f7cb424b0c204377bc1d"
+  integrity sha512-ZihV23qmjsYWdENp+2jZFUK8flrThMZNTOup5WDoYCwc7dpsVDZYokDOEDnqXAcwb5UGmrDNQX3a6rnBW8cp/Q==
+  dependencies:
+    chalk "4.0.0"
+    handlebars "4.7.6"
+    inquirer "7.1.0"
+    ora "4.0.4"
+    ramda "0.27.0"
+    recursive-copy "2.0.10"
+    shelljs "0.8.4"
+    through2 "3.0.1"
+    validate-npm-package-name "3.0.0"
+    yargs "15.3.1"
+
+"@test-release/editor-config@1.19.2":
+  version "1.19.2"
+  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.19.2.tgz#cd624d3436a1cd0544483e5b543c10c90b9b7244"
+  integrity sha512-qcgUV7Q2SXAbIJkXsdtmiN96DIXnXdTwWsN6FOtH+AZQDi+ySEPJ05ITRUK+LNKwJ3DLKWQpBnqK26TBYhXLTw==
   dependencies:
     "@test-release/core" "1.13.1"
 
