@@ -1,3 +1,11 @@
+# [@test-release/create-react-app-v1.0.4](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.3...@test-release/create-react-app-v1.0.4) (2020-10-09)
+
+
+### Bug Fixes
+
+* cra package name ([64017de](https://github.com/developer239/test-release/commit/64017dec2749beac083e060685c7d7892aaa97b6))
+* general configuration ([0871c8e](https://github.com/developer239/test-release/commit/0871c8e20b441a959ba4db381b39141682024d87))
+
 # [@test-release/create-react-app-v1.0.3](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.2...@test-release/create-react-app-v1.0.3) (2020-05-27)
 
 # [@test-release/create-react-app-v1.0.2](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.1...@test-release/create-react-app-v1.0.2) (2020-05-19)
