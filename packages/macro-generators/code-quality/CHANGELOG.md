@@ -1,3 +1,10 @@
+# [@test-release/code-quality-v1.5.0](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.4.3...@test-release/code-quality-v1.5.0) (2020-10-09)
+
+
+### Features
+
+* update code quality generator ([9785b91](https://github.com/developer239/test-release/commit/9785b91d99dd6389ec48c9c5daad283a109fdb3f))
+
 # [@test-release/code-quality-v1.4.3](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.4.2...@test-release/code-quality-v1.4.3) (2020-05-27)
 
 # [@test-release/code-quality-v1.4.2](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.4.1...@test-release/code-quality-v1.4.2) (2020-05-19)
