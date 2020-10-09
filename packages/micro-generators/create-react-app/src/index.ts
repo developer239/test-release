@@ -3,13 +3,11 @@ import { builder } from '@test-release/core'
 
 interface IOptions {
   projectFolder: string
-  isHeroku: boolean
   isRouter: boolean
 }
 
 export const createCreateReactAppSchema = ({
   projectFolder,
-  isHeroku,
   isRouter,
 }: IOptions) => {
   const schema = builder('create-react-app')
@@ -57,7 +55,6 @@ export const createCreateReactAppSchema = ({
     source: path.join(__dirname, 'templates/base'),
     context: {
       projectFolder,
-      isHeroku,
     },
   })
 
