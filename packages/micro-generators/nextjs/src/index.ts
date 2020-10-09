@@ -32,7 +32,7 @@ export const createNextJsSchema = ({ projectFolder, isHeroku }: IOptions) => {
 
   schema.addFolder({
     name: 'nextjs',
-    source: path.join('templates'),
+    source: path.join(__dirname, 'templates'),
     context: {
       projectFolder,
       isHeroku,
