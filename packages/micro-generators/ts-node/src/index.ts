@@ -14,7 +14,7 @@ export const createTsNodeSchema = () => {
 
   schema.addFolder({
     name: 'ts-node',
-    source: path.join('templates'),
+    source: path.join(__dirname, 'templates'),
   })
 
   return schema.toJson()
