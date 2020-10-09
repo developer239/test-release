@@ -1,5 +1,6 @@
 import { AppType, builder } from '@test-release/core'
 import { createEditorConfigSchema } from '@test-release/editor-config'
+import { createEslintSchema } from '@test-release/eslint'
 import { createPrettierConfig } from '@test-release/prettier'
 import {
   createStylelintWebConfig,
@@ -7,7 +8,7 @@ import {
 } from '@test-release/stylelint'
 
 export interface IOptions {
-  appType: AppType.WEB | AppType.MOBILE
+  appType: AppType
 }
 
 export const createCodeQualityConfig = ({ appType }: IOptions) => {
@@ -16,14 +17,20 @@ export const createCodeQualityConfig = ({ appType }: IOptions) => {
 
   const editorConfigSchema = createEditorConfigSchema()
   const prettierSchema = createPrettierConfig({ appType })
-  const stylelintConfig =
-    appType === AppType.MOBILE
-      ? createStylelintWebConfig({ hasPrettier })
-      : createStylelintMobileConfig({ hasPrettier })
+  const eslintSchema = createEslintSchema({ appType })
 
   schema.combineSchema(editorConfigSchema)
   schema.combineSchema(prettierSchema)
-  schema.combineSchema(stylelintConfig)
+  schema.combineSchema(eslintSchema)
+
+  if(appType !== AppType.NODE) {
+    const stylelintConfig =
+      appType === AppType.MOBILE
+        ? createStylelintMobileConfig({ hasPrettier })
+        : createStylelintWebConfig({ hasPrettier })
+
+    schema.combineSchema(stylelintConfig)
+  }
 
   return schema.toJson()
 }

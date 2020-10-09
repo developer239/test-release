@@ -1,20 +1,15 @@
 /* eslint-disable no-await-in-loop */
 import {
-  AppType,
-  askAppTypeFE,
   getProjectPath,
   logError,
   execute,
+  askAppType,
 } from '@test-release/core'
 import { createCodeQualityConfig } from './index'
 
 const run = async () => {
   const projectFolder = getProjectPath() ?? '.'
-  const appType = await askAppTypeFE()
-
-  if (appType !== AppType.WEB && appType !== AppType.MOBILE) {
-    logError('App type is not supported!')
-  }
+  const appType = await askAppType()
 
   const codeQualitySchema = createCodeQualityConfig({ appType })
 

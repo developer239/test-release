@@ -1799,6 +1799,13 @@
   dependencies:
     "@test-release/core" "1.13.1"
 
+"@test-release/eslint@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@test-release/eslint/-/eslint-1.0.4.tgz#a08691a8167add3082a8b14e940459ce151d8462"
+  integrity sha512-1cSclBeoWGC28x/1P3S+8CB2lbPfWFue5Apye9SbDaSfoQAsnaWGBpcQ0Wfog4Pebn/+3gTOkQYN74oy0S92dQ==
+  dependencies:
+    "@test-release/core" "1.13.1"
+
 "@test-release/prettier@1.3.3":
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.3.3.tgz#18c39f74eb89e77c391d25fa7caad5ec6eb3a4cd"
