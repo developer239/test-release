@@ -1,3 +1,10 @@
+# [@test-release/eslint-v1.0.4](https://github.com/developer239/test-release/compare/@test-release/eslint-v1.0.3...@test-release/eslint-v1.0.4) (2020-10-09)
+
+
+### Bug Fixes
+
+* eslint config template path ([1db28fa](https://github.com/developer239/test-release/commit/1db28fa3c9f0d38084622696d809dfe2f86ee556))
+
 # [@test-release/eslint-v1.0.3](https://github.com/developer239/test-release/compare/@test-release/eslint-v1.0.2...@test-release/eslint-v1.0.3) (2020-10-09)
 
 
