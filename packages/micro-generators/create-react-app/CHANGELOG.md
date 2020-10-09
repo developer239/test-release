@@ -1,3 +1,10 @@
+# [@test-release/create-react-app-v1.0.5](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.4...@test-release/create-react-app-v1.0.5) (2020-10-09)
+
+
+### Bug Fixes
+
+* add forgotten react-router template ([11ff39e](https://github.com/developer239/test-release/commit/11ff39e1864c336eae369c4d174c2b1b7720e724))
+
 # [@test-release/create-react-app-v1.0.4](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.3...@test-release/create-react-app-v1.0.4) (2020-10-09)
 
 
