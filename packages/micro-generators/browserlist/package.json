@@ -11,7 +11,7 @@
   ],
   "types": "lib/index",
   "bin": {
-    "@test-release/stylelint": "lib/bin.js"
+    "@test-release/browserlist": "lib/bin.js"
   },
   "dependencies": {
     "@test-release/core": "1.13.1"
