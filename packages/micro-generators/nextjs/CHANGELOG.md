@@ -1,3 +1,10 @@
+# [@test-release/nextjs-v1.0.5](https://github.com/developer239/test-release/compare/@test-release/nextjs-v1.0.4...@test-release/nextjs-v1.0.5) (2020-10-09)
+
+
+### Bug Fixes
+
+* next template path ([a271709](https://github.com/developer239/test-release/commit/a271709332e5aff658b31972bd629ffeaabb5230))
+
 # [@test-release/nextjs-v1.0.4](https://github.com/developer239/test-release/compare/@test-release/nextjs-v1.0.3...@test-release/nextjs-v1.0.4) (2020-10-09)
 
 
