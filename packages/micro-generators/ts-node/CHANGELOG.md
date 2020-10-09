@@ -1,3 +1,10 @@
+# [@test-release/ts-node-v1.0.5](https://github.com/developer239/test-release/compare/@test-release/ts-node-v1.0.4...@test-release/ts-node-v1.0.5) (2020-10-09)
+
+
+### Bug Fixes
+
+* ts-node tempalte path ([6ebea23](https://github.com/developer239/test-release/commit/6ebea231314b61a721a3e48bb090c07a690e3636))
+
 # [@test-release/ts-node-v1.0.4](https://github.com/developer239/test-release/compare/@test-release/ts-node-v1.0.3...@test-release/ts-node-v1.0.4) (2020-10-09)
 
 
