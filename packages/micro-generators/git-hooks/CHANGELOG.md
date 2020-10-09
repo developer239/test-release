@@ -1,3 +1,10 @@
+# [@test-release/git-hooks-v1.0.3](https://github.com/developer239/test-release/compare/@test-release/git-hooks-v1.0.2...@test-release/git-hooks-v1.0.3) (2020-10-09)
+
+
+### Bug Fixes
+
+* git hooks generator ([ce54527](https://github.com/developer239/test-release/commit/ce54527f3f66e45571f7512567f4faefadbaa188))
+
 # [@test-release/git-hooks-v1.0.2](https://github.com/developer239/test-release/compare/@test-release/git-hooks-v1.0.1...@test-release/git-hooks-v1.0.2) (2020-10-09)
 
 
