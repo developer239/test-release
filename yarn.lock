@@ -1808,10 +1808,10 @@
     validate-npm-package-name "3.0.0"
     yargs "15.3.1"
 
-"@test-release/core@1.14.0":
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.14.0.tgz#60730b640eb526dba94e2ba962fb9c999abbd5db"
-  integrity sha512-kyI4CMQKiwJxoxIP7NDULrMZUrr1L3mh9xn/JEeUstW/NxV6HTnp4ABIFKOfHvAPLWha2PQ3pYiTm1CbbCBNHw==
+"@test-release/core@1.14.1":
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.14.1.tgz#e73fcf18a98a00ffc4609f546f295fe5ed708a26"
+  integrity sha512-L4ttD8xhnehtonRCo3Oecwv9BTlHnPVKV5WtR7+EnnxNzqMo+47mK1DqZmIKRPcgehqsTN+2+K8tr7cwqf1dOA==
   dependencies:
     chalk "4.0.0"
     handlebars "4.7.6"
