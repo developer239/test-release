@@ -1,3 +1,10 @@
+# [@test-release/nextjs-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/nextjs-v1.0.5...@test-release/nextjs-v1.1.0) (2020-10-10)
+
+
+### Features
+
+* make nextjs generator work ([df0e24b](https://github.com/developer239/test-release/commit/df0e24b402bf4633816b569916fdc0c57bfa9e28))
+
 # [@test-release/nextjs-v1.0.5](https://github.com/developer239/test-release/compare/@test-release/nextjs-v1.0.4...@test-release/nextjs-v1.0.5) (2020-10-09)
 
 
