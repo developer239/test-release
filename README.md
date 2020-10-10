@@ -23,6 +23,9 @@ Multiple micro generators composed into robust generators. These generators are 
 |Type          | Package                                         | Version                                       | 
 |------------- | ----------------------------------------------- | ----------------------------------------------
 |Macro | [@test-release/code-quality](packages/macro-generators/code-quality) | [![@test-release/code-quality][cc-badge]][cc-npm] |  
+|Macro | [@test-release/cra-full](packages/macro-generators/cra-full) | [![@test-release/cra-full][cra-full-badge]][cra-full-npm] |    
+|Macro | [@test-release/nestjs-full](packages/macro-generators/nestjs-full) | [![@test-release/nestjs-full][nest-full-badge]][nest-full-npm] |    
+|Macro | [@test-release/nextjs-full](packages/macro-generators/nextjs-full) | [![@test-release/nextjs-full][next-full-badge]][next-full-npm] |    
 
 ## Micro Generators
 
@@ -157,3 +160,12 @@ execute(createWebCodeQualitySchema(), projectFolder)
 
 [tsnode-badge]: https://badge.fury.io/js/%40test-release%2Fts-node.svg
 [tsnode-npm]: https://badge.fury.io/js/%40test-release%2Fts-node
+
+[cra-full-badge]: https://badge.fury.io/js/%40test-release%2Fcra-full.svg
+[cra-full-npm]: https://badge.fury.io/js/%40test-release%2Fcra-full
+
+[nest-full-badge]: https://badge.fury.io/js/%40test-release%2Fnest-full.svg
+[nest-full-npm]: https://badge.fury.io/js/%40test-release%2Fnest-full
+
+[next-full-badge]: https://badge.fury.io/js/%40test-release%2Fnext-full.svg
+[next-full-npm]: https://badge.fury.io/js/%40test-release%2Fnext-full

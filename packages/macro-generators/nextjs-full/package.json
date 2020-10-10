@@ -1,0 +1,27 @@
+{
+  "name": "@test-release/nextjs-full",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index",
+  "bin": {
+    "@test-release/nextjs-full": "lib/bin.js"
+  },
+  "dependencies": {
+    "@test-release/browserlist": "^1.0.3",
+    "@test-release/code-quality": "^1.5.0",
+    "@test-release/core": "^1.14.5",
+    "@test-release/git-hooks": "^1.0.3",
+    "@test-release/heroku": "^1.0.3",
+    "@test-release/nextjs": "^1.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
