@@ -120,40 +120,40 @@ execute(createWebCodeQualitySchema(), projectFolder)
 ```
 
 [core-badge]: https://badge.fury.io/js/%40test-release%2Fcore.svg
-[core-npm]: https://badge.fury.io/js/%4040test-release%2Fcore
+[core-npm]: https://badge.fury.io/js/%40test-release%2Fcore
 
 [cc-badge]: https://badge.fury.io/js/%40test-release%2Fcode-quality.svg
-[cc-npm]: https://badge.fury.io/js/%4040test-release%2Fcode-quality
+[cc-npm]: https://badge.fury.io/js/%40test-release%2Fcode-quality
 
 [bl-badge]: https://badge.fury.io/js/%40test-release%2Fbrowserlist.svg
-[bl-npm]: https://badge.fury.io/js/%4040test-release%2Fbrowserlist
+[bl-npm]: https://badge.fury.io/js/%40test-release%2Fbrowserlist
 
 [cra-badge]: https://badge.fury.io/js/%40test-release%2Fcreate-react-app.svg
-[cra-npm]: https://badge.fury.io/js/%4040test-release%2Fcreate-react-app
+[cra-npm]: https://badge.fury.io/js/%40test-release%2Fcreate-react-app
 
 [ef-badge]: https://badge.fury.io/js/%40test-release%2Feditor-config.svg
-[ef-npm]: https://badge.fury.io/js/%4040test-release%2Feditor-config
+[ef-npm]: https://badge.fury.io/js/%40test-release%2Feditor-config
 
 [es-badge]: https://badge.fury.io/js/%40test-release%2Feslint.svg
-[es-npm]: https://badge.fury.io/js/%4040test-release%2Feslint
+[es-npm]: https://badge.fury.io/js/%40test-release%2Feslint
 
 [gh-badge]: https://badge.fury.io/js/%40test-release%2Fgit-hooks.svg
-[gh-npm]: https://badge.fury.io/js/%4040test-release%2Fgit-hooks
+[gh-npm]: https://badge.fury.io/js/%40test-release%2Fgit-hooks
 
 [he-badge]: https://badge.fury.io/js/%40test-release%2Fheroku.svg
-[he-npm]: https://badge.fury.io/js/%4040test-release%2Fheroku
+[he-npm]: https://badge.fury.io/js/%40test-release%2Fheroku
 
 [nest-badge]: https://badge.fury.io/js/%40test-release%2Fnestjs.svg
-[nest-npm]: https://badge.fury.io/js/%4040test-release%2Fnestjs
+[nest-npm]: https://badge.fury.io/js/%40test-release%2Fnestjs
 
 [next-badge]: https://badge.fury.io/js/%40test-release%2Fnextjs.svg
-[next-npm]: https://badge.fury.io/js/%4040test-release%2Fnextjs
+[next-npm]: https://badge.fury.io/js/%40test-release%2Fnextjs
 
 [prettier-badge]: https://badge.fury.io/js/%40test-release%2Fprettier.svg
-[prettier-npm]: https://badge.fury.io/js/%4040test-release%2Fprettier
+[prettier-npm]: https://badge.fury.io/js/%40test-release%2Fprettier
 
 [stylelint-badge]: https://badge.fury.io/js/%40test-release%2Fstylelint.svg
-[stylelint-npm]: https://badge.fury.io/js/%4040test-release%2Fstylelint
+[stylelint-npm]: https://badge.fury.io/js/%40test-release%2Fstylelint
 
 [tsnode-badge]: https://badge.fury.io/js/%40test-release%2Fts-node.svg
-[tsnode-npm]: https://badge.fury.io/js/%4040test-release%2Fts-node
+[tsnode-npm]: https://badge.fury.io/js/%40test-release%2Fts-node
