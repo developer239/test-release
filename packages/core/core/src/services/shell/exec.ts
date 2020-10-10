@@ -31,6 +31,6 @@ export const execWithSpinner = async (
   return response
 }
 
-export const exec = (command: string, silent = true) => {
+export const exec = (command: string, silent = false) => {
   return shelljs.exec(command, { silent })
 }
