@@ -1808,6 +1808,22 @@
     validate-npm-package-name "3.0.0"
     yargs "15.3.1"
 
+"@test-release/core@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.14.0.tgz#60730b640eb526dba94e2ba962fb9c999abbd5db"
+  integrity sha512-kyI4CMQKiwJxoxIP7NDULrMZUrr1L3mh9xn/JEeUstW/NxV6HTnp4ABIFKOfHvAPLWha2PQ3pYiTm1CbbCBNHw==
+  dependencies:
+    chalk "4.0.0"
+    handlebars "4.7.6"
+    inquirer "7.1.0"
+    ora "4.0.4"
+    ramda "0.27.0"
+    recursive-copy "2.0.10"
+    shelljs "0.8.4"
+    through2 "3.0.1"
+    validate-npm-package-name "3.0.0"
+    yargs "15.3.1"
+
 "@test-release/editor-config@1.19.2":
   version "1.19.2"
   resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.19.2.tgz#cd624d3436a1cd0544483e5b543c10c90b9b7244"
