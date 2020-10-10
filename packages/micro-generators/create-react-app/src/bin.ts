@@ -3,7 +3,7 @@ import { askIsRouter } from './services/prompt'
 import { createCreateReactAppSchema } from './index'
 
 const run = async () => {
-  const projectFolder = await askProjectName()
+  const { projectFolder } = await askProjectName()
   const isRouter = await askIsRouter()
 
   const createReactAppSchema = createCreateReactAppSchema({

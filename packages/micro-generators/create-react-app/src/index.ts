@@ -22,19 +22,30 @@ export const createCreateReactAppSchema = ({
     priority: 98,
     shouldRunInProject: true,
   })
+  // TODO: remove when they fix their 💩
+  // https://github.com/facebook/create-react-app/issues/8714
+  schema.addCommand({
+    command: 'yarn upgrade typescript --latest',
+    successMessage: '[dependencies] updated to latest typescript',
+    priority: 97,
+    shouldRunInProject: true,
+  })
 
   schema.moveDependencies([
     '@types/jest',
     '@types/node',
     '@types/react',
     '@types/react-dom',
+    '@testing-library/jest-dom',
+    '@testing-library/react',
+    '@testing-library/user-event',
   ])
-  schema.addDevDependencies(['@types/webpack-env'])
-  schema.addDependencies([
-    'styled-components',
-    'sanitize.css',
+  schema.addDevDependencies([
+    '@types/webpack-env',
     '@types/styled-components',
+    'jest-styled-components',
   ])
+  schema.addDependencies(['styled-components', 'sanitize.css'])
 
   schema.addJsonProperty({
     path: ['compilerOptions', 'baseUrl'],
@@ -48,7 +59,7 @@ export const createCreateReactAppSchema = ({
   schema.removePackageJsonProperty(['scripts', 'eject'])
   schema.removePackageJsonProperty(['scripts', 'start'])
 
-  schema.addScript('start', 'react-scripts start')
+  schema.addScript('dev', 'react-scripts start')
 
   schema.addFolder({
     name: 'create react app base',
