@@ -4,7 +4,7 @@ import { preserveShebangs } from 'rollup-plugin-preserve-shebangs'
 import progress from 'rollup-plugin-progress'
 import typescript from 'rollup-plugin-typescript2'
 
-export default ['bin', 'index'].map(name => ({
+export default ['bin', 'index'].map((name) => ({
   input: `./src/${name}.ts`,
   output: {
     file: `./lib/${name}.js`,
@@ -18,11 +18,9 @@ export default ['bin', 'index'].map(name => ({
       clean: true,
       tsconfig: 'tsconfig.build.json',
     }),
-    commonjs(),
+    commonjs({ ignore: ['conditional-runtime-dependency'] }),
     copy({
-      targets: [
-        { src: 'src/templates*', dest: './lib' }
-      ],
-    })
+      targets: [{ src: 'src/templates*', dest: './lib' }],
+    }),
   ],
 }))
