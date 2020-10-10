@@ -1,3 +1,5 @@
+# [@test-release/create-react-app-v1.1.1](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.1.0...@test-release/create-react-app-v1.1.1) (2020-10-10)
+
 # [@test-release/create-react-app-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.9...@test-release/create-react-app-v1.1.0) (2020-10-10)
 
 
