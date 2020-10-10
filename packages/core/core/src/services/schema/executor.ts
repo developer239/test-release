@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 import { orderBy } from '../../helpers/array/orderBy'
 import { addProperty } from '../../helpers/object/addProperty'
 import { deleteProperty } from '../../helpers/object/deleteProperty'
@@ -68,34 +69,40 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
       messageSuccess: '[json] clean package.json',
     },
     (packageJson) => {
+      let updatedFile = packageJson
+
       for (const propertyPath of schema.packageProperties.remove) {
-        deleteProperty(packageJson, propertyPath)
+        updatedFile = deleteProperty(packageJson, propertyPath)
       }
 
       for (const property of packagePropertiesAdd) {
-        addProperty(property.path, property.value)(packageJson)
+        updatedFile = addProperty(property.path, property.value)(packageJson)
       }
 
-      return packageJson
+      return updatedFile
     }
   )
 
   const tsconfigPropertiesAdd = schema.packageProperties.add.filter(
     (prop) => prop.file === 'tsconfig.json'
   )
+
   if (tsconfigPropertiesAdd.length) {
     await updatePackageJson(
       {
         projectFolder,
+        fileName: 'tsconfig.json',
         message: '[json] cleaning tsconfig.json',
         messageSuccess: '[json] clean tsconfig.json',
       },
       (tsconfigJson) => {
+        let updatedFile = tsconfigJson
+
         for (const property of tsconfigPropertiesAdd) {
-          addProperty(property.path, property.value)(tsconfigJson)
+          updatedFile = addProperty(property.path, property.value)(updatedFile)
         }
 
-        return tsconfigJson
+        return updatedFile
       }
     )
   }
