@@ -1,3 +1,10 @@
+# [@test-release/core-v1.14.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.0...@test-release/core-v1.14.1) (2020-10-10)
+
+
+### Bug Fixes
+
+* turn off shell option ([eb012d6](https://github.com/developer239/test-release/commit/eb012d6f78d59ad168aa355aad69a6bbbb8b7fd1))
+
 # [@test-release/core-v1.14.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.13.2...@test-release/core-v1.14.0) (2020-10-10)
 
 
