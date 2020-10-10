@@ -1,3 +1,10 @@
+# [@test-release/core-v1.14.4](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.3...@test-release/core-v1.14.4) (2020-10-10)
+
+
+### Bug Fixes
+
+* ask project name ([221df74](https://github.com/developer239/test-release/commit/221df7469f0d00f29bd5327bddd7a6fde809472b))
+
 # [@test-release/core-v1.14.3](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.2...@test-release/core-v1.14.3) (2020-10-10)
 
 # [@test-release/core-v1.14.2](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.1...@test-release/core-v1.14.2) (2020-10-10)
