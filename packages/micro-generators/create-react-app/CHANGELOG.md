@@ -1,3 +1,10 @@
+# [@test-release/create-react-app-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.9...@test-release/create-react-app-v1.1.0) (2020-10-10)
+
+
+### Features
+
+* update create react app generator ([1aec56f](https://github.com/developer239/test-release/commit/1aec56f9f0e94d6806763dab00e8da94ed988064))
+
 # [@test-release/create-react-app-v1.0.9](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.8...@test-release/create-react-app-v1.0.9) (2020-10-10)
 
 # [@test-release/create-react-app-v1.0.8](https://github.com/developer239/test-release/compare/@test-release/create-react-app-v1.0.7...@test-release/create-react-app-v1.0.8) (2020-10-10)
