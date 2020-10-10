@@ -1,5 +1,22 @@
 import inquirer from 'inquirer'
+import { capitalizeAll } from '../../helpers/text'
 import { AppType, CDType, CIType, DatabaseType } from '../../types'
+import { validateProjectFolder } from '../validator/validateProjectFolder'
+
+export const askQuestion = async (question: string, validate?: (value: string) => boolean | string): Promise<string> => {
+  const { answer } = await inquirer.prompt({
+    name: 'answer',
+    message: question,
+    validate,
+  })
+
+  return answer
+}
+
+export const askProjectName = async (): Promise<string> => {
+  const answer = await askQuestion('How do you want to call your project?', validateProjectFolder)
+  return capitalizeAll(answer)
+}
 
 export const askYesNo = async (question: string): Promise<boolean> => {
   const { answer } = await inquirer.prompt({
