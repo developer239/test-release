@@ -14,7 +14,7 @@
     "@test-release/nextjs": "lib/bin.js"
   },
   "dependencies": {
-    "@test-release/core": "1.13.1"
+    "@test-release/core": "1.14.5"
   },
   "publishConfig": {
     "access": "public"
