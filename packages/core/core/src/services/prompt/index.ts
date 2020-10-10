@@ -13,9 +13,13 @@ export const askQuestion = async (question: string, validate?: (value: string) =
   return answer
 }
 
-export const askProjectName = async (): Promise<string> => {
+export const askProjectName = async (): Promise<{ projectFolder: string; projectName: string }> => {
   const answer = await askQuestion('How do you want to call your project?', validateProjectFolder)
-  return capitalizeAll(answer)
+
+  return {
+    projectFolder: answer,
+    projectName: capitalizeAll(answer),
+  }
 }
 
 export const askYesNo = async (question: string): Promise<boolean> => {
