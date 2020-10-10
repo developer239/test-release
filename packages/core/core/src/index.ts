@@ -14,6 +14,8 @@ export {
   askCIType,
   askCDType,
   askDatabaseType,
+  askQuestion,
+  askProjectName,
 } from './services/prompt'
 export { builder } from './services/schema/builder'
 export { execute } from './services/schema/executor'
