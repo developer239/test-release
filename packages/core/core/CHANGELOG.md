@@ -1,3 +1,11 @@
+# [@test-release/core-v1.14.5](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.4...@test-release/core-v1.14.5) (2020-10-10)
+
+
+### Bug Fixes
+
+* executor ([b46b962](https://github.com/developer239/test-release/commit/b46b962265bd7cbf3173b69fdfa53dfa4ceb64d7))
+* updatePackageJson helper ([ef40fa0](https://github.com/developer239/test-release/commit/ef40fa002d7ba31b28935ab338c5dc06f41f8026))
+
 # [@test-release/core-v1.14.4](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.3...@test-release/core-v1.14.4) (2020-10-10)
 
 
