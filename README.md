@@ -32,7 +32,7 @@ You can easily selectively add code quality tools and other useful libraries to 
 |------------- | ----------------------------------------------- | ----------------------------------------------
 |Micro | [@test-release/browserlist](packages/micro-generators/browserlist) | [![@test-release/browserlist][bl-badge]][bl-npm] |
 |Micro | [@test-release/create-react-app](packages/micro-generators/create-react-app) | [![@test-release/create-react-app][cra-badge]][cra-npm] |
-|Micro | [@test-release/semantic-release](packages/micro-generators/editor-config) | [![@test-release/editor-config][ef-badge]][ef-npm] | 
+|Micro | [@test-release/editor-config](packages/micro-generators/editor-config) | [![@test-release/editor-config][ef-badge]][ef-npm] | 
 |Micro | [@test-release/eslint](packages/micro-generators/eslint) | [![@test-release/eslint][es-badge]][es-npm] |
 |Micro | [@test-release/git-hooks](packages/micro-generators/git-hooks) | [![@test-release/git-hooks][gh-badge]][gh-npm] |
 |Micro | [@test-release/heroku](packages/micro-generators/heroku) | [![@test-release/heroku][he-badge]][he-npm] |
