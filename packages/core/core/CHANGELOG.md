@@ -1,3 +1,10 @@
+# [@test-release/core-v1.14.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.13.2...@test-release/core-v1.14.0) (2020-10-10)
+
+
+### Features
+
+* add ask question and ask project name prompts ([1085a11](https://github.com/developer239/test-release/commit/1085a1108ce034be6a2adb2d8aee39dadd353bb5))
+
 # [@test-release/core-v1.13.2](https://github.com/developer239/test-release/compare/@test-release/core-v1.13.1...@test-release/core-v1.13.2) (2020-05-27)
 
 # [@test-release/core-v1.13.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.13.0...@test-release/core-v1.13.1) (2020-05-18)
