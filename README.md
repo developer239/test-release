@@ -164,8 +164,8 @@ execute(createWebCodeQualitySchema(), projectFolder)
 [cra-full-badge]: https://badge.fury.io/js/%40test-release%2Fcra-full.svg
 [cra-full-npm]: https://badge.fury.io/js/%40test-release%2Fcra-full
 
-[nest-full-badge]: https://badge.fury.io/js/%40test-release%2Fnest-full.svg
-[nest-full-npm]: https://badge.fury.io/js/%40test-release%2Fnest-full
+[nest-full-badge]: https://badge.fury.io/js/%40test-release%2Fnestjs-full.svg
+[nest-full-npm]: https://badge.fury.io/js/%40test-release%2Fnestjs-full
 
-[next-full-badge]: https://badge.fury.io/js/%40test-release%2Fnext-full.svg
-[next-full-npm]: https://badge.fury.io/js/%40test-release%2Fnext-full
+[next-full-badge]: https://badge.fury.io/js/%40test-release%2Fnextjs-full.svg
+[next-full-npm]: https://badge.fury.io/js/%40test-release%2Fnextjs-full
