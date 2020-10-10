@@ -25,7 +25,10 @@ export const updatePackageJson = async (
 
   const jsonFilePath = path.join(process.cwd(), projectFolder, fileName)
 
-  delete require.cache[jsonFilePath]
+  if (require.cache && require.cache[jsonFilePath]) {
+    delete require.cache[jsonFilePath]
+  }
+
   // eslint-disable-next-line @typescript-eslint/no-var-requires,security/detect-non-literal-require
   const jsonFile = require(jsonFilePath)
 
