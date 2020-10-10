@@ -1,12 +1,11 @@
-import { execute, getProjectPath, logError } from '@test-release/core'
+import { askProjectName, execute, logError } from '@test-release/core'
 import { createNextJsSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getProjectPath() ?? '.'
+  const { projectFolder } = await askProjectName()
 
   const nextJsSchema = createNextJsSchema({
     projectFolder,
-    isHeroku: false,
   })
 
   await execute(nextJsSchema, projectFolder)

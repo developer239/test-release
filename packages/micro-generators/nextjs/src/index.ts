@@ -3,10 +3,9 @@ import { builder } from '@test-release/core'
 
 interface IOptions {
   projectFolder: string
-  isHeroku: boolean
 }
 
-export const createNextJsSchema = ({ projectFolder, isHeroku }: IOptions) => {
+export const createNextJsSchema = ({ projectFolder }: IOptions) => {
   const schema = builder('nextjs')
 
   schema.addCommand({
@@ -35,7 +34,6 @@ export const createNextJsSchema = ({ projectFolder, isHeroku }: IOptions) => {
     source: path.join(__dirname, 'templates'),
     context: {
       projectFolder,
-      isHeroku,
     },
   })
 
