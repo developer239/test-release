@@ -3,7 +3,6 @@ import { Module } from '@nestjs/common'
 import { DatabaseModule } from 'src/modules/database/database.module'
 {{/if}}
 import { EnvModule } from 'src/modules/env/env.module'
-import { TerminusModule } from 'src/modules/terminus/terminus.module'
 import { WelcomeModule } from 'src/modules/welcome/welcome.module'
 
 @Module({
@@ -13,7 +12,6 @@ import { WelcomeModule } from 'src/modules/welcome/welcome.module'
     DatabaseModule,
 {{/if}}
     WelcomeModule,
-    TerminusModule,
   ],
   controllers: [],
   providers: [],

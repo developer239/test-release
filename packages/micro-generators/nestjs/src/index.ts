@@ -3,13 +3,11 @@ import { builder } from '@test-release/core'
 
 interface IOptions {
   projectFolder: string
-  isHeroku: boolean
   isDatabase: boolean
 }
 
 export const createNestJsSchema = ({
   projectFolder,
-  isHeroku,
   isDatabase,
 }: IOptions) => {
   const schema = builder('nestjs')
@@ -41,7 +39,6 @@ export const createNestJsSchema = ({
     name: 'nest.js base',
     source: path.join(__dirname, 'templates/base'),
     context: {
-      isHeroku,
       isDatabase,
       projectFolder
     },
@@ -55,7 +52,6 @@ export const createNestJsSchema = ({
       name: 'nest.js base',
       source: path.join(__dirname, 'templates/typeorm'),
       context: {
-        isHeroku,
         isDatabase,
         projectFolder
       },
