@@ -1,3 +1,10 @@
+# [@test-release/nestjs-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/nestjs-v1.0.1...@test-release/nestjs-v1.1.0) (2020-10-10)
+
+
+### Features
+
+* make nestjs generator work ([2b2b05c](https://github.com/developer239/test-release/commit/2b2b05cfbca5762f24cb7e64cc9b22118c0d4dd8))
+
 # [@test-release/nestjs-v1.0.1](https://github.com/developer239/test-release/compare/@test-release/nestjs-v1.0.0...@test-release/nestjs-v1.0.1) (2020-10-09)
 
 
