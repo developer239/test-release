@@ -1,18 +1,16 @@
-/* eslint-disable max-lines-per-function */
+/* eslint-disable max-lines-per-function,no-await-in-loop */
 import { orderBy } from '../../helpers/array/orderBy'
 import { addProperty } from '../../helpers/object/addProperty'
 import { deleteProperty } from '../../helpers/object/deleteProperty'
 import { ISchema, ISchemaCommand } from '../../types'
 import { createFilesFromFolder } from '../files/createFromFolder'
-import { updatePackageJson } from '../packageJson'
 import {
   addDependencies,
   moveToDevDependencies,
-  removeDependencies,
 } from '../shell/dependencies'
 import { execWithSpinner } from '../shell/exec'
 import { execInProjectWithSpinner } from '../shell/execProject'
-import { removeProjectFiles } from '../shell/files'
+import { updateJson } from '../updateJson'
 
 export const execute = async (schema: ISchema, projectFolder: string) => {
   //
@@ -32,17 +30,6 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
   }
 
   //
-  // Remove unnecessary project files
-  //
-
-  await removeProjectFiles({
-    projectFolder,
-    message: `all in ${projectFolder}`,
-    files: schema.files.remove,
-    recursive: true,
-  })
-
-  //
   // Add new project files
   //
 
@@ -56,65 +43,39 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
   }
 
   //
-  // Update package json
+  // Update json files
   //
 
-  const packagePropertiesAdd = schema.packageProperties.add.filter(
-    (prop) => !prop.file || prop.file === 'package.json'
-  )
-  await updatePackageJson(
-    {
-      projectFolder,
-      message: '[json] cleaning package.json',
-      messageSuccess: '[json] clean package.json',
-    },
-    (packageJson) => {
-      let updatedFile = packageJson
-
-      for (const propertyPath of schema.packageProperties.remove) {
-        updatedFile = deleteProperty(packageJson, propertyPath)
-      }
-
-      for (const property of packagePropertiesAdd) {
-        updatedFile = addProperty(property.path, property.value)(packageJson)
-      }
-
-      return updatedFile
-    }
-  )
-
-  const tsconfigPropertiesAdd = schema.packageProperties.add.filter(
-    (prop) => prop.file === 'tsconfig.json'
-  )
-
-  if (tsconfigPropertiesAdd.length) {
-    await updatePackageJson(
+  for(const file of Object.keys(schema.jsonFiles)) {
+    await updateJson(
       {
         projectFolder,
-        fileName: 'tsconfig.json',
-        message: '[json] cleaning tsconfig.json',
-        messageSuccess: '[json] clean tsconfig.json',
+        fileName: file,
+        message: `[json] cleaning ${file}`,
+        messageSuccess: `[json] clean ${file}`,
       },
-      (tsconfigJson) => {
-        let updatedFile = tsconfigJson
+      (content) => {
+        let updatedContent = { ...content }
 
-        for (const property of tsconfigPropertiesAdd) {
-          updatedFile = addProperty(property.path, property.value)(updatedFile)
+        const propertiesToAdd = schema.jsonFiles[file]?.add
+        const propertiesToRemove = schema.jsonFiles[file]?.remove
+
+        if (propertiesToAdd) {
+          for (const property of propertiesToAdd) {
+            updatedContent = addProperty(property.path, property.value)(updatedContent)
+          }
         }
 
-        return updatedFile
+        if (propertiesToRemove) {
+          for (const propertyPath of propertiesToRemove) {
+            updatedContent = deleteProperty(updatedContent, propertyPath)
+          }
+        }
+
+        return updatedContent
       }
     )
   }
-
-  //
-  // Uninstall dependencies
-  //
-
-  await removeDependencies({
-    projectFolder,
-    libraries: schema.dependencies.remove,
-  })
 
   //
   // Move dependencies to dev dependencies

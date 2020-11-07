@@ -20,7 +20,6 @@ export interface ISchemaAddFile {
 export interface ISchemaAddProperty {
   path: string[]
   value: string | number | boolean
-  file?: string
 }
 
 export interface ISchema {
@@ -28,11 +27,12 @@ export interface ISchema {
   commands: ISchemaCommand[]
   files: {
     add: ISchemaAddFile[]
-    remove: string[]
   }
-  packageProperties: {
-    add: ISchemaAddProperty[]
-    remove: string[][]
+  jsonFiles: {
+    [key: string]: {
+      add?: ISchemaAddProperty[]
+      remove?: string[][]
+    }
   }
   dependencies: {
     add: {
@@ -42,7 +42,6 @@ export interface ISchema {
     move: {
       prod: string[] // move to dev dependencies
     }
-    remove: string[]
   }
 }
 

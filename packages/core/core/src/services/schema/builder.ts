@@ -12,12 +12,8 @@ export const builder = (name: string) => {
     commands: [],
     files: {
       add: [],
-      remove: [], // TODO: not used anywhere
     },
-    packageProperties: {
-      add: [],
-      remove: [],
-    },
+    jsonFiles: {},
     dependencies: {
       add: {
         prod: [],
@@ -26,7 +22,6 @@ export const builder = (name: string) => {
       move: {
         prod: [],
       },
-      remove: [], // TODO: not used anywhere
     },
   } as ISchema
 
@@ -55,20 +50,45 @@ export const builder = (name: string) => {
     ]
   }
 
-  const addJsonProperty = (property: ISchemaAddProperty) =>
-    schema.packageProperties.add.push(property)
+  const addJsonFileProperty = (file: string, property: ISchemaAddProperty) => {
+    const targetFile = schema.jsonFiles[file]
 
-  const removePackageJsonProperty = (pathToProperty: string[]) =>
-    schema.packageProperties.remove.push(pathToProperty)
+    if (targetFile?.add) {
+      targetFile.add.push(property)
+    } else if (targetFile) {
+      targetFile.add = [property]
+    } else {
+      schema.jsonFiles[file] = {
+        add: [property],
+      }
+    }
+  }
+
+  const removeJsonFileProperty = (
+    file: string,
+    pathToProperty: string[]
+  ) => {
+    const targetFile = schema.jsonFiles[file]
+
+    if (targetFile?.remove) {
+      targetFile.remove.push(pathToProperty)
+    } else if (targetFile) {
+      targetFile.remove = [pathToProperty]
+    } else {
+      schema.jsonFiles[file] = {
+        remove: [pathToProperty],
+      }
+    }
+  }
 
   const addScript = (key: string, value: string) =>
-    addJsonProperty({
+    addJsonFileProperty('package.json', {
       path: ['scripts', key],
       value,
     })
 
   const removeScript = (key: string) =>
-    removePackageJsonProperty(['scripts', key])
+    removeJsonFileProperty('package.json', ['scripts', key])
 
   const addFolder = (file: ISchemaAddFile) => schema.files.add.push(file)
 
@@ -85,8 +105,8 @@ export const builder = (name: string) => {
     moveDependencies,
     addScript,
     removeScript,
-    addJsonProperty,
-    removePackageJsonProperty,
+    addJsonFileProperty,
+    removeJsonFileProperty,
     combineSchema,
     addFolder,
     toJson,

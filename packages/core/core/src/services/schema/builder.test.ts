@@ -1,4 +1,4 @@
-/* eslint-disable max-lines */
+/* eslint-disable max-lines,max-lines-per-function */
 import { builder } from './builder'
 
 describe('[services][schema] builder', () => {
@@ -17,16 +17,11 @@ describe('[services][schema] builder', () => {
         move: {
           prod: [],
         },
-        remove: [],
       },
       files: {
         add: [],
-        remove: [],
       },
-      packageProperties: {
-        add: [],
-        remove: [],
-      },
+      jsonFiles: {},
     })
   })
 
@@ -70,16 +65,11 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
-          remove: [],
         },
         files: {
           add: [],
-          remove: [],
         },
-        packageProperties: {
-          add: [],
-          remove: [],
-        },
+        jsonFiles: {},
       })
     })
   })
@@ -103,16 +93,11 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
-          remove: [],
         },
         files: {
           add: [],
-          remove: [],
         },
-        packageProperties: {
-          add: [],
-          remove: [],
-        },
+        jsonFiles: {},
       })
     })
 
@@ -138,16 +123,11 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
-          remove: [],
         },
         files: {
           add: [],
-          remove: [],
         },
-        packageProperties: {
-          add: [],
-          remove: [],
-        },
+        jsonFiles: {},
       })
     })
 
@@ -169,16 +149,11 @@ describe('[services][schema] builder', () => {
           move: {
             prod: ['first-dependency', 'second', 'third-added-later'],
           },
-          remove: [],
         },
         files: {
           add: [],
-          remove: [],
         },
-        packageProperties: {
-          add: [],
-          remove: [],
-        },
+        jsonFiles: {},
       })
     })
   })
@@ -188,12 +163,11 @@ describe('[services][schema] builder', () => {
       const name = 'some-name'
 
       const schema = builder(name)
-      schema.addJsonProperty({
+      schema.addJsonFileProperty('some-file.json', {
         path: ['some', 'path', 'in', 'json'],
         value: 'some value',
-        file: 'some-file.json',
       })
-      schema.addJsonProperty({
+      schema.addJsonFileProperty('some-file.json', {
         path: ['another', 'path', 'in', 'another', 'json'],
         value: 'another value',
       })
@@ -209,25 +183,23 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
-          remove: [],
         },
         files: {
           add: [],
-          remove: [],
         },
-        packageProperties: {
-          add: [
-            {
-              file: 'some-file.json',
-              path: ['some', 'path', 'in', 'json'],
-              value: 'some value',
-            },
-            {
-              path: ['another', 'path', 'in', 'another', 'json'],
-              value: 'another value',
-            },
-          ],
-          remove: [],
+        jsonFiles: {
+          'some-file.json': {
+            add: [
+              {
+                path: ['some', 'path', 'in', 'json'],
+                value: 'some value',
+              },
+              {
+                path: ['another', 'path', 'in', 'another', 'json'],
+                value: 'another value',
+              },
+            ],
+          },
         },
       })
     })
@@ -236,8 +208,13 @@ describe('[services][schema] builder', () => {
       const name = 'some-name'
 
       const schema = builder(name)
-      schema.removePackageJsonProperty(['some', 'path', 'in', 'json'])
-      schema.removePackageJsonProperty([
+      schema.removeJsonFileProperty('some-file.json', [
+        'some',
+        'path',
+        'in',
+        'json',
+      ])
+      schema.removeJsonFileProperty('some-file.json', [
         'another',
         'path',
         'in',
@@ -256,18 +233,17 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
-          remove: [],
         },
         files: {
           add: [],
-          remove: [],
         },
-        packageProperties: {
-          add: [],
-          remove: [
-            ['some', 'path', 'in', 'json'],
-            ['another', 'path', 'in', 'another', 'json'],
-          ],
+        jsonFiles: {
+          'some-file.json': {
+            remove: [
+              ['some', 'path', 'in', 'json'],
+              ['another', 'path', 'in', 'another', 'json'],
+            ],
+          },
         },
       })
     })
@@ -290,24 +266,23 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
-          remove: [],
         },
         files: {
           add: [],
-          remove: [],
         },
-        packageProperties: {
-          add: [
-            {
-              path: ['scripts', 'lint'],
-              value: 'files',
-            },
-            {
-              path: ['scripts', 'prettier'],
-              value: 'files',
-            },
-          ],
-          remove: [],
+        jsonFiles: {
+          'package.json': {
+            add: [
+              {
+                path: ['scripts', 'lint'],
+                value: 'files',
+              },
+              {
+                path: ['scripts', 'prettier'],
+                value: 'files',
+              },
+            ],
+          },
         },
       })
     })
@@ -330,18 +305,17 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
-          remove: [],
         },
         files: {
           add: [],
-          remove: [],
         },
-        packageProperties: {
-          add: [],
-          remove: [
-            ['scripts', 'lint'],
-            ['scripts', 'prettier'],
-          ],
+        jsonFiles: {
+          'package.json': {
+            remove: [
+              ['scripts', 'lint'],
+              ['scripts', 'prettier'],
+            ],
+          }
         },
       })
     })
@@ -368,7 +342,6 @@ describe('[services][schema] builder', () => {
           move: {
             prod: [],
           },
-          remove: [],
         },
         files: {
           add: [
@@ -380,12 +353,9 @@ describe('[services][schema] builder', () => {
               source: 'path/to/source',
             },
           ],
-          remove: [],
         },
         name: 'some-name',
-        packageProperties: {
-          add: [],
-          remove: [],
+        jsonFiles: {
         },
       })
     })

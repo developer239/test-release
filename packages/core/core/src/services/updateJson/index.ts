@@ -3,7 +3,7 @@ import path from 'path'
 import ora from 'ora'
 
 interface IOptions {
-  fileName?: string
+  fileName: string
   projectFolder: string
   message: string
   messageSuccess: string
@@ -11,9 +11,9 @@ interface IOptions {
 
 type jsonFileType = any
 
-export const updatePackageJson = async (
+export const updateJson = async (
   {
-    fileName = 'package.json',
+    fileName,
     projectFolder,
     message,
     messageSuccess,

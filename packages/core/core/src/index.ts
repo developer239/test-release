@@ -6,7 +6,7 @@ export { getProjectPath } from './services/arguments'
 export { copyFiles } from './services/files/copyFiles'
 export { createFilesFromFolder } from './services/files/createFromFolder'
 export { logInfo, logError } from './services/logger'
-export { updatePackageJson } from './services/packageJson'
+export { updateJson } from './services/updateJson'
 export {
   askAppType,
   askAppTypeFE,
