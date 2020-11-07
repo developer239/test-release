@@ -27,9 +27,9 @@ export const createNestJsSchema = ({
     shouldRunInProject: true,
   })
 
-  schema.removePackageJsonProperty(['jest'])
-  schema.removePackageJsonProperty(['scripts', 'lint'])
-  schema.removePackageJsonProperty(['scripts', 'test:e2e])'])
+  schema.removeJsonFileProperty('package.json', ['jest'])
+  schema.removeJsonFileProperty('package.json', ['scripts', 'lint'])
+  schema.removeJsonFileProperty('package.json', ['scripts', 'test:e2e])'])
 
   schema.addScript('start:dev', 'NODE_ENV=development nest start --watch')
 

@@ -47,17 +47,16 @@ export const createCreateReactAppSchema = ({
   ])
   schema.addDependencies(['styled-components', 'sanitize.css'])
 
-  schema.addJsonProperty({
+  schema.addJsonFileProperty('tsconfig.json', {
     path: ['compilerOptions', 'baseUrl'],
     value: 'src',
-    file: 'tsconfig.json',
   })
 
-  schema.removePackageJsonProperty(['private'])
-  schema.removePackageJsonProperty(['browserslist'])
-  schema.removePackageJsonProperty(['eslintConfig'])
-  schema.removePackageJsonProperty(['scripts', 'eject'])
-  schema.removePackageJsonProperty(['scripts', 'start'])
+  schema.removeJsonFileProperty('package.json', ['private'])
+  schema.removeJsonFileProperty('package.json', ['browserslist'])
+  schema.removeJsonFileProperty('package.json', ['eslintConfig'])
+  schema.removeJsonFileProperty('package.json', ['scripts', 'eject'])
+  schema.removeJsonFileProperty('package.json', ['scripts', 'start'])
 
   schema.addScript('dev', 'react-scripts start')
 

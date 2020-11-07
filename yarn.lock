@@ -1860,6 +1860,22 @@
     validate-npm-package-name "3.0.0"
     yargs "15.3.1"
 
+"@test-release/core@1.16.0":
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.16.0.tgz#fc0839b8e4cd2c2375cb64c2689189d1597aff0d"
+  integrity sha512-DOFzZr1BuniDl4kuXjcduaFZGwTgMMxZ0LUD8i+EpC43Dt/l2fOoqOgwOXb5LAZMlAD2ZhJhbRYAevGgbpHOHQ==
+  dependencies:
+    chalk "4.1.0"
+    handlebars "4.7.6"
+    inquirer "7.3.3"
+    ora "5.1.0"
+    ramda "0.27.1"
+    recursive-copy "2.0.11"
+    shelljs "0.8.4"
+    through2 "4.0.2"
+    validate-npm-package-name "3.0.0"
+    yargs "16.1.0"
+
 "@test-release/create-react-app@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@test-release/create-react-app/-/create-react-app-1.1.1.tgz#d993ee58faa971438e2c77d6463fc65269ab3336"
