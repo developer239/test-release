@@ -1,17 +1,17 @@
 /* eslint-disable no-await-in-loop */
 import {
-  getProjectPath,
+  getProjectFolder,
   logError,
   execute,
   askAppType,
 } from '@test-release/core'
-import { createCodeQualityConfig } from './index'
+import { createSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getProjectPath() ?? '.'
+  const projectFolder = getProjectFolder() ?? '.'
   const appType = await askAppType()
 
-  const codeQualitySchema = createCodeQualityConfig({ appType })
+  const codeQualitySchema = createSchema({ appType })
 
   await execute(codeQualitySchema, projectFolder)
 }

@@ -1,35 +1,30 @@
 import { AppType, builder } from '@test-release/core'
-import { createEditorConfigSchema } from '@test-release/editor-config'
-import { createEslintSchema } from '@test-release/eslint'
-import { createPrettierConfig } from '@test-release/prettier'
+import { createSchema as createEditorConfigSchema } from '@test-release/editor-config'
+import { createSchema as createEslintSchema } from '@test-release/eslint'
+import { createSchema as createPrettierSchema } from '@test-release/prettier'
 import {
-  createStylelintWebConfig,
-  createStylelintMobileConfig,
+  createSchemaForWeb as createStylelintSchemaForWeb,
+  createSchemaForMobile as createStylelintSchemaForMobile,
 } from '@test-release/stylelint'
 
 export interface IOptions {
   appType: AppType
 }
 
-export const createCodeQualityConfig = ({ appType }: IOptions) => {
+export const createSchema = ({ appType }: IOptions) => {
   const schema = builder('codequality')
   const hasPrettier = true
 
-  const editorConfigSchema = createEditorConfigSchema()
-  const prettierSchema = createPrettierConfig({ appType })
-  const eslintSchema = createEslintSchema({ appType })
+  schema.combineSchema(createEditorConfigSchema())
+  schema.combineSchema(createPrettierSchema({ appType }))
+  schema.combineSchema(createEslintSchema({ appType }))
 
-  schema.combineSchema(editorConfigSchema)
-  schema.combineSchema(prettierSchema)
-  schema.combineSchema(eslintSchema)
+  if (AppType.MOBILE) {
+    schema.combineSchema(createStylelintSchemaForWeb({ hasPrettier }))
+  }
 
-  if(appType !== AppType.NODE) {
-    const stylelintConfig =
-      appType === AppType.MOBILE
-        ? createStylelintMobileConfig({ hasPrettier })
-        : createStylelintWebConfig({ hasPrettier })
-
-    schema.combineSchema(stylelintConfig)
+  if (AppType.WEB) {
+    schema.combineSchema(createStylelintSchemaForMobile({ hasPrettier }))
   }
 
   return schema.toJson()
