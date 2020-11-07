@@ -37,7 +37,7 @@ export const execute = async (schema: ISchema, projectFolder: string) => {
 
   await removeProjectFiles({
     projectFolder,
-    message: 'all',
+    message: `all in ${projectFolder}`,
     files: schema.files.remove,
     recursive: true,
   })
