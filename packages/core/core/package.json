@@ -17,24 +17,24 @@
     "access": "public"
   },
   "dependencies": {
-    "chalk": "4.0.0",
+    "chalk": "4.1.0",
     "handlebars": "4.7.6",
-    "inquirer": "7.1.0",
-    "ora": "4.0.4",
-    "ramda": "0.27.0",
-    "recursive-copy": "2.0.10",
+    "inquirer": "7.3.3",
+    "ora": "5.1.0",
+    "ramda": "0.27.1",
+    "recursive-copy": "2.0.11",
     "shelljs": "0.8.4",
-    "through2": "3.0.1",
+    "through2": "4.0.2",
     "validate-npm-package-name": "3.0.0",
-    "yargs": "15.3.1"
+    "yargs": "16.1.0"
   },
   "devDependencies": {
     "@types/chalk": "2.2.0",
     "@types/handlebars": "4.1.0",
-    "@types/inquirer": "6.5.0",
+    "@types/inquirer": "7.3.1",
     "@types/ora": "3.2.0",
-    "@types/ramda": "0.27.4",
-    "@types/shelljs": "0.8.7",
-    "@types/yargs": "15.0.4"
+    "@types/ramda": "0.27.32",
+    "@types/shelljs": "0.8.8",
+    "@types/yargs": "15.0.9"
   }
 }
