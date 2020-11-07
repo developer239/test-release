@@ -1,3 +1,10 @@
+# [@test-release/nestjs-v1.2.0](https://github.com/developer239/test-release/compare/@test-release/nestjs-v1.1.0...@test-release/nestjs-v1.2.0) (2020-11-07)
+
+
+### Features
+
+* update @test-release/core ([3ea25d4](https://github.com/developer239/test-release/commit/3ea25d446d3f24bdba0dd8dd3a21109639c125e0))
+
 # [@test-release/nestjs-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/nestjs-v1.0.1...@test-release/nestjs-v1.1.0) (2020-10-10)
 
 
