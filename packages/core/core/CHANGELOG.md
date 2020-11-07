@@ -1,3 +1,10 @@
+# [@test-release/core-v1.16.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.15.0...@test-release/core-v1.16.0) (2020-11-07)
+
+
+### Features
+
+* update dependencies 💥 ([8f4fd23](https://github.com/developer239/test-release/commit/8f4fd232e0680d4d85ccdd2e6e55df07a010b4ac))
+
 # [@test-release/core-v1.15.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.5...@test-release/core-v1.15.0) (2020-11-07)
 
 
