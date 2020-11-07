@@ -6,7 +6,7 @@
 
 _@test-release_ is alternative to Yeoman and other generators that help you to kickstart new projects, prescribe best practices and tools to help you stay productive.
 
-There is a difference though that _@test-release_ generators are really small and independent. However you can easily compose smaller generators into bigger ones and create more robust and opinionated codebase. 
+This library is unique though because **_@test-release_ generators are small and composable**. You can use generators separately to generate small chunks of code, or you can compose them together so that you can easily create bigger and more opinionated codebase. 
 
 ## Core Packages
 
