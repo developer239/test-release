@@ -1,5 +1,5 @@
 import { createSchema as createBrowserlistSchema } from '@test-release/browserlist'
-import { createSchema as createCodeQualitySchema } from '@test-release/code-quality'
+// import { createSchema as createCodeQualitySchema } from '@test-release/code-quality'
 import { AppType, builder } from '@test-release/core'
 import { createSchema as createReactAppSchema } from '@test-release/create-react-app'
 import { createSchema as createGitHooksSchema } from '@test-release/git-hooks'
@@ -25,7 +25,7 @@ export const createSchema = ({
     isRouter,
   }))
   schema.combineSchema(createBrowserlistSchema())
-  schema.combineSchema(createCodeQualitySchema({ appType }))
+  // schema.combineSchema(createCodeQualitySchema({ appType }))
   schema.combineSchema(createGitHooksSchema({
     appType,
     isEslint: true,

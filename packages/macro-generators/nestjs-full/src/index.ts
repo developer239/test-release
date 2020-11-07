@@ -1,8 +1,8 @@
-import { createCodeQualityConfig } from '@test-release/code-quality'
+// import { createSchema as createCodeQualitySchema } from '@test-release/code-quality'
 import { AppType, builder } from '@test-release/core'
-import { createNestJsSchema } from '@test-release/nestjs'
-import { createGitHooksSchema } from '@test-release/git-hooks'
-import { createHerokuSchema } from '@test-release/heroku'
+import { createSchema as createGitHooksSchema } from '@test-release/git-hooks'
+import { createSchema as createHerokuSchema } from '@test-release/heroku'
+import { createSchema as createNestJsSchema } from '@test-release/nestjs'
 
 export interface IOptions {
   projectFolder: string
@@ -10,7 +10,7 @@ export interface IOptions {
   isDatabase: boolean
 }
 
-export const createNestJsConfig = ({
+export const createSchema = ({
   projectFolder,
   isHeroku,
   isDatabase,
@@ -18,32 +18,31 @@ export const createNestJsConfig = ({
   const appType = AppType.NODE
 
   const schema = builder('nestjs')
-
-  const nestJsSchema = createNestJsSchema({
-    projectFolder,
-    isDatabase,
-  })
-  schema.combineSchema(nestJsSchema)
-
-  const codeQualitySchema = createCodeQualityConfig({ appType })
-  schema.combineSchema(codeQualitySchema)
-
-  const gitHooksSchema = createGitHooksSchema({
-    appType,
-    isEslint: true,
-    isPrettier: true,
-    isStylelint: true,
-  })
-  schema.combineSchema(gitHooksSchema)
+  schema.combineSchema(
+    createNestJsSchema({
+      projectFolder,
+      isDatabase,
+    })
+  )
+  // schema.combineSchema(createCodeQualitySchema({ appType }))
+  schema.combineSchema(
+    createGitHooksSchema({
+      appType,
+      isEslint: true,
+      isPrettier: true,
+      isStylelint: true,
+    })
+  )
 
   if (isHeroku) {
-    const herokuSchema = createHerokuSchema({
-      appType,
-      isCRA: false,
-      projectFolder,
-      isDatabase: false,
-    })
-    schema.combineSchema(herokuSchema)
+    schema.combineSchema(
+      createHerokuSchema({
+        appType,
+        isCRA: false,
+        projectFolder,
+        isDatabase,
+      })
+    )
   }
 
   return schema.toJson()
