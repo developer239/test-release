@@ -1,3 +1,10 @@
+# [@test-release/nestjs-full-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/nestjs-full-v1.0.0...@test-release/nestjs-full-v1.1.0) (2020-11-07)
+
+
+### Features
+
+* fix macro generators ([76a7768](https://github.com/developer239/test-release/commit/76a77680f4e1102de9b9b7d900ac6dfbce9a9291))
+
 # @test-release/nestjs-full-v1.0.0 (2020-10-10)
 
 
