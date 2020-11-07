@@ -1,3 +1,10 @@
+# [@test-release/code-quality-v1.6.0](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.5.0...@test-release/code-quality-v1.6.0) (2020-11-07)
+
+
+### Features
+
+* update code quality macro generator ([b025475](https://github.com/developer239/test-release/commit/b025475b6ac0b34452c9327e12069f0f12cd5015))
+
 # [@test-release/code-quality-v1.5.0](https://github.com/developer239/test-release/compare/@test-release/code-quality-v1.4.3...@test-release/code-quality-v1.5.0) (2020-10-09)
 
 
