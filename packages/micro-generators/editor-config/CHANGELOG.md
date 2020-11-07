@@ -1,3 +1,10 @@
+# [@test-release/editor-config-v1.21.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.20.0...@test-release/editor-config-v1.21.0) (2020-11-07)
+
+
+### Features
+
+* update all micro generators ([66e53d1](https://github.com/developer239/test-release/commit/66e53d18cedd9809f39897d40ff6270169d17410))
+
 # [@test-release/editor-config-v1.20.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.19.2...@test-release/editor-config-v1.20.0) (2020-11-07)
 
 
