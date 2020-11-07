@@ -1,3 +1,10 @@
+# [@test-release/core-v1.17.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.16.0...@test-release/core-v1.17.0) (2020-11-07)
+
+
+### Features
+
+* update core configuration ([5a3073a](https://github.com/developer239/test-release/commit/5a3073a379d04cf29162f4ce21f8a7928be5898a))
+
 # [@test-release/core-v1.16.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.15.0...@test-release/core-v1.16.0) (2020-11-07)
 
 
