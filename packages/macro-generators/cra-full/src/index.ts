@@ -1,9 +1,9 @@
-import { createBrowserListSchema } from '@test-release/browserlist'
-import { createCodeQualityConfig } from '@test-release/code-quality'
+import { createSchema as createBrowserlistSchema } from '@test-release/browserlist'
+import { createSchema as createCodeQualitySchema } from '@test-release/code-quality'
 import { AppType, builder } from '@test-release/core'
-import { createCreateReactAppSchema } from '@test-release/create-react-app'
-import { createGitHooksSchema } from '@test-release/git-hooks'
-import { createHerokuSchema } from '@test-release/heroku'
+import { createSchema as createReactAppSchema } from '@test-release/create-react-app'
+import { createSchema as createGitHooksSchema } from '@test-release/git-hooks'
+import { createSchema as createHerokuSchema } from '@test-release/heroku'
 
 export interface IOptions {
   projectFolder: string
@@ -11,7 +11,7 @@ export interface IOptions {
   isRouter: boolean
 }
 
-export const createCRAJsConfig = ({
+export const createSchema = ({
   projectFolder,
   isRouter,
   isHeroku,
@@ -20,34 +20,26 @@ export const createCRAJsConfig = ({
 
   const schema = builder('cra')
 
-  const createReactAppSchema = createCreateReactAppSchema({
+  schema.combineSchema(createReactAppSchema({
     projectFolder,
     isRouter,
-  })
-  schema.combineSchema(createReactAppSchema)
-
-  const browserListSchema = createBrowserListSchema()
-  schema.combineSchema(browserListSchema)
-
-  const codeQualitySchema = createCodeQualityConfig({ appType })
-  schema.combineSchema(codeQualitySchema)
-
-  const gitHooksSchema = createGitHooksSchema({
+  }))
+  schema.combineSchema(createBrowserlistSchema())
+  schema.combineSchema(createCodeQualitySchema({ appType }))
+  schema.combineSchema(createGitHooksSchema({
     appType,
     isEslint: true,
     isPrettier: true,
     isStylelint: true,
-  })
-  schema.combineSchema(gitHooksSchema)
+  }))
 
   if (isHeroku) {
-    const herokuSchema = createHerokuSchema({
+    schema.combineSchema(createHerokuSchema({
       appType,
-      isCRA: true,
       projectFolder,
+      isCRA: true,
       isDatabase: false,
-    })
-    schema.combineSchema(herokuSchema)
+    }))
   }
 
   return schema.toJson()

@@ -1,5 +1,5 @@
 import { logError, execute, askProjectName, askYesNo } from '@test-release/core'
-import { createCRAJsConfig } from './index'
+import { createSchema } from './index'
 
 const run = async () => {
   const { projectFolder } = await askProjectName()
@@ -8,7 +8,7 @@ const run = async () => {
     'Do you want to generate Heroku configuration?'
   )
 
-  const schema = createCRAJsConfig({ projectFolder, isHeroku, isRouter })
+  const schema = createSchema({ projectFolder, isHeroku, isRouter })
 
   await execute(schema, projectFolder)
 }
