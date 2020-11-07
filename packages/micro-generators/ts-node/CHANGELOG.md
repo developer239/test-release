@@ -1,3 +1,10 @@
+# [@test-release/ts-node-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/ts-node-v1.0.5...@test-release/ts-node-v1.1.0) (2020-11-07)
+
+
+### Features
+
+* update @test-release/core ([3ea25d4](https://github.com/developer239/test-release/commit/3ea25d446d3f24bdba0dd8dd3a21109639c125e0))
+
 # [@test-release/ts-node-v1.0.5](https://github.com/developer239/test-release/compare/@test-release/ts-node-v1.0.4...@test-release/ts-node-v1.0.5) (2020-10-09)
 
 
