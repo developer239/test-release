@@ -1,3 +1,10 @@
+# [@test-release/prettier-v1.5.0](https://github.com/developer239/test-release/compare/@test-release/prettier-v1.4.0...@test-release/prettier-v1.5.0) (2020-11-07)
+
+
+### Features
+
+* update all micro generators ([66e53d1](https://github.com/developer239/test-release/commit/66e53d18cedd9809f39897d40ff6270169d17410))
+
 # [@test-release/prettier-v1.4.0](https://github.com/developer239/test-release/compare/@test-release/prettier-v1.3.3...@test-release/prettier-v1.4.0) (2020-11-07)
 
 
