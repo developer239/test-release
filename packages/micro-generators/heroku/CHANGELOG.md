@@ -1,3 +1,10 @@
+# [@test-release/heroku-v1.2.0](https://github.com/developer239/test-release/compare/@test-release/heroku-v1.1.0...@test-release/heroku-v1.2.0) (2020-11-07)
+
+
+### Features
+
+* update all micro generators ([66e53d1](https://github.com/developer239/test-release/commit/66e53d18cedd9809f39897d40ff6270169d17410))
+
 # [@test-release/heroku-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/heroku-v1.0.3...@test-release/heroku-v1.1.0) (2020-11-07)
 
 
