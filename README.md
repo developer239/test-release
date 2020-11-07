@@ -105,15 +105,10 @@ export const createWebCodeQualitySchema = () => {
   const schema = builder('codequality')
   const hasPrettier = true
 
-  const editorconfigSchema = createEditorConfigSchema()
-  const eslintSchema = createEslintSchema({ appType: AppType.WEB })
-  const prettierSchema = createPrettierConfig({ appType: AppType.WEB })
-  const stylelintSchema = createStylelintWebConfig({ hasPrettier })
-
-  schema.combineSchema(editorconfigSchema)
-  schema.combineSchema(eslintSchema)
-  schema.combineSchema(prettierSchema)
-  schema.combineSchema(stylelintSchema)
+  schema.combineSchema(createEditorConfigSchema())
+  schema.combineSchema(createEslintSchema({ appType: AppType.WEB }))
+  schema.combineSchema(createPrettierConfig({ appType: AppType.WEB }))
+  schema.combineSchema(createStylelintWebConfig({ hasPrettier }))
 
   return schema.toJson()
 }
