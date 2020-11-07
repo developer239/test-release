@@ -4,13 +4,13 @@ import {
   logError,
 } from '@test-release/core'
 import { askIsDatabase } from './services/prompt'
-import { createNestJsSchema } from './index'
+import { createSchema } from './index'
 
 const run = async () => {
   const { projectFolder } = await askProjectName()
   const isDatabase = await askIsDatabase()
 
-  const nestJsSchema = createNestJsSchema({
+  const nestJsSchema = createSchema({
     projectFolder,
     isDatabase,
   })

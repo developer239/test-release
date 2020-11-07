@@ -1,16 +1,16 @@
 import {
   askAppType,
   execute,
-  getProjectPath,
+  getProjectFolder,
   logError,
 } from '@test-release/core'
-import { createEslintSchema } from './index'
+import { createSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getProjectPath() ?? '.'
+  const projectFolder = getProjectFolder() ?? '.'
   const appType = await askAppType()
 
-  const eslintSchema = createEslintSchema({ appType })
+  const eslintSchema = createSchema({ appType })
 
   await execute(eslintSchema, projectFolder)
 }

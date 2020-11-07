@@ -2,24 +2,25 @@ import {
   AppType,
   askAppType,
   execute,
-  getProjectPath,
+  getProjectFolder,
   logError,
 } from '@test-release/core'
 import { askIsEslint, askIsPrettier, askIsStylelint } from './services/prompt'
-import { createGitHooksSchema } from './index'
+import { createSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getProjectPath() ?? '.'
+  const projectFolder = getProjectFolder() ?? '.'
   const appType = await askAppType()
   const isEslint = await askIsEslint()
   const isPrettier = await askIsPrettier()
+
   let isStylelint = false
 
   if (appType !== AppType.NODE) {
     isStylelint = await askIsStylelint()
   }
 
-  const schema = createGitHooksSchema({
+  const schema = createSchema({
     appType,
     isEslint,
     isPrettier,

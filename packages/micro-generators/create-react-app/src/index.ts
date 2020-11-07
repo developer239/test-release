@@ -6,7 +6,7 @@ interface IOptions {
   isRouter: boolean
 }
 
-export const createCreateReactAppSchema = ({
+export const createSchema = ({
   projectFolder,
   isRouter,
 }: IOptions) => {

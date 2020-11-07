@@ -18,12 +18,15 @@ You have to generate JSON schema and use `execute` function from `@test-release/
 
 ```ts
 // src/index.ts
-import { execute } from '@test-release/core'
-import { createEslintSchema } from '@test-release/eslint'
+import { execute, getProjectFolder, askAppType, } from '@test-release/core'
+import { createSchema } from '@test-release/eslint'
 
 const generate = async () => {
-  const schema = createEslintSchema()
-  await execute(schema, '.')
+  const projectFolder = getProjectFolder() ?? '.'
+  const appType = await askAppType()
+
+  const schema = createSchema({ appType })
+  await execute(schema, projectFolder)
 }
 
 generate()

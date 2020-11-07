@@ -1,7 +1,7 @@
 import path from 'path'
 import { builder } from '@test-release/core'
 
-export const createTsNodeSchema = () => {
+export const createSchema = () => {
   const schema = builder('ts-node')
   schema.addScript('start', 'ts-node -r tsconfig-paths/register src/index.ts')
   schema.addScript('build', 'tsc')

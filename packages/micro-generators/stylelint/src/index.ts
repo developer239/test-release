@@ -17,7 +17,7 @@ export const createCommonSchema = ({ hasPrettier }: IOptions) => {
   return schema
 }
 
-export const createStylelintWebConfig = (options: IOptions) => {
+export const createSchemaForWeb = (options: IOptions) => {
   const schema = createCommonSchema(options)
 
   schema.addFolder({
@@ -30,7 +30,7 @@ export const createStylelintWebConfig = (options: IOptions) => {
   return schema.toJson()
 }
 
-export const createStylelintMobileConfig = (options: IOptions) => {
+export const createSchemaForMobile = (options: IOptions) => {
   const schema = createCommonSchema(options)
 
   schema.addFolder({

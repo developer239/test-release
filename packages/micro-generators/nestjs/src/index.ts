@@ -6,7 +6,7 @@ interface IOptions {
   isDatabase: boolean
 }
 
-export const createNestJsSchema = ({
+export const createSchema = ({
   projectFolder,
   isDatabase,
 }: IOptions) => {

@@ -1,10 +1,10 @@
-import { execute, getProjectPath, logError } from '@test-release/core'
-import { createTsNodeSchema } from './index'
+import { execute, getProjectFolder, logError } from '@test-release/core'
+import { createSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getProjectPath() ?? '.'
+  const projectFolder = getProjectFolder() ?? '.'
 
-  const tsNodeSchema = createTsNodeSchema()
+  const tsNodeSchema = createSchema()
 
   await execute(tsNodeSchema, projectFolder)
 }

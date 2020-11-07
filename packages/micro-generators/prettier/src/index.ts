@@ -1,7 +1,7 @@
 import path from 'path'
 import { AppType, builder } from '@test-release/core'
 
-export const createPrettierConfig = ({ appType }: { appType: AppType }) => {
+export const createSchema = ({ appType }: { appType: AppType }) => {
   const schema = builder('prettier')
 
   schema.addFolder({

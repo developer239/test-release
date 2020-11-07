@@ -5,7 +5,7 @@ interface IOptions {
   projectFolder: string
 }
 
-export const createNextJsSchema = ({ projectFolder }: IOptions) => {
+export const createSchema = ({ projectFolder }: IOptions) => {
   const schema = builder('nextjs')
 
   schema.addCommand({

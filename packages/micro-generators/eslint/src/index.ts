@@ -5,7 +5,7 @@ interface IOptions {
   appType: AppType
 }
 
-export const createEslintSchema = ({ appType }: IOptions) => {
+export const createSchema = ({ appType }: IOptions) => {
   const schema = builder('eslint')
 
   if (appType === AppType.NODE) {

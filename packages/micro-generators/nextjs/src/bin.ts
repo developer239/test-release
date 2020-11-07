@@ -1,10 +1,10 @@
 import { askProjectName, execute, logError } from '@test-release/core'
-import { createNextJsSchema } from './index'
+import { createSchema } from './index'
 
 const run = async () => {
   const { projectFolder } = await askProjectName()
 
-  const nextJsSchema = createNextJsSchema({
+  const nextJsSchema = createSchema({
     projectFolder,
   })
 

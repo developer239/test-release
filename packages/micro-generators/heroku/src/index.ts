@@ -8,7 +8,7 @@ interface IOptions {
   isDatabase?: boolean
 }
 
-export const createHerokuSchema = ({
+export const createSchema = ({
   appType,
   isCRA,
   projectFolder,

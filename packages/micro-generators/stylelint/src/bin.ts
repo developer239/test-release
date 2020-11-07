@@ -2,14 +2,14 @@ import {
   AppType,
   askAppTypeFE,
   execute,
-  getProjectPath,
+  getProjectFolder,
   logError,
 } from '@test-release/core'
 import { askHasPrettier } from './services/prompt'
-import { createStylelintMobileConfig, createStylelintWebConfig } from './index'
+import { createSchemaForMobile, createSchemaForWeb } from './index'
 
 const run = async () => {
-  const projectFolder = getProjectPath() ?? '.'
+  const projectFolder = getProjectFolder() ?? '.'
   const type = await askAppTypeFE()
   const hasPrettier = await askHasPrettier()
 
@@ -19,8 +19,8 @@ const run = async () => {
 
   const stylelintSchema =
     type === AppType.WEB
-      ? createStylelintWebConfig({ hasPrettier })
-      : createStylelintMobileConfig({ hasPrettier })
+      ? createSchemaForWeb({ hasPrettier })
+      : createSchemaForMobile({ hasPrettier })
 
   await execute(stylelintSchema, projectFolder)
 }

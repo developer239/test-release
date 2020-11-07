@@ -1,7 +1,7 @@
 import path from 'path'
 import { builder } from '@test-release/core'
 
-export const createEditorConfigSchema = () => {
+export const createSchema = () => {
   const schema = builder('editorconfig')
   schema.addFolder({
     name: 'editorconfig',

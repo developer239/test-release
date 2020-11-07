@@ -8,7 +8,7 @@ export interface IOptions {
   isStylelint: boolean
 }
 
-export const createGitHooksSchema = ({
+export const createSchema = ({
   appType,
   isPrettier,
   isEslint,

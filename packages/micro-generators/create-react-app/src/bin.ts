@@ -1,12 +1,12 @@
 import { execute, askProjectName, logError } from '@test-release/core'
 import { askIsRouter } from './services/prompt'
-import { createCreateReactAppSchema } from './index'
+import { createSchema } from './index'
 
 const run = async () => {
   const { projectFolder } = await askProjectName()
   const isRouter = await askIsRouter()
 
-  const createReactAppSchema = createCreateReactAppSchema({
+  const createReactAppSchema = createSchema({
     projectFolder,
     isRouter,
   })

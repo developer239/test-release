@@ -1,14 +1,14 @@
 import {
   askAppType,
   execute,
-  getProjectPath,
+  getProjectFolder,
   logError,
 } from '@test-release/core'
 import { askIsCRA, askPostgreAddon } from './services/prompt'
-import { createHerokuSchema } from './index'
+import { createSchema } from './index'
 
 const run = async () => {
-  const projectFolder = getProjectPath() ?? '.'
+  const projectFolder = getProjectFolder() ?? '.'
   const appType = await askAppType()
   const isCRA = await askIsCRA()
 
@@ -18,7 +18,7 @@ const run = async () => {
     isDatabase = await askPostgreAddon()
   }
 
-  const herokuSchema = createHerokuSchema({
+  const herokuSchema = createSchema({
     appType,
     projectFolder,
     isCRA,

@@ -14,7 +14,7 @@
     "@test-release/create-react-app": "lib/bin.js"
   },
   "dependencies": {
-    "@test-release/core": "1.16.0"
+    "@test-release/core": "1.17.0"
   },
   "publishConfig": {
     "access": "public"

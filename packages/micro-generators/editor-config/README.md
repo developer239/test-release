@@ -1,6 +1,6 @@
-# @test-release/editorconfig
+# @test-release/editor-config
 
-A micro generator for generating editorconfig configuration.
+A micro generator for generating editor-config configuration.
 
 ### CLI
 
@@ -9,7 +9,7 @@ I highly recommend using `npx` so that you don't have to install anything global
 - **optional** `--path=target_folder`
 
 ```bash
-npx @test-release/editorconfig
+npx @test-release/editor-config
 ```
 
 ### Programmatically
@@ -18,12 +18,14 @@ You have to generate JSON schema and use `execute` function from `@test-release/
 
 ```ts
 // src/index.ts
-import { execute } from '@test-release/core'
-import { createEditorConfigSchema } from '@test-release/editorconfig'
+import { execute, getProjectFolder } from '@test-release/core'
+import { createSchema } from '@test-release/editor-config'
 
 const generate = async () => {
-  const schema = createEditorConfigSchema()
-  await execute(schema, '.')
+  const projectFolder = getProjectFolder() ?? '.'
+  
+  const schema = createSchema()
+  await execute(schema, projectFolder)
 }
 
 generate()
