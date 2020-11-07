@@ -1,3 +1,15 @@
+# [@test-release/core-v1.15.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.5...@test-release/core-v1.15.0) (2020-11-07)
+
+
+### Bug Fixes
+
+* remove project files executor message ([ed3d33f](https://github.com/developer239/test-release/commit/ed3d33f7eb32019041f4bda1540cd2b3298d924e))
+
+
+### Features
+
+* improve json modifying logic ([8f2383a](https://github.com/developer239/test-release/commit/8f2383aad677008f443cdc58e75a24ef0dfb230c))
+
 # [@test-release/core-v1.14.5](https://github.com/developer239/test-release/compare/@test-release/core-v1.14.4...@test-release/core-v1.14.5) (2020-10-10)
 
 
