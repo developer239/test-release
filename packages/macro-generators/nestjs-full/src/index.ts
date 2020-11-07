@@ -1,4 +1,4 @@
-// import { createSchema as createCodeQualitySchema } from '@test-release/code-quality'
+import { createSchema as createCodeQualitySchema } from '@test-release/code-quality'
 import { AppType, builder } from '@test-release/core'
 import { createSchema as createGitHooksSchema } from '@test-release/git-hooks'
 import { createSchema as createHerokuSchema } from '@test-release/heroku'
@@ -24,7 +24,7 @@ export const createSchema = ({
       isDatabase,
     })
   )
-  // schema.combineSchema(createCodeQualitySchema({ appType }))
+  schema.combineSchema(createCodeQualitySchema({ appType }))
   schema.combineSchema(
     createGitHooksSchema({
       appType,
