@@ -1,3 +1,11 @@
+# [@test-release/nextjs-full-v1.1.1](https://github.com/developer239/test-release/compare/@test-release/nextjs-full-v1.1.0...@test-release/nextjs-full-v1.1.1) (2020-11-07)
+
+
+### Bug Fixes
+
+* macro generators again 🤯 ([790e31c](https://github.com/developer239/test-release/commit/790e31c3506e24180bbf8b67fda01bf2b3732ff4))
+* make code quality work again ([45d47eb](https://github.com/developer239/test-release/commit/45d47eb253a5bf2010f65c01eaa513a146258124))
+
 # [@test-release/nextjs-full-v1.1.0](https://github.com/developer239/test-release/compare/@test-release/nextjs-full-v1.0.0...@test-release/nextjs-full-v1.1.0) (2020-11-07)
 
 
