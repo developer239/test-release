@@ -1793,57 +1793,25 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@test-release/browserlist@^1.2.0":
+"@test-release/browserlist@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@test-release/browserlist/-/browserlist-1.2.0.tgz#c36382a9140f9fbd0eee08054b39eef9996e0c02"
   integrity sha512-fGdYcYS5ANCeiWvPRcfD7SoSMtAL/MwobNSQpvfsmanqllk27tZzF0YTEQC4xDj6/JW5fSDkmC/kW0gSqDOYaA==
   dependencies:
     "@test-release/core" "1.17.0"
 
-"@test-release/code-quality@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@test-release/code-quality/-/code-quality-1.5.0.tgz#3faa11f959f0ee42be009a9b8b966c42a3b2a65a"
-  integrity sha512-sxtjGZLojNYqk7mRbchXfliyy7fa2Aaj8hu72eIRLt8Pf6UKq1RU4FcBQb7ZHiDC1ZFP6aDybb1mrtbegqHpaA==
+"@test-release/code-quality@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@test-release/code-quality/-/code-quality-1.6.0.tgz#cd7a8d0b57f1cc2a6474645ed77ada8acfba19c9"
+  integrity sha512-GlAWj0AxvM1YUr5biIFNkTq2UZ/8EopPoJOtwFyiKd7f200hg1mCuM/gKJ84NhM8KgxoxWOx9wfXtp8Mcuq4Jw==
   dependencies:
-    "@test-release/core" "1.13.2"
-    "@test-release/editor-config" "1.19.2"
-    "@test-release/eslint" "^1.0.4"
-    "@test-release/prettier" "1.3.3"
-    "@test-release/stylelint" "1.3.3"
+    "@test-release/core" "1.17.0"
+    "@test-release/editor-config" "1.21.0"
+    "@test-release/eslint" "^1.2.0"
+    "@test-release/prettier" "1.5.0"
+    "@test-release/stylelint" "1.5.0"
 
-"@test-release/core@1.13.1":
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.13.1.tgz#3c2752d98987959a985de421cce32c929a9263ed"
-  integrity sha512-8YYw42VbvtZCytJZEk4cjqzCLCmP40OmnwejuHtTHU2Dp/1ytXx0InsVSHVSkcPb5JFls25bZX27rgDoYz2dVQ==
-  dependencies:
-    chalk "4.0.0"
-    handlebars "4.7.6"
-    inquirer "7.1.0"
-    ora "4.0.4"
-    ramda "0.27.0"
-    recursive-copy "2.0.10"
-    shelljs "0.8.4"
-    through2 "3.0.1"
-    validate-npm-package-name "3.0.0"
-    yargs "15.3.1"
-
-"@test-release/core@1.13.2":
-  version "1.13.2"
-  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.13.2.tgz#3d67c2b52617ac911034f7cb424b0c204377bc1d"
-  integrity sha512-ZihV23qmjsYWdENp+2jZFUK8flrThMZNTOup5WDoYCwc7dpsVDZYokDOEDnqXAcwb5UGmrDNQX3a6rnBW8cp/Q==
-  dependencies:
-    chalk "4.0.0"
-    handlebars "4.7.6"
-    inquirer "7.1.0"
-    ora "4.0.4"
-    ramda "0.27.0"
-    recursive-copy "2.0.10"
-    shelljs "0.8.4"
-    through2 "3.0.1"
-    validate-npm-package-name "3.0.0"
-    yargs "15.3.1"
-
-"@test-release/core@1.17.0", "@test-release/core@^1.17.0":
+"@test-release/core@1.17.0":
   version "1.17.0"
   resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.17.0.tgz#3d693cfed16db8772affb43ddc2f447c2290c392"
   integrity sha512-jfPAa7QahXbqQTLAF9peTD7KJ3Vj8coNUJFfjDLMr+NITVfIeg2MfyxgXcM5ukdXD6SPegOuQuwXVN7HswGSzA==
@@ -1859,19 +1827,12 @@
     validate-npm-package-name "3.0.0"
     yargs "16.1.0"
 
-"@test-release/create-react-app@^1.3.0":
+"@test-release/create-react-app@1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@test-release/create-react-app/-/create-react-app-1.3.0.tgz#865d2ee1953d8b908c134db67bd598d6af5e2aad"
   integrity sha512-jCiVQ8MTNz/z0hM6ETPdtls+1oUOTHtTPbAgwPI6ZodOZbEtkq8hDHwiiXq8HHLrkJJZjTsLIRBMkHHFJsVAjA==
   dependencies:
     "@test-release/core" "1.17.0"
-
-"@test-release/editor-config@1.19.2":
-  version "1.19.2"
-  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.19.2.tgz#cd624d3436a1cd0544483e5b543c10c90b9b7244"
-  integrity sha512-qcgUV7Q2SXAbIJkXsdtmiN96DIXnXdTwWsN6FOtH+AZQDi+ySEPJ05ITRUK+LNKwJ3DLKWQpBnqK26TBYhXLTw==
-  dependencies:
-    "@test-release/core" "1.13.1"
 
 "@test-release/editor-config@1.21.0":
   version "1.21.0"
@@ -1880,13 +1841,6 @@
   dependencies:
     "@test-release/core" "1.17.0"
 
-"@test-release/eslint@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@test-release/eslint/-/eslint-1.0.4.tgz#a08691a8167add3082a8b14e940459ce151d8462"
-  integrity sha512-1cSclBeoWGC28x/1P3S+8CB2lbPfWFue5Apye9SbDaSfoQAsnaWGBpcQ0Wfog4Pebn/+3gTOkQYN74oy0S92dQ==
-  dependencies:
-    "@test-release/core" "1.13.1"
-
 "@test-release/eslint@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@test-release/eslint/-/eslint-1.2.0.tgz#8c7e5670e12016ebd0e7bb13d33dbc256678ca89"
@@ -1894,40 +1848,33 @@
   dependencies:
     "@test-release/core" "1.17.0"
 
-"@test-release/git-hooks@^1.2.0":
+"@test-release/git-hooks@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@test-release/git-hooks/-/git-hooks-1.2.0.tgz#15830d6f19e5b036d96991c245b1b792e8f06e25"
   integrity sha512-MNwW66MJTWniGeTFO9TQf5dOeWF9uiF4OOdWfxRRIPBRaosaiWmrKzX+NVz8pqgZcvIGBJ/hOqIDZmDRou2s5Q==
   dependencies:
     "@test-release/core" "1.17.0"
 
-"@test-release/heroku@^1.2.0":
+"@test-release/heroku@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@test-release/heroku/-/heroku-1.2.0.tgz#a1f80d84edcb209929539de599bde67d7cf605d6"
   integrity sha512-A0xCcAJ1pexrXBbdChjprDtTuStIq6+1gMOmNTR0NDUjBVBe+tW8Vj5DgSow+F/y+9EMnnMKBcmfQAX2efWNhw==
   dependencies:
     "@test-release/core" "1.17.0"
 
-"@test-release/nestjs@^1.3.0":
+"@test-release/nestjs@1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@test-release/nestjs/-/nestjs-1.3.0.tgz#5aedc4b12de3f2137886f8bffb2c424c52016e4f"
   integrity sha512-HImOkQZdkgD9m2/4xXcNrvQF+jvdHEb4ce7EU9GBXy0zALxHepZ2BubnXAFTfIXz4tJMkE/0iHGFCxnrTkxsCg==
   dependencies:
     "@test-release/core" "1.17.0"
 
-"@test-release/nextjs@^1.3.0":
+"@test-release/nextjs@1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@test-release/nextjs/-/nextjs-1.3.0.tgz#c355c1db9c301b27df534a02f08976e6dd2b0db8"
   integrity sha512-FbX3LfkfqXC2xSCmICIAYeDBQTYRfI0/Rqted8DVuihqos2cCUs0eONCdKY61PCIgjKJVA6122h4COLRs0haqA==
   dependencies:
     "@test-release/core" "1.17.0"
-
-"@test-release/prettier@1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.3.3.tgz#18c39f74eb89e77c391d25fa7caad5ec6eb3a4cd"
-  integrity sha512-cpuHXcqDXEqO++OSYALtWlWYNyWmRuEi+3Tt6Uhjm9t0kVWJWcZs+A8fC5L+Hnu69ZNKTwx6TdG/ftGDyRDc3Q==
-  dependencies:
-    "@test-release/core" "1.13.1"
 
 "@test-release/prettier@1.5.0":
   version "1.5.0"
@@ -1935,13 +1882,6 @@
   integrity sha512-+JaWYMjfl+4fBw+8Q6j0HqPfWlRlETw2l3+JSKU0VMpC8E+jJ2WbJ4InbC8dFm8vxYx5B1durrhlEBzURd5viw==
   dependencies:
     "@test-release/core" "1.17.0"
-
-"@test-release/stylelint@1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.3.3.tgz#93e54f08cab1a3d7c527a89854da3d29747d6282"
-  integrity sha512-EomLayHIJXaaPfhWXWV1RO2AJdc+LUyNZexjeXciWaeTjzLinhY4zn6QblESAXLwRYqetMhS5xYMI7DhkLa2OQ==
-  dependencies:
-    "@test-release/core" "1.13.1"
 
 "@test-release/stylelint@1.5.0":
   version "1.5.0"
@@ -2979,7 +2919,7 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-chalk@*, chalk@4.0.0:
+chalk@*:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
   integrity sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
@@ -5464,25 +5404,6 @@ init-package-json@^1.10.3:
     semver "2.x || 3.x || 4 || 5"
     validate-npm-package-license "^3.0.1"
     validate-npm-package-name "^3.0.0"
-
-inquirer@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-7.1.0.tgz#1298a01859883e17c7264b82870ae1034f92dd29"
-  integrity sha512-5fJMWEmikSYu0nv/flMc475MhGbB7TSPd/2IpFV4I4rMklboCH2rQjYY5kKiYGHqUF9gvaambupcJFFG9dvReg==
-  dependencies:
-    ansi-escapes "^4.2.1"
-    chalk "^3.0.0"
-    cli-cursor "^3.1.0"
-    cli-width "^2.0.0"
-    external-editor "^3.0.3"
-    figures "^3.0.0"
-    lodash "^4.17.15"
-    mute-stream "0.0.8"
-    run-async "^2.4.0"
-    rxjs "^6.5.3"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
-    through "^2.3.6"
 
 inquirer@7.3.3:
   version "7.3.3"
@@ -8110,7 +8031,7 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
-ora@*, ora@4.0.4:
+ora@*:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/ora/-/ora-4.0.4.tgz#e8da697cc5b6a47266655bf68e0fb588d29a545d"
   integrity sha512-77iGeVU1cIdRhgFzCK8aw1fbtT1B/iZAvWjS+l/o1x0RShMgxHUZaD2yDpWsNCPwXg9z1ZA78Kbdvr8kBmG/Ww==
@@ -8792,11 +8713,6 @@ qw@~1.0.1:
   resolved "https://registry.yarnpkg.com/qw/-/qw-1.0.1.tgz#efbfdc740f9ad054304426acb183412cc8b996d4"
   integrity sha1-77/cdA+a0FQwRCassYNBLMi5ltQ=
 
-ramda@0.27.0:
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.0.tgz#915dc29865c0800bf3f69b8fd6c279898b59de43"
-  integrity sha512-pVzZdDpWwWqEVVLshWUHjNwuVP7SfcmPraYuqocJp1yo2U1R7P+5QAfDhdItkuoGqIBnBYrtPp7rEPqDn9HlZA==
-
 ramda@0.27.1:
   version "0.27.1"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.1.tgz#66fc2df3ef873874ffc2da6aa8984658abacf5c9"
@@ -8989,22 +8905,6 @@ rechoir@^0.6.2:
   integrity sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
   dependencies:
     resolve "^1.1.6"
-
-recursive-copy@2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/recursive-copy/-/recursive-copy-2.0.10.tgz#a39402f2270c5f8b562b48d438a42e2e6e5c644c"
-  integrity sha512-S9J9XJUnfZ2NUS3lK6lx6HWLl2nWui+f7AKuu+qoFs4ikEPYgZ3qKk1T6tmBnr7PzhtKnawE+6TREy9XQKmxCA==
-  dependencies:
-    del "^2.2.0"
-    emitter-mixin "0.0.3"
-    errno "^0.1.2"
-    graceful-fs "^4.1.4"
-    junk "^1.0.1"
-    maximatch "^0.1.0"
-    mkdirp "^0.5.1"
-    pify "^2.3.0"
-    promise "^7.0.1"
-    slash "^1.0.0"
 
 recursive-copy@2.0.11:
   version "2.0.11"
@@ -9375,7 +9275,7 @@ rxjs@^6.4.0:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.5.3, rxjs@^6.6.0, rxjs@^6.6.3:
+rxjs@^6.6.0, rxjs@^6.6.3:
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==
@@ -10265,13 +10165,6 @@ throat@^5.0.0:
   resolved "https://registry.yarnpkg.com/throat/-/throat-5.0.0.tgz#c5199235803aad18754a667d659b5e72ce16764b"
   integrity sha512-fcwX4mndzpLQKBS1DVYhGAcYaYt7vsHNIvQV+WXMvnow5cgjPphq5CaayLaGsjRdSCKZFNGt7/GYAuXaNOiYCA==
 
-through2@3.0.1, through2@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
-  integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
-  dependencies:
-    readable-stream "2 || 3"
-
 through2@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/through2/-/through2-4.0.2.tgz#a7ce3ac2a7a8b0b966c80e7c49f0484c3b239764"
@@ -10286,6 +10179,13 @@ through2@^2.0.0, through2@^2.0.2, through2@~2.0.0:
   dependencies:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
+
+through2@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
+  integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
+  dependencies:
+    readable-stream "2 || 3"
 
 through@2, "through@>=2.2.7 <3", through@^2.3.4, through@^2.3.6, through@^2.3.8:
   version "2.3.8"
@@ -11073,23 +10973,6 @@ yargs-parser@^9.0.2:
   dependencies:
     camelcase "^4.1.0"
 
-yargs@15.3.1, yargs@^15.0.1:
-  version "15.3.1"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.3.1.tgz#9505b472763963e54afe60148ad27a330818e98b"
-  integrity sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
-  dependencies:
-    cliui "^6.0.0"
-    decamelize "^1.2.0"
-    find-up "^4.1.0"
-    get-caller-file "^2.0.1"
-    require-directory "^2.1.1"
-    require-main-filename "^2.0.0"
-    set-blocking "^2.0.0"
-    string-width "^4.2.0"
-    which-module "^2.0.0"
-    y18n "^4.0.0"
-    yargs-parser "^18.1.1"
-
 yargs@16.1.0:
   version "16.1.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-16.1.0.tgz#fc333fe4791660eace5a894b39d42f851cd48f2a"
@@ -11137,6 +11020,23 @@ yargs@^14.2.2, yargs@^14.2.3:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^15.0.1"
+
+yargs@^15.0.1:
+  version "15.3.1"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.3.1.tgz#9505b472763963e54afe60148ad27a330818e98b"
+  integrity sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
+  dependencies:
+    cliui "^6.0.0"
+    decamelize "^1.2.0"
+    find-up "^4.1.0"
+    get-caller-file "^2.0.1"
+    require-directory "^2.1.1"
+    require-main-filename "^2.0.0"
+    set-blocking "^2.0.0"
+    string-width "^4.2.0"
+    which-module "^2.0.0"
+    y18n "^4.0.0"
+    yargs-parser "^18.1.1"
 
 yargs@^15.1.0, yargs@^15.4.1:
   version "15.4.1"
