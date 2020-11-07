@@ -25,7 +25,7 @@ export const updateJson = async (
 
   const jsonFilePath = path.join(process.cwd(), projectFolder, fileName)
 
-  if (require.cache && require.cache[jsonFilePath]) {
+  if (require?.cache[jsonFilePath]) {
     delete require.cache[jsonFilePath]
   }
 

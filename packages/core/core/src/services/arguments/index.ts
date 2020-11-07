@@ -1,3 +1,3 @@
 import yargs from 'yargs'
 
-export const getProjectPath = () => yargs.argv.path as string | undefined
+export const getProjectFolder = () => yargs.argv.path as string | undefined

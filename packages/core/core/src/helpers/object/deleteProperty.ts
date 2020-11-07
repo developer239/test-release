@@ -1,18 +1,19 @@
 export type IObject = any
 
 export const deleteProperty = (object: IObject, path: string[]) => {
-  let currentObject = object
+  const currentObject = JSON.parse(JSON.stringify(object))
+  let currentPath = currentObject
   const last = path.pop() as string
 
   for (const key of path) {
-    currentObject = currentObject[key]
+    currentPath = currentObject[key]
 
     if (!currentObject) {
       return
     }
   }
 
-  delete currentObject[last]
+  delete currentPath[last]
 
   return currentObject
 }

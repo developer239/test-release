@@ -11,5 +11,6 @@ module.exports = {
     'guard-for-in': 1,
     'no-await-in-loop': 1,
     'absolute-import/no-relative-path': 0,
-  }
+  },
+  ignorePatterns: ['**/lib/*'],
 }

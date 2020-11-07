@@ -1,6 +1,6 @@
 export enum AppType {
-  WEB = 'web',
-  MOBILE = 'mobile',
+  WEB = 'web', // TODO: rename to react
+  MOBILE = 'mobile', // TODO: rename to react-native
   NODE = 'node',
 }
 

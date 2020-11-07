@@ -10,9 +10,10 @@ describe('[helpers][object] delete property', () => {
       },
     }
 
-    deleteProperty(target, ['first', 'second'])
+    const result = deleteProperty(target, ['first', 'second'])
 
-    expect(target).toStrictEqual({
+    expect(target).toStrictEqual(target)
+    expect(result).toStrictEqual({
       first: {},
     })
   })
