@@ -12,7 +12,7 @@ export const builder = (name: string) => {
     commands: [],
     files: {
       add: [],
-      remove: [],
+      remove: [], // TODO: not used anywhere
     },
     packageProperties: {
       add: [],
@@ -26,7 +26,7 @@ export const builder = (name: string) => {
       move: {
         prod: [],
       },
-      remove: [],
+      remove: [], // TODO: not used anywhere
     },
   } as ISchema
 
