@@ -1,3 +1,15 @@
+# [@test-release/core-v1.18.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.17.0...@test-release/core-v1.18.0) (2020-11-08)
+
+
+### Bug Fixes
+
+* failed logger refactor ([c121464](https://github.com/developer239/test-release/commit/c121464455db5c2e6037365a997c699984bfe5b5))
+
+
+### Features
+
+* update core package ([998b397](https://github.com/developer239/test-release/commit/998b3979dce1a6fdba6211b46d8510970adf15a3))
+
 # [@test-release/core-v1.17.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.16.0...@test-release/core-v1.17.0) (2020-11-07)
 
 
