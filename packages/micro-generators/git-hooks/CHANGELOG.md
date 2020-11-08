@@ -1,3 +1,5 @@
+# [@test-release/git-hooks-v1.2.1](https://github.com/developer239/test-release/compare/@test-release/git-hooks-v1.2.0...@test-release/git-hooks-v1.2.1) (2020-11-08)
+
 # [@test-release/git-hooks-v1.2.0](https://github.com/developer239/test-release/compare/@test-release/git-hooks-v1.1.0...@test-release/git-hooks-v1.2.0) (2020-11-07)
 
 
