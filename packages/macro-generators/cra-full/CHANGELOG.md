@@ -1,3 +1,5 @@
+# [@test-release/cra-full-v1.1.2](https://github.com/developer239/test-release/compare/@test-release/cra-full-v1.1.1...@test-release/cra-full-v1.1.2) (2020-11-08)
+
 # [@test-release/cra-full-v1.1.1](https://github.com/developer239/test-release/compare/@test-release/cra-full-v1.1.0...@test-release/cra-full-v1.1.1) (2020-11-07)
 
 
