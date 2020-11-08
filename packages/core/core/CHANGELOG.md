@@ -1,3 +1,10 @@
+# [@test-release/core-v1.18.1](https://github.com/developer239/test-release/compare/@test-release/core-v1.18.0...@test-release/core-v1.18.1) (2020-11-08)
+
+
+### Bug Fixes
+
+* logger success message ([3b1a49a](https://github.com/developer239/test-release/commit/3b1a49a6efa69783889115eb93a2c006a70dab84))
+
 # [@test-release/core-v1.18.0](https://github.com/developer239/test-release/compare/@test-release/core-v1.17.0...@test-release/core-v1.18.0) (2020-11-08)
 
 
