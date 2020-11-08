@@ -5,5 +5,5 @@ import figlet from 'figlet'
 export const logger = {
   info: console.log,
   error: console.error,
-  success: (text: string) => chalk.green(figlet.textSync(text, { horizontalLayout: 'full' })),
+  success: (text: string) => console.log(chalk.green(figlet.textSync(text, { horizontalLayout: 'full' }))),
 }
