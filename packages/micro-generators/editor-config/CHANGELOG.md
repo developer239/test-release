@@ -1,3 +1,5 @@
+# [@test-release/editor-config-v1.21.1](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.21.0...@test-release/editor-config-v1.21.1) (2020-11-08)
+
 # [@test-release/editor-config-v1.21.0](https://github.com/developer239/test-release/compare/@test-release/editor-config-v1.20.0...@test-release/editor-config-v1.21.0) (2020-11-07)
 
 
