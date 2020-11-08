@@ -1858,12 +1858,26 @@
   dependencies:
     "@test-release/core" "1.17.0"
 
+"@test-release/editor-config@1.21.1":
+  version "1.21.1"
+  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.21.1.tgz#fa7269829f1156e1cbbe3f29537a7c58a174381a"
+  integrity sha512-f/8BgpdINEvDq5jiza3MGJJOR8sYidEhtq5jnZsHk8U8bYG2n/jUvEBWwxAh7cys603SX114oP3i4aNd76R7lw==
+  dependencies:
+    "@test-release/core" "1.18.0"
+
 "@test-release/eslint@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@test-release/eslint/-/eslint-1.2.0.tgz#8c7e5670e12016ebd0e7bb13d33dbc256678ca89"
   integrity sha512-uj4zYH8Woggp39TdYsldBE9aClaUB6Ny+fDsalDcgP3CXWNOlIGo+KSsRT0f29209zMC9ssDcdDIzzHc/30jGQ==
   dependencies:
     "@test-release/core" "1.17.0"
+
+"@test-release/eslint@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@test-release/eslint/-/eslint-1.2.1.tgz#3c880435f306ab0ce0de139e7192305554c4fb58"
+  integrity sha512-+jJirdvfmP24GqroOCcY/Z1UYou51tzPNkc2ZHpvG4zl2i2ZGfQNJGTmk8S222L3NqK01czW6Ii23Miyfu7nYg==
+  dependencies:
+    "@test-release/core" "1.18.0"
 
 "@test-release/git-hooks@1.2.0":
   version "1.2.0"
@@ -1900,12 +1914,26 @@
   dependencies:
     "@test-release/core" "1.17.0"
 
+"@test-release/prettier@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.5.1.tgz#acd1c088d4de3118230baa005a54f0b2adc9a1db"
+  integrity sha512-jVoUvYP+GvXVgnIER4FAPM8/GG/I78AsLKqvn+6k2EbNsYD1+B6mM0ZS+RcZ9fEF2xvXdDk36EbSOXBCCHpfYg==
+  dependencies:
+    "@test-release/core" "1.18.0"
+
 "@test-release/stylelint@1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.5.0.tgz#25c80b9924951d50489d525f522e65ffc38372b8"
   integrity sha512-cWlupMuOuRMjRsIiRuaCRLi/P8p3ZoX50khq4XBzmxEe89b1rOO1UQprGhxODbIPI6JrXgUtbcPQExY2otcYnQ==
   dependencies:
     "@test-release/core" "1.17.0"
+
+"@test-release/stylelint@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.5.1.tgz#4ce045dc82ea4225af67822deb742f5c322d6add"
+  integrity sha512-bfmGYZedbLTeiIKEIM8o7Cv0/vt0MW3ZD9p9N59GoGJLRMOlQdCQ6nbcU/BGd8EvSyGKB1QQzYFmhZ5lo0lb0Q==
+  dependencies:
+    "@test-release/core" "1.18.0"
 
 "@tootallnate/once@1":
   version "1.1.2"

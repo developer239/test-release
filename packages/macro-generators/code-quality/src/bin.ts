@@ -1,7 +1,7 @@
 /* eslint-disable no-await-in-loop */
 import {
   getProjectFolder,
-  logError,
+  logger,
   execute,
   askAppType,
 } from '@test-release/core'
@@ -16,4 +16,4 @@ const run = async () => {
   await execute(codeQualitySchema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)
