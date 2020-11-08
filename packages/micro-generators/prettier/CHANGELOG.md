@@ -1,3 +1,5 @@
+# [@test-release/prettier-v1.5.1](https://github.com/developer239/test-release/compare/@test-release/prettier-v1.5.0...@test-release/prettier-v1.5.1) (2020-11-08)
+
 # [@test-release/prettier-v1.5.0](https://github.com/developer239/test-release/compare/@test-release/prettier-v1.4.0...@test-release/prettier-v1.5.0) (2020-11-07)
 
 
