@@ -5,7 +5,7 @@ export { deleteProperty } from './helpers/object/deleteProperty'
 export { getProjectFolder } from './services/arguments'
 export { copyFiles } from './services/files/copyFiles'
 export { createFilesFromFolder } from './services/files/createFromFolder'
-export { logInfo, logError } from './services/logger'
+export { logger } from './services/logger'
 export { updateJson } from './services/updateJson'
 export {
   askAppType,

@@ -1,3 +1,3 @@
-import { logError } from './services/logger'
+import { logger } from './services/logger'
 
-logError('Not implemented.')
+logger.error('Not implemented.')
