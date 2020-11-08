@@ -588,13 +588,6 @@
     slash "^3.0.0"
     strip-ansi "^6.0.0"
 
-"@jest/create-cache-key-function@^26.5.0":
-  version "26.6.2"
-  resolved "https://registry.yarnpkg.com/@jest/create-cache-key-function/-/create-cache-key-function-26.6.2.tgz#04cf439207a4fd12418d8aee551cddc86f9ac5f5"
-  integrity sha512-LgEuqU1f/7WEIPYqwLPIvvHuc1sB6gMVbT6zWhin3txYUNYK/kGQrC1F2WR4gR34YlI9bBtViTm5z98RqVZAaw==
-  dependencies:
-    "@jest/types" "^26.6.2"
-
 "@jest/environment@^26.6.2":
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/@jest/environment/-/environment-26.6.2.tgz#ba364cc72e221e79cc8f0a99555bf5d7577cf92c"
@@ -1793,39 +1786,23 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@test-release/browserlist@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@test-release/browserlist/-/browserlist-1.2.0.tgz#c36382a9140f9fbd0eee08054b39eef9996e0c02"
-  integrity sha512-fGdYcYS5ANCeiWvPRcfD7SoSMtAL/MwobNSQpvfsmanqllk27tZzF0YTEQC4xDj6/JW5fSDkmC/kW0gSqDOYaA==
+"@test-release/browserlist@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@test-release/browserlist/-/browserlist-1.2.1.tgz#3169def32f4907fc769adb60a3f393620457e4cc"
+  integrity sha512-wJ/8dkq4LXpNwHIIQ75TLQFyZIVSTKa+qJ/AMWJGmaROYVSN9MlewHgyoSk8QyY4DdhmDKU/zl4yGB6sDVPGNA==
   dependencies:
-    "@test-release/core" "1.17.0"
+    "@test-release/core" "1.18.0"
 
-"@test-release/code-quality@1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@test-release/code-quality/-/code-quality-1.6.0.tgz#cd7a8d0b57f1cc2a6474645ed77ada8acfba19c9"
-  integrity sha512-GlAWj0AxvM1YUr5biIFNkTq2UZ/8EopPoJOtwFyiKd7f200hg1mCuM/gKJ84NhM8KgxoxWOx9wfXtp8Mcuq4Jw==
+"@test-release/code-quality@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@test-release/code-quality/-/code-quality-1.6.1.tgz#5061037c0f64a2473f3b55ba2c333d0aaa37a776"
+  integrity sha512-xuQ4ojOs1I0BBjlSbZpCXM8kBt7pUcZGCpFWmudRQ/3Pl36FtCpUriz3TlT3CeeOHCMcCw532LeEAd/kZMCmXw==
   dependencies:
-    "@test-release/core" "1.17.0"
-    "@test-release/editor-config" "1.21.0"
-    "@test-release/eslint" "^1.2.0"
-    "@test-release/prettier" "1.5.0"
-    "@test-release/stylelint" "1.5.0"
-
-"@test-release/core@1.17.0":
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.17.0.tgz#3d693cfed16db8772affb43ddc2f447c2290c392"
-  integrity sha512-jfPAa7QahXbqQTLAF9peTD7KJ3Vj8coNUJFfjDLMr+NITVfIeg2MfyxgXcM5ukdXD6SPegOuQuwXVN7HswGSzA==
-  dependencies:
-    chalk "4.1.0"
-    handlebars "4.7.6"
-    inquirer "7.3.3"
-    ora "5.1.0"
-    ramda "0.27.1"
-    recursive-copy "2.0.11"
-    shelljs "0.8.4"
-    through2 "4.0.2"
-    validate-npm-package-name "3.0.0"
-    yargs "16.1.0"
+    "@test-release/core" "1.18.0"
+    "@test-release/editor-config" "1.21.1"
+    "@test-release/eslint" "^1.2.1"
+    "@test-release/prettier" "1.5.1"
+    "@test-release/stylelint" "1.5.1"
 
 "@test-release/core@1.18.0":
   version "1.18.0"
@@ -1844,19 +1821,12 @@
     validate-npm-package-name "3.0.0"
     yargs "16.1.0"
 
-"@test-release/create-react-app@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@test-release/create-react-app/-/create-react-app-1.3.0.tgz#865d2ee1953d8b908c134db67bd598d6af5e2aad"
-  integrity sha512-jCiVQ8MTNz/z0hM6ETPdtls+1oUOTHtTPbAgwPI6ZodOZbEtkq8hDHwiiXq8HHLrkJJZjTsLIRBMkHHFJsVAjA==
+"@test-release/create-react-app@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@test-release/create-react-app/-/create-react-app-1.3.1.tgz#6abf5ae6781702970ad942fc072718d635777698"
+  integrity sha512-du0vTnT4A8LStIMpcYWyu3xIDx2ttF8mH4GA7S2qp2iEqGoIMO+lJ/7v7m+hBWQ1fw5ILnLOy2Cw4TIbWxo+9w==
   dependencies:
-    "@test-release/core" "1.17.0"
-
-"@test-release/editor-config@1.21.0":
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/@test-release/editor-config/-/editor-config-1.21.0.tgz#7139aae454d5218834cc168c7d786700592b5c0d"
-  integrity sha512-ds/rOk1aexWXsx6se+4p2RTzRk3qtsuIspju+Tmgo+olJVHuBOrg454ksGHp1pImOsz23tlRSzgrlP59LV88bw==
-  dependencies:
-    "@test-release/core" "1.17.0"
+    "@test-release/core" "1.18.0"
 
 "@test-release/editor-config@1.21.1":
   version "1.21.1"
@@ -1865,13 +1835,6 @@
   dependencies:
     "@test-release/core" "1.18.0"
 
-"@test-release/eslint@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@test-release/eslint/-/eslint-1.2.0.tgz#8c7e5670e12016ebd0e7bb13d33dbc256678ca89"
-  integrity sha512-uj4zYH8Woggp39TdYsldBE9aClaUB6Ny+fDsalDcgP3CXWNOlIGo+KSsRT0f29209zMC9ssDcdDIzzHc/30jGQ==
-  dependencies:
-    "@test-release/core" "1.17.0"
-
 "@test-release/eslint@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@test-release/eslint/-/eslint-1.2.1.tgz#3c880435f306ab0ce0de139e7192305554c4fb58"
@@ -1879,40 +1842,33 @@
   dependencies:
     "@test-release/core" "1.18.0"
 
-"@test-release/git-hooks@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@test-release/git-hooks/-/git-hooks-1.2.0.tgz#15830d6f19e5b036d96991c245b1b792e8f06e25"
-  integrity sha512-MNwW66MJTWniGeTFO9TQf5dOeWF9uiF4OOdWfxRRIPBRaosaiWmrKzX+NVz8pqgZcvIGBJ/hOqIDZmDRou2s5Q==
+"@test-release/git-hooks@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@test-release/git-hooks/-/git-hooks-1.2.1.tgz#e50b06c639769fbe88259ccedfb829b9068a3422"
+  integrity sha512-uTzlO7q+O5wCza+IyRFeS9xlpGjm7MwPERgkhWPJBUc/WdWsIVdFtfT4QtUFu6JAtgkC+lhbE4MS3D13DmOkEg==
   dependencies:
-    "@test-release/core" "1.17.0"
+    "@test-release/core" "1.18.0"
 
-"@test-release/heroku@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@test-release/heroku/-/heroku-1.2.0.tgz#a1f80d84edcb209929539de599bde67d7cf605d6"
-  integrity sha512-A0xCcAJ1pexrXBbdChjprDtTuStIq6+1gMOmNTR0NDUjBVBe+tW8Vj5DgSow+F/y+9EMnnMKBcmfQAX2efWNhw==
+"@test-release/heroku@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@test-release/heroku/-/heroku-1.2.1.tgz#ab3ce87865968e8b863e652823d8bcda246143cf"
+  integrity sha512-+SahrilrUaMyKT3MGka83fAcceweU4PFqg/icuCYL5zBX1cFxaaEEksIAEMXagBgy9Z8IBY5lSlId4F89JfQNw==
   dependencies:
-    "@test-release/core" "1.17.0"
+    "@test-release/core" "1.18.0"
 
-"@test-release/nestjs@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@test-release/nestjs/-/nestjs-1.3.0.tgz#5aedc4b12de3f2137886f8bffb2c424c52016e4f"
-  integrity sha512-HImOkQZdkgD9m2/4xXcNrvQF+jvdHEb4ce7EU9GBXy0zALxHepZ2BubnXAFTfIXz4tJMkE/0iHGFCxnrTkxsCg==
+"@test-release/nestjs@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@test-release/nestjs/-/nestjs-1.3.1.tgz#9ded02d71b382904d88c65745ac2574ff9da6bf9"
+  integrity sha512-bYirHX5xMzV7Nm1b4I8XBbbaJsARfizXNLBG2e08TuYMmGEtOmGygYyFCMIr1QshJ8D3s7FA7tIIlQvmYTii1g==
   dependencies:
-    "@test-release/core" "1.17.0"
+    "@test-release/core" "1.18.0"
 
-"@test-release/nextjs@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@test-release/nextjs/-/nextjs-1.3.0.tgz#c355c1db9c301b27df534a02f08976e6dd2b0db8"
-  integrity sha512-FbX3LfkfqXC2xSCmICIAYeDBQTYRfI0/Rqted8DVuihqos2cCUs0eONCdKY61PCIgjKJVA6122h4COLRs0haqA==
+"@test-release/nextjs@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@test-release/nextjs/-/nextjs-1.3.1.tgz#a5ab3b56c1ea2edf53bf2982f8d1e2e282999c6e"
+  integrity sha512-WceI9ozLAjM2wWD0N+v69+k5/UG+amyV0bvWSphrEFQs37OcQEwPImYzLbOIlseUCxXQbIpnhMqrTHtHLekIQQ==
   dependencies:
-    "@test-release/core" "1.17.0"
-
-"@test-release/prettier@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@test-release/prettier/-/prettier-1.5.0.tgz#59f9de331018ee935cc518c768d929b2cce91711"
-  integrity sha512-+JaWYMjfl+4fBw+8Q6j0HqPfWlRlETw2l3+JSKU0VMpC8E+jJ2WbJ4InbC8dFm8vxYx5B1durrhlEBzURd5viw==
-  dependencies:
-    "@test-release/core" "1.17.0"
+    "@test-release/core" "1.18.0"
 
 "@test-release/prettier@1.5.1":
   version "1.5.1"
@@ -1920,13 +1876,6 @@
   integrity sha512-jVoUvYP+GvXVgnIER4FAPM8/GG/I78AsLKqvn+6k2EbNsYD1+B6mM0ZS+RcZ9fEF2xvXdDk36EbSOXBCCHpfYg==
   dependencies:
     "@test-release/core" "1.18.0"
-
-"@test-release/stylelint@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@test-release/stylelint/-/stylelint-1.5.0.tgz#25c80b9924951d50489d525f522e65ffc38372b8"
-  integrity sha512-cWlupMuOuRMjRsIiRuaCRLi/P8p3ZoX50khq4XBzmxEe89b1rOO1UQprGhxODbIPI6JrXgUtbcPQExY2otcYnQ==
-  dependencies:
-    "@test-release/core" "1.17.0"
 
 "@test-release/stylelint@1.5.1":
   version "1.5.1"
@@ -10362,12 +10311,11 @@ trim-off-newlines@^1.0.0:
   resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
   integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
 
-ts-jest@^26.4.3:
-  version "26.4.3"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.3.tgz#d153a616033e7ec8544b97ddbe2638cbe38d53db"
-  integrity sha512-pFDkOKFGY+nL9v5pkhm+BIFpoAuno96ff7GMnIYr/3L6slFOS365SI0fGEVYx2RKGji5M2elxhWjDMPVcOCdSw==
+ts-jest@^26.4.4:
+  version "26.4.4"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.4.tgz#61f13fb21ab400853c532270e52cc0ed7e502c49"
+  integrity sha512-3lFWKbLxJm34QxyVNNCgXX1u4o/RV0myvA2y2Bxm46iGIjKlaY0own9gIckbjZJPn+WaJEnfPPJ20HHGpoq4yg==
   dependencies:
-    "@jest/create-cache-key-function" "^26.5.0"
     "@types/jest" "26.x"
     bs-logger "0.x"
     buffer-from "1.x"

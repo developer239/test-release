@@ -14,12 +14,12 @@
     "@test-release/cra-full": "lib/bin.js"
   },
   "dependencies": {
-    "@test-release/browserlist": "1.2.0",
-    "@test-release/code-quality": "1.6.0",
-    "@test-release/core": "1.17.0",
-    "@test-release/create-react-app": "1.3.0",
-    "@test-release/git-hooks": "1.2.0",
-    "@test-release/heroku": "1.2.0"
+    "@test-release/browserlist": "1.2.1",
+    "@test-release/code-quality": "1.6.1",
+    "@test-release/core": "1.18.0",
+    "@test-release/create-react-app": "1.3.1",
+    "@test-release/git-hooks": "1.2.1",
+    "@test-release/heroku": "1.2.1"
   },
   "publishConfig": {
     "access": "public"

@@ -1,4 +1,4 @@
-import { logError, execute, askProjectName, askYesNo } from '@test-release/core'
+import { logger, execute, askProjectName, askYesNo } from '@test-release/core'
 import { createSchema } from './index'
 
 const run = async () => {
@@ -11,4 +11,4 @@ const run = async () => {
   await execute(schema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)
