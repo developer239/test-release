@@ -1,4 +1,4 @@
-import { execute, getProjectFolder, logError } from '@test-release/core'
+import { execute, getProjectFolder, logger } from '@test-release/core'
 import { createSchema } from './index'
 
 const run = async () => {
@@ -9,4 +9,4 @@ const run = async () => {
   await execute(tsNodeSchema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)

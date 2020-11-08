@@ -3,7 +3,7 @@ import {
   askAppTypeFE,
   execute,
   getProjectFolder,
-  logError,
+  logger,
 } from '@test-release/core'
 import { askHasPrettier } from './services/prompt'
 import { createSchemaForMobile, createSchemaForWeb } from './index'
@@ -14,7 +14,7 @@ const run = async () => {
   const hasPrettier = await askHasPrettier()
 
   if (type !== AppType.WEB && type !== AppType.MOBILE) {
-    logError('App type is not supported!')
+    logger.error('App type is not supported!')
   }
 
   const stylelintSchema =
@@ -25,4 +25,4 @@ const run = async () => {
   await execute(stylelintSchema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)

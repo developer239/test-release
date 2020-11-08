@@ -1429,10 +1429,10 @@
     eslint-plugin-node "11.1.0"
     eslint-plugin-security "1.4.0"
 
-"@linters/eslint-config-typescript@^1.8.1":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@linters/eslint-config-typescript/-/eslint-config-typescript-1.8.1.tgz#07b24253999d0c7078c9ab494b86ac6bd61a15d2"
-  integrity sha512-wo1fOYC8fKRx1A8vDDwvrY+resM5FJRkjgt7bttFk7n7sogEhbdigZfy8CzlH45kD2eJ8/+Et4VON+pl5quLaw==
+"@linters/eslint-config-typescript@^1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@linters/eslint-config-typescript/-/eslint-config-typescript-1.9.0.tgz#f747f37e37d6743f68231d334631019f44bd81cb"
+  integrity sha512-DLqN+SJv1dVtNsKSeYH4bvC86afErzrpRUmMnX+fKPxRUbvyHQVwsSmkGkCU5RafqfAH9EvGu4dGPC5u1Fs+1w==
   dependencies:
     "@linters/eslint-config" "1.8.1"
     "@typescript-eslint/eslint-plugin" "4.6.1"
@@ -1817,6 +1817,23 @@
   integrity sha512-jfPAa7QahXbqQTLAF9peTD7KJ3Vj8coNUJFfjDLMr+NITVfIeg2MfyxgXcM5ukdXD6SPegOuQuwXVN7HswGSzA==
   dependencies:
     chalk "4.1.0"
+    handlebars "4.7.6"
+    inquirer "7.3.3"
+    ora "5.1.0"
+    ramda "0.27.1"
+    recursive-copy "2.0.11"
+    shelljs "0.8.4"
+    through2 "4.0.2"
+    validate-npm-package-name "3.0.0"
+    yargs "16.1.0"
+
+"@test-release/core@1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@test-release/core/-/core-1.18.0.tgz#a4aac06f3bf915e8f08374320038d5e2fb6f8744"
+  integrity sha512-A+Llid1pPe7Wr4cEYLOgNllRlRYERliLj4wsbubgqW5q9yjlf+iQrpX9HQ2EZlNiicdYXr++Mj0I4xY0uNI1oA==
+  dependencies:
+    chalk "4.1.0"
+    figlet "^1.5.0"
     handlebars "4.7.6"
     inquirer "7.3.3"
     ora "5.1.0"

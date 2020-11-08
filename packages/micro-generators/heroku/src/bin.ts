@@ -2,7 +2,7 @@ import {
   askAppType,
   execute,
   getProjectFolder,
-  logError,
+  logger,
 } from '@test-release/core'
 import { askIsCRA, askPostgreAddon } from './services/prompt'
 import { createSchema } from './index'
@@ -28,4 +28,4 @@ const run = async () => {
   await execute(herokuSchema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)

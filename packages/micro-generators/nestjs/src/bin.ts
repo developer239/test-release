@@ -1,7 +1,7 @@
 import {
   askProjectName,
   execute,
-  logError,
+  logger,
 } from '@test-release/core'
 import { askIsDatabase } from './services/prompt'
 import { createSchema } from './index'
@@ -18,4 +18,4 @@ const run = async () => {
   await execute(nestJsSchema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)

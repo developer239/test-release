@@ -3,7 +3,7 @@ import {
   askAppType,
   execute,
   getProjectFolder,
-  logError,
+  logger,
 } from '@test-release/core'
 import { askIsEslint, askIsPrettier, askIsStylelint } from './services/prompt'
 import { createSchema } from './index'
@@ -30,4 +30,4 @@ const run = async () => {
   await execute(schema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)

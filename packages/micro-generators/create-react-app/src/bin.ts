@@ -1,4 +1,4 @@
-import { execute, askProjectName, logError } from '@test-release/core'
+import { execute, askProjectName, logger } from '@test-release/core'
 import { askIsRouter } from './services/prompt'
 import { createSchema } from './index'
 
@@ -14,4 +14,4 @@ const run = async () => {
   await execute(createReactAppSchema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)

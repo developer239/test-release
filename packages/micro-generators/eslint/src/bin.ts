@@ -2,7 +2,7 @@ import {
   askAppType,
   execute,
   getProjectFolder,
-  logError,
+  logger,
 } from '@test-release/core'
 import { createSchema } from './index'
 
@@ -15,4 +15,4 @@ const run = async () => {
   await execute(eslintSchema, projectFolder)
 }
 
-run().catch(logError)
+run().catch(logger.error)
